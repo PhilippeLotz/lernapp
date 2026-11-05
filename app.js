@@ -1,22 +1,62 @@
 const faecher = {
-  "deutsch-plus": [
-    { name: "Netzplantechnik", datei: "netzplantechnik" }
-  ],
-  "aeup": [
-    { name: "Software-Ergonomie", datei: "softwareergonomie" }
-  ,
-    { name: "Daten", datei: "daten" }
-  ],
-  "pug": [
-    { name: "Staatsaufgaben", datei: "staatsaufgaben" }
-  ],
-  "bgwp": [
-    { name: "Ablauforganisation", datei: "ablauforganisation" }
-  ],
+  "deutsch-plus": {
+    name: "Deutsch+",
+    themen: [
+      {
+        name: "Netzplantechnik",
+        datei: "netzplantechnik"
+      }
+    ]
+  },
 
-  "fu-it": [],
-  "englisch": [],
-  "r-plus": []
+  "aeup": {
+    name: "AEuP",
+    themen: [
+      {
+        name: "Software-Ergonomie",
+        datei: "softwareergonomie"
+      },
+      {
+        name: "Daten",
+        datei: "daten"
+      }
+    ]
+  },
+
+  "pug": {
+    name: "PuG",
+    themen: [
+      {
+        name: "Staatsaufgaben",
+        datei: "staatsaufgaben"
+      }
+    ]
+  },
+
+  "bgwp": {
+    name: "BGWP",
+    themen: [
+      {
+        name: "Ablauforganisation",
+        datei: "ablauforganisation"
+      }
+    ]
+  },
+
+  "fu-it": {
+    name: "FU-IT",
+    themen: []
+  },
+
+  "englisch": {
+    name: "Englisch",
+    themen: []
+  },
+
+  "r-plus": {
+    name: "R-Plus",
+    themen: []
+  }
 };
 
 
@@ -119,6 +159,7 @@ const lernstandResetButton =
 
 
 // Lernstand-Übersicht
+
 const lernstandUebersicht =
   document.getElementById("lernstandUebersicht");
 
@@ -145,6 +186,7 @@ const fortschrittsProzent =
 
 
 // Session-Auswertung
+
 const sessionAuswertung =
   document.getElementById("sessionAuswertung");
 
@@ -220,11 +262,109 @@ function lernmodusNameErmitteln() {
 
 
 // --------------------------------------------------
-// MISCHEN
+// FÄCHER ALPHABETISCH ERZEUGEN
+// --------------------------------------------------
+
+function faecherAktualisieren() {
+  fachAuswahl.innerHTML =
+    '<option value="">Fach auswählen</option>';
+
+  const sortierteFaecher =
+    Object.entries(faecher).sort(
+      ([, fachA], [, fachB]) =>
+        fachA.name.localeCompare(
+          fachB.name,
+          "de",
+          {
+            sensitivity: "base"
+          }
+        )
+    );
+
+  sortierteFaecher.forEach(
+    ([fachId, fach]) => {
+      const option =
+        document.createElement("option");
+
+      option.value = fachId;
+      option.textContent = fach.name;
+
+      fachAuswahl.appendChild(option);
+    }
+  );
+}
+
+
+// --------------------------------------------------
+// THEMEN ALPHABETISCH ERZEUGEN
+// --------------------------------------------------
+
+function themenAktualisieren() {
+  const fachId =
+    fachAuswahl.value;
+
+  themaAuswahl.innerHTML =
+    '<option value="">Thema auswählen</option>';
+
+  if (!fachId) {
+    return;
+  }
+
+  const fach =
+    faecher[fachId];
+
+  if (!fach) {
+    console.error(
+      `Das Fach "${fachId}" ist nicht eingetragen.`
+    );
+
+    return;
+  }
+
+  if (fach.themen.length === 0) {
+    const option =
+      document.createElement("option");
+
+    option.value = "";
+    option.textContent =
+      "Noch keine Themen vorhanden";
+
+    themaAuswahl.appendChild(option);
+
+    return;
+  }
+
+  const sortierteThemen =
+    [...fach.themen].sort(
+      (themaA, themaB) =>
+        themaA.name.localeCompare(
+          themaB.name,
+          "de",
+          {
+            sensitivity: "base"
+          }
+        )
+    );
+
+  sortierteThemen.forEach(thema => {
+    const option =
+      document.createElement("option");
+
+    option.value = thema.datei;
+    option.textContent = thema.name;
+
+    themaAuswahl.appendChild(option);
+  });
+}
+
+
+// --------------------------------------------------
+// KARTEN MISCHEN
 // --------------------------------------------------
 
 function kartenMischen(liste) {
-  const gemischt = [...liste];
+  const gemischt =
+    [...liste];
 
   for (
     let i = gemischt.length - 1;
@@ -314,6 +454,7 @@ function lernrundeErstellen() {
   if (alleKarten.length === 0) {
     karten = [];
     aktuelleKarte = 0;
+
     return;
   }
 
@@ -326,61 +467,6 @@ function lernrundeErstellen() {
     );
 
   aktuelleKarte = 0;
-}
-
-
-// --------------------------------------------------
-// FÄCHER UND THEMEN
-// --------------------------------------------------
-
-function themenAktualisieren() {
-  const fach =
-    fachAuswahl.value;
-
-  themaAuswahl.innerHTML =
-    '<option value="">Thema auswählen</option>';
-
-  if (!fach) {
-    return;
-  }
-
-  const themen =
-    faecher[fach];
-
-  if (!themen) {
-    console.error(
-      `Das Fach "${fach}" ist nicht eingetragen.`
-    );
-
-    return;
-  }
-
-  if (themen.length === 0) {
-    const option =
-      document.createElement("option");
-
-    option.value = "";
-
-    option.textContent =
-      "Noch keine Themen vorhanden";
-
-    themaAuswahl.appendChild(option);
-
-    return;
-  }
-
-  themen.forEach(thema => {
-    const option =
-      document.createElement("option");
-
-    option.value =
-      thema.datei;
-
-    option.textContent =
-      thema.name;
-
-    themaAuswahl.appendChild(option);
-  });
 }
 
 
@@ -465,6 +551,7 @@ function lernstandSpeichern(
     karte.frage
   ] = {
     bewertung: bewertung,
+
     zuletztGelernt:
       new Date().toISOString()
   };
@@ -472,6 +559,7 @@ function lernstandSpeichern(
   try {
     localStorage.setItem(
       speicherSchluessel,
+
       JSON.stringify(
         gespeicherterLernstand
       )
@@ -1247,7 +1335,7 @@ function lernrundeBeenden() {
 
 
 // --------------------------------------------------
-// RESET DER ANSICHT
+// ANSICHT ZURÜCKSETZEN
 // --------------------------------------------------
 
 function ansichtZuruecksetzen() {
@@ -1409,6 +1497,7 @@ function tastaturSteuern(event) {
     )
   ) {
     unsicherButton.click();
+
     return;
   }
 
@@ -1419,6 +1508,7 @@ function tastaturSteuern(event) {
     )
   ) {
     teilweiseButton.click();
+
     return;
   }
 
@@ -1429,6 +1519,7 @@ function tastaturSteuern(event) {
     )
   ) {
     sicherButton.click();
+
     return;
   }
 
@@ -1447,7 +1538,6 @@ function tastaturSteuern(event) {
 // EVENT-LISTENER
 // --------------------------------------------------
 
-// Antwort anzeigen / ausblenden
 antwortButton.addEventListener(
   "click",
   () => {
@@ -1469,6 +1559,7 @@ antwortButton.addEventListener(
       bewertungBereich.classList.add(
         "versteckt"
       );
+
     } else {
       bewertungBereich.classList.remove(
         "versteckt"
@@ -1478,14 +1569,12 @@ antwortButton.addEventListener(
 );
 
 
-// Quizantwort prüfen
 quizPruefenButton.addEventListener(
   "click",
   quizAntwortPruefen
 );
 
 
-// Quiz-Fehler zurücksetzen
 quizAntwort.addEventListener(
   "input",
   () => {
@@ -1494,7 +1583,6 @@ quizAntwort.addEventListener(
 );
 
 
-// Bewertungen
 unsicherButton.addEventListener(
   "click",
   () => {
@@ -1519,7 +1607,6 @@ sicherButton.addEventListener(
 );
 
 
-// Nächste Karte
 weiterButton.addEventListener(
   "click",
   () => {
@@ -1537,35 +1624,30 @@ weiterButton.addEventListener(
 );
 
 
-// Alle Karten wiederholen
 alleWiederholenButton.addEventListener(
   "click",
   alleKartenWiederholen
 );
 
 
-// Lernstand zurücksetzen
 lernstandResetButton.addEventListener(
   "click",
   lernstandZuruecksetzen
 );
 
 
-// Lernart wechseln
 lernartAuswahl.addEventListener(
   "change",
   lernartWechseln
 );
 
 
-// Lernmodus wechseln
 lernmodusAuswahl.addEventListener(
   "change",
   lernmodusWechseln
 );
 
 
-// Fach wechseln
 fachAuswahl.addEventListener(
   "change",
   () => {
@@ -1575,12 +1657,12 @@ fachAuswahl.addEventListener(
 );
 
 
-// Thema wechseln
 themaAuswahl.addEventListener(
   "change",
   () => {
     if (!themaAuswahl.value) {
       ansichtZuruecksetzen();
+
       return;
     }
 
@@ -1589,19 +1671,17 @@ themaAuswahl.addEventListener(
 );
 
 
-// Tastatursteuerung
 document.addEventListener(
   "keydown",
   tastaturSteuern
 );
 
 
-// Mischen wird bei der nächsten
-// neu erzeugten Lernrunde angewendet
 mischenCheckbox.addEventListener(
   "change",
   () => {
-    // Absichtlich keine direkte Aktion.
+    // Die Einstellung gilt bei der
+    // nächsten neu erzeugten Lernrunde.
   }
 );
 
@@ -1610,5 +1690,6 @@ mischenCheckbox.addEventListener(
 // START
 // --------------------------------------------------
 
+faecherAktualisieren();
 themenAktualisieren();
 ansichtZuruecksetzen();
