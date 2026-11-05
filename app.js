@@ -4,8 +4,7 @@ const faecher = {
   ],
   "aeup": [
     { name: "Software-Ergonomie", datei: "softwareergonomie" }
-  ],
-  "daten": [
+  ,
     { name: "Daten", datei: "daten" }
   ],
   "pug": [
