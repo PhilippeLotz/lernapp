@@ -1,0 +1,737 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+
+  font-family: Arial, sans-serif;
+
+  background: #f3f5f7;
+  color: #202124;
+}
+
+.container {
+  width: min(90%, 680px);
+  margin: 0 auto;
+  padding: 60px 0;
+
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 6px;
+}
+
+.untertitel {
+  margin-top: 0;
+  color: #6b7280;
+}
+
+
+/* --------------------------------------------------
+   FACH UND THEMA
+-------------------------------------------------- */
+
+.auswahl {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  gap: 16px;
+
+  margin-top: 32px;
+
+  text-align: left;
+}
+
+.auswahl-feld {
+  display: flex;
+  flex-direction: column;
+
+  gap: 7px;
+
+  min-width: 0;
+}
+
+.auswahl-feld label {
+  font-weight: 700;
+}
+
+
+/* --------------------------------------------------
+   SELECT-FELDER
+-------------------------------------------------- */
+
+select {
+  width: 100%;
+
+  min-height: 44px;
+
+  padding: 11px 12px;
+
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+
+  background: #fff;
+
+  font-size: 1rem;
+
+  color: #202124;
+}
+
+
+/* --------------------------------------------------
+   LERNOPTIONEN
+-------------------------------------------------- */
+
+.lernoptionen {
+  display: flex;
+
+  justify-content: center;
+  align-items: end;
+
+  gap: 24px;
+
+  margin: 20px 0;
+
+  flex-wrap: wrap;
+}
+
+.lernart-option,
+.lernmodus-option {
+  display: flex;
+  flex-direction: column;
+
+  gap: 6px;
+
+  min-width: 0;
+
+  text-align: left;
+}
+
+.lernart-option label,
+.lernmodus-option label {
+  font-weight: 600;
+}
+
+.lernart-option select,
+.lernmodus-option select {
+  min-width: 160px;
+}
+
+.mischen-option {
+  display: flex;
+  align-items: center;
+
+  min-height: 44px;
+}
+
+.mischen-option label {
+  display: flex;
+
+  align-items: center;
+
+  gap: 8px;
+
+  min-height: 44px;
+
+  cursor: pointer;
+}
+
+#mischenCheckbox {
+  width: 20px;
+  height: 20px;
+
+  margin: 0;
+}
+
+
+/* --------------------------------------------------
+   LERNSTAND
+-------------------------------------------------- */
+
+.lernstand-uebersicht {
+  margin-top: 24px;
+
+  padding: 24px;
+
+  background: #fff;
+
+  border-radius: 16px;
+
+  box-shadow:
+    0 8px 24px rgba(0, 0, 0, .08);
+}
+
+.lernstand-uebersicht h2 {
+  margin-top: 0;
+}
+
+
+/* Lernstandwerte */
+
+.lernstand-werte {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+
+  gap: 22px;
+
+  flex-wrap: wrap;
+
+  margin: 20px 0;
+}
+
+.lernstand-werte p {
+  margin: 0;
+
+  white-space: nowrap;
+}
+
+
+/* Fortschrittsbalken */
+
+#fortschrittsBalken {
+  display: block;
+
+  width: 100%;
+  height: 18px;
+
+  margin-top: 8px;
+}
+
+
+/* --------------------------------------------------
+   LERNKARTE
+-------------------------------------------------- */
+
+.karte {
+  margin-top: 24px;
+
+  padding: 40px;
+
+  background: #fff;
+
+  border-radius: 16px;
+
+  box-shadow:
+    0 8px 24px rgba(0, 0, 0, .08);
+
+  overflow-wrap: anywhere;
+}
+
+.fortschritt {
+  margin-top: 0;
+
+  color: #6b7280;
+
+  font-size: .9rem;
+}
+
+.label {
+  color: #6b7280;
+
+  font-size: .85rem;
+
+  font-weight: 700;
+
+  text-transform: uppercase;
+
+  letter-spacing: .08em;
+}
+
+
+/* --------------------------------------------------
+   BEREICH
+-------------------------------------------------- */
+
+#bereich {
+  margin-bottom: 12px;
+
+  color: #555;
+
+  font-size: 1.5rem;
+
+  font-weight: 700;
+
+  overflow-wrap: anywhere;
+}
+
+#frage {
+  overflow-wrap: anywhere;
+}
+
+
+/* --------------------------------------------------
+   BUTTONS
+-------------------------------------------------- */
+
+button {
+  min-height: 44px;
+
+  margin-top: 20px;
+
+  padding: 12px 20px;
+
+  border: 0;
+
+  border-radius: 8px;
+
+  background: #2563eb;
+
+  color: #fff;
+
+  font-size: 1rem;
+
+  cursor: pointer;
+
+  touch-action: manipulation;
+}
+
+button:hover {
+  background: #1d4ed8;
+}
+
+button:focus-visible {
+  outline: 3px solid rgba(37, 99, 235, .35);
+  outline-offset: 3px;
+}
+
+button:disabled {
+  opacity: .5;
+
+  cursor: not-allowed;
+}
+
+.sekundaer {
+  margin-left: 8px;
+
+  background: #475569;
+}
+
+
+/* Bewertungsbuttons */
+
+.bewertung-buttons {
+  display: flex;
+
+  justify-content: center;
+
+  gap: 10px;
+
+  flex-wrap: wrap;
+}
+
+.bewertung-buttons button {
+  flex: 1 1 140px;
+
+  max-width: 180px;
+}
+
+
+/* --------------------------------------------------
+   ANTWORT
+-------------------------------------------------- */
+
+.antwort {
+  margin-top: 28px;
+
+  padding-top: 20px;
+
+  border-top: 1px solid #e5e7eb;
+}
+
+#antwortText {
+  white-space: pre-line;
+
+  overflow-wrap: anywhere;
+}
+
+
+/* --------------------------------------------------
+   QUIZ
+-------------------------------------------------- */
+
+.quiz-bereich {
+  margin-top: 24px;
+}
+
+.quiz-bereich label {
+  display: block;
+
+  margin-bottom: 8px;
+
+  font-weight: 600;
+}
+
+#quizAntwort {
+  display: block;
+
+  width: 100%;
+
+  min-height: 120px;
+
+  padding: 12px;
+
+  border: 1px solid #cbd5e1;
+
+  border-radius: 8px;
+
+  background: #fff;
+
+  color: #202124;
+
+  font-family: Arial, sans-serif;
+
+  font-size: 1rem;
+
+  line-height: 1.5;
+
+  resize: vertical;
+}
+
+#quizAntwort:focus {
+  outline: 2px solid #2563eb;
+  outline-offset: 2px;
+}
+
+
+/* --------------------------------------------------
+   LERNSTAND-BUTTONS
+-------------------------------------------------- */
+
+.lernstand-buttons {
+  display: flex;
+
+  justify-content: center;
+
+  gap: 12px;
+
+  margin-top: 20px;
+
+  flex-wrap: wrap;
+}
+
+.lernstand-buttons button {
+  flex: 0 1 auto;
+}
+
+
+/* --------------------------------------------------
+   SESSION-AUSWERTUNG
+-------------------------------------------------- */
+
+.session-auswertung {
+  margin-top: 24px;
+
+  padding: 24px;
+
+  background: #fff;
+
+  border-radius: 16px;
+
+  box-shadow:
+    0 8px 24px rgba(0, 0, 0, .08);
+}
+
+.session-auswertung h2 {
+  margin-top: 0;
+}
+
+.session-auswertung p {
+  margin: 8px 0;
+}
+
+
+/* --------------------------------------------------
+   TASTATUR-HINWEISE
+-------------------------------------------------- */
+
+.tastatur-hinweise {
+  margin-top: 24px;
+
+  text-align: left;
+}
+
+.tastatur-hinweise summary {
+  min-height: 44px;
+
+  padding: 10px 0;
+
+  cursor: pointer;
+
+  font-weight: 700;
+}
+
+.tastatur-hinweise ul {
+  padding-left: 22px;
+
+  line-height: 1.6;
+}
+
+
+/* --------------------------------------------------
+   VERSTECKTE ELEMENTE
+-------------------------------------------------- */
+
+.versteckt {
+  display: none;
+}
+
+
+/* ==================================================
+   TABLET / KLEINE FENSTER
+   bis 768 px
+================================================== */
+
+@media (max-width: 768px) {
+
+  .container {
+    width: min(94%, 680px);
+
+    padding: 36px 0;
+  }
+
+  .karte,
+  .lernstand-uebersicht,
+  .session-auswertung {
+    padding: 28px;
+  }
+
+  .lernoptionen {
+    gap: 16px;
+  }
+
+  .lernstand-werte {
+    gap: 14px 20px;
+  }
+}
+
+
+/* ==================================================
+   SMARTPHONE
+   bis 520 px
+================================================== */
+
+@media (max-width: 520px) {
+
+  body {
+    background: #f3f5f7;
+  }
+
+  .container {
+    width: 100%;
+
+    padding: 24px 14px;
+  }
+
+  h1 {
+    font-size: 1.75rem;
+  }
+
+
+  /* Fach und Thema */
+
+  .auswahl {
+    grid-template-columns: 1fr;
+
+    gap: 14px;
+
+    margin-top: 24px;
+  }
+
+
+  /* Lernoptionen untereinander */
+
+  .lernoptionen {
+    display: grid;
+
+    grid-template-columns: 1fr;
+
+    gap: 14px;
+
+    margin: 20px 0;
+  }
+
+  .lernart-option,
+  .lernmodus-option {
+    width: 100%;
+  }
+
+  .lernart-option select,
+  .lernmodus-option select {
+    width: 100%;
+
+    min-width: 0;
+  }
+
+  .mischen-option {
+    justify-content: center;
+  }
+
+
+  /* Lernstand */
+
+  .lernstand-uebersicht {
+    margin-top: 18px;
+
+    padding: 20px 16px;
+  }
+
+  .lernstand-werte {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 12px;
+
+    text-align: left;
+  }
+
+  .lernstand-werte p {
+    white-space: normal;
+  }
+
+
+  /* Lernkarte */
+
+  .karte {
+    margin-top: 18px;
+
+    padding: 26px 18px;
+
+    border-radius: 14px;
+  }
+
+  #bereich {
+    font-size: 1.3rem;
+  }
+
+  #frage {
+    font-size: 1.35rem;
+
+    line-height: 1.35;
+  }
+
+
+  /* Buttons */
+
+  button {
+    width: 100%;
+
+    min-height: 48px;
+
+    margin-top: 14px;
+
+    padding: 13px 16px;
+  }
+
+  .sekundaer {
+    margin-left: 0;
+  }
+
+
+  /* Bewertungsbuttons */
+
+  .bewertung-buttons {
+    display: grid;
+
+    grid-template-columns: 1fr;
+
+    gap: 0;
+  }
+
+  .bewertung-buttons button {
+    width: 100%;
+
+    max-width: none;
+  }
+
+
+  /* Lernstandbuttons */
+
+  .lernstand-buttons {
+    display: grid;
+
+    grid-template-columns: 1fr;
+
+    gap: 0;
+
+    margin-top: 14px;
+  }
+
+
+  /* Quiz */
+
+  #quizAntwort {
+    min-height: 150px;
+  }
+
+
+  /* Session */
+
+  .session-auswertung {
+    padding: 20px 16px;
+  }
+}
+
+
+/* ==================================================
+   SEHR SCHMALE SMARTPHONES
+   bis 380 px
+================================================== */
+
+@media (max-width: 380px) {
+
+  .container {
+    padding:
+      20px 10px;
+  }
+
+  h1 {
+    font-size: 1.55rem;
+  }
+
+  .untertitel {
+    font-size: .9rem;
+  }
+
+  .karte {
+    padding:
+      22px 14px;
+  }
+
+  .lernstand-uebersicht,
+  .session-auswertung {
+    padding:
+      18px 12px;
+  }
+
+
+  /* Lernstand auf sehr kleinen Displays
+     komplett untereinander */
+
+  .lernstand-werte {
+    grid-template-columns: 1fr;
+  }
+
+  #bereich {
+    font-size: 1.2rem;
+  }
+
+  #frage {
+    font-size: 1.25rem;
+  }
+
+  select,
+  button,
+  #quizAntwort {
+    font-size: 16px;
+  }
+}

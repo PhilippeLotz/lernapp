@@ -1,0 +1,50 @@
+[
+  {
+    "frage": "Was ist ein Staat?",
+    "antwort": "Ein Staat ist eine politische Organisation, die aus drei grundlegenden Elementen besteht:\n 1. Staatsgebiet\n 2. Staatsvolk\n 3. Staatsgewalt"
+  },
+  {
+    "frage": "Was bedeutet Staatsvolk?",
+    "antwort": "Das Staatsvolk umfasst alle Menschen, die die Staatsangehörigkeit eines bestimmten Staates besitzen. Es ist das rechtliche Band, das die Bürger mit dem Staat verbindet."
+  },
+  {
+    "frage": "Was bedeutet Staatsgebiet?",
+    "antwort": "Das Staatsgebiet umfasst das räumlich abgegrenzte Gebiet, auf dem die Staatsgewalt ausgeübt wird."
+  },
+  {
+    "frage": "Was bedeutet Staatsgewalt?",
+    "antwort": "Die Staatsgewalt ist die Befugnis des Staates, Gesetze zu erlassen und durchzusetzen. Sie umfasst die legislative, exekutive und judikative Gewalt."
+  },
+  {
+    "frage": "Welche Aufgaben hat der Staat im Bereich der äußeren Sicherheit?",
+    "antwort": "Der Staat hat die Aufgabe, die äußere Sicherheit seines Territoriums zu gewährleisten.\n Dazu gehören Maßnahmen zur Verteidigung gegen auswärtige Angriffe sowie Diplomatie und internationale Verteidigungsbündnisse."
+  },
+  {
+    "frage": "Welche Einrichtungen sind für die innere Sicherheit zuständig?",
+    "antwort": "Polizei und Gerichte sorgen für Sicherheit, Ordnung und Rechtsdurchsetzung im Staat."
+  },
+  {
+    "frage": "Warum ist die Rechtsordnung eine Staatsaufgabe?",
+    "antwort": "Der Staat schafft, erhält und entwickelt Gesetze, die das Zusammenleben der Menschen regeln. Die Rechtsordnung sorgt für Gerechtigkeit und schützt die Rechte der Bürger."
+  },
+  {
+    "frage": "Was sind öffentliche Leistungen des Staates?",
+    "antwort": "Der Staat stellt wichtige Infrastrukturen und Dienstleistungen bereit, wie Bildung, Gesundheitsversorgung, Verkehrssysteme und soziale Sicherheit."
+  },
+  {
+    "frage": "Was bedeutet soziale Sicherung?",
+    "antwort": "Der Staat schützt Menschen vor sozialen Risiken und unterstützt sie in besonderen Lebenslagen."
+  },
+  {
+    "frage": "Warum fördert der Staat die Wirtschaft?", 
+    "antwort": "Um wirtschaftliche Entwicklung, Wohlstand und Arbeitsplätze zu sichern."
+  },
+  {
+    "frage": "Welche Aufgaben hat der Staat im Bereich der Umwelt?",
+    "antwort": "Der Staat schützt die Umwelt durch Gesetze und Maßnahmen, um die natürlichen Lebensgrundlagen zu erhalten."
+  },
+  {
+    "frage": "Warum braucht der Staat eine öffentliche Verwaltung?",
+    "antwort": "Die öffentliche Verwaltung sorgt dafür, dass staatliche Aufgaben organisiert geplant und effizient umgesetzt werden."
+  }
+]

@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>Meine Lernkarten</title>
+
+  <link
+    rel="stylesheet"
+    href="style.css"
+  >
+</head>
+
+<body>
+
+  <main class="container">
+
+    <h1>Meine Lernkarten</h1>
+
+    <p class="untertitel">
+      Version 0.9
+    </p>
+
+
+    <!-- Fach und Thema -->
+    <section
+      class="auswahl"
+      aria-label="Lernbereich auswählen"
+    >
+
+      <div class="auswahl-feld">
+
+        <label for="fachAuswahl">
+          Fach
+        </label>
+
+        <select id="fachAuswahl">
+
+          <option value="" selected>
+            Fach auswählen
+          </option>
+
+          <option value="deutsch-plus">
+            Deutsch+
+          </option>
+
+          <option value="aeup">
+            AEuP
+          </option>
+
+          <option value="pug">
+            PuG
+          </option>
+
+          <option value="bgwp">
+            BGWP
+          </option>
+
+          <option value="fu-it">
+            FU-IT
+          </option>
+
+          <option value="englisch">
+            Englisch
+          </option>
+
+          <option value="r-plus">
+            R-Plus
+          </option>
+
+        </select>
+
+      </div>
+
+
+      <div class="auswahl-feld">
+
+        <label for="themaAuswahl">
+          Thema
+        </label>
+
+        <select id="themaAuswahl">
+
+          <option value="" selected>
+            Thema auswählen
+          </option>
+
+        </select>
+
+      </div>
+
+    </section>
+
+
+    <!-- Lernoptionen -->
+    <div class="lernoptionen">
+
+      <div class="lernart-option">
+
+        <label for="lernartAuswahl">
+          Lernart
+        </label>
+
+        <select id="lernartAuswahl">
+
+          <option value="lernkarten" selected>
+            Lernkarten
+          </option>
+
+          <option value="quiz">
+            Quiz
+          </option>
+
+        </select>
+
+      </div>
+
+
+      <div class="lernmodus-option">
+
+        <label for="lernmodusAuswahl">
+          Lernmodus
+        </label>
+
+        <select id="lernmodusAuswahl">
+
+          <option value="offen" selected>
+            Offene Karten
+          </option>
+
+          <option value="unsicher">
+            Nur Unsichere
+          </option>
+
+          <option value="problematisch">
+            Unsichere + Teilweise
+          </option>
+
+          <option value="alle">
+            Alle Karten
+          </option>
+
+        </select>
+
+      </div>
+
+
+      <div class="mischen-option">
+
+        <label for="mischenCheckbox">
+
+          <input
+            id="mischenCheckbox"
+            type="checkbox"
+          >
+
+          Karten mischen
+
+        </label>
+
+      </div>
+
+    </div>
+
+
+    <!-- Lernstand-Übersicht -->
+    <section
+      id="lernstandUebersicht"
+      class="lernstand-uebersicht versteckt"
+      aria-labelledby="lernstandTitel"
+    >
+
+      <h2 id="lernstandTitel">
+        Lernstand
+      </h2>
+
+      <div class="lernstand-werte">
+
+        <p>
+          Gesamt:
+          <strong id="statistikGesamt">0</strong>
+        </p>
+
+        <p>
+          🟢 Sicher:
+          <strong id="statistikSicher">0</strong>
+        </p>
+
+        <p>
+          🟡 Teilweise:
+          <strong id="statistikTeilweise">0</strong>
+        </p>
+
+        <p>
+          🔴 Unsicher:
+          <strong id="statistikUnsicher">0</strong>
+        </p>
+
+        <p>
+          Noch nicht bewertet:
+          <strong id="statistikOffen">0</strong>
+        </p>
+
+      </div>
+
+
+      <label for="fortschrittsBalken">
+        <span id="fortschrittsProzent">
+          0 % sicher
+        </span>
+      </label>
+
+      <progress
+        id="fortschrittsBalken"
+        max="100"
+        value="0"
+      >
+        0 %
+      </progress>
+
+    </section>
+
+
+    <!-- Lernkarte -->
+    <section class="karte">
+
+      <p
+        id="fortschritt"
+        class="fortschritt"
+      ></p>
+
+
+      <p class="label">
+        Frage
+      </p>
+
+
+      <div id="bereich"></div>
+
+
+      <h2 id="frage">
+        Bitte ein Fach und ein Thema auswählen.
+      </h2>
+
+
+      <!-- Quizmodus -->
+      <div
+        id="quizBereich"
+        class="quiz-bereich versteckt"
+      >
+
+        <label for="quizAntwort">
+          Deine Antwort
+        </label>
+
+        <textarea
+          id="quizAntwort"
+          rows="5"
+          placeholder="Schreibe deine Antwort hier..."
+        ></textarea>
+
+        <button
+          id="quizPruefenButton"
+          type="button"
+        >
+          Antwort prüfen
+        </button>
+
+      </div>
+
+
+      <!-- Lernkartenmodus -->
+      <button
+        id="antwortButton"
+        type="button"
+      >
+        Antwort anzeigen
+      </button>
+
+
+      <!-- Musterantwort -->
+      <div
+        id="antwortBereich"
+        class="antwort versteckt"
+      >
+
+        <p class="label">
+          Musterantwort
+        </p>
+
+        <p id="antwortText"></p>
+
+      </div>
+
+
+      <!-- Selbsteinschätzung -->
+      <div
+        id="bewertungBereich"
+        class="bewertung-bereich versteckt"
+      >
+
+        <p class="label">
+          Wie sicher wusstest du die Antwort?
+        </p>
+
+        <div class="bewertung-buttons">
+
+          <button
+            id="unsicherButton"
+            type="button"
+          >
+            🔴 Unsicher
+          </button>
+
+          <button
+            id="teilweiseButton"
+            type="button"
+          >
+            🟡 Teilweise
+          </button>
+
+          <button
+            id="sicherButton"
+            type="button"
+          >
+            🟢 Sicher
+          </button>
+
+        </div>
+
+      </div>
+
+
+      <!-- Navigation -->
+      <button
+        id="weiterButton"
+        class="sekundaer"
+        type="button"
+      >
+        Nächste Karte
+      </button>
+
+
+      <!-- Lernstand-Verwaltung -->
+      <div class="lernstand-buttons">
+
+        <button
+          id="alleWiederholenButton"
+          type="button"
+          disabled
+        >
+          Alle Karten wiederholen
+        </button>
+
+        <button
+          id="lernstandResetButton"
+          type="button"
+          disabled
+        >
+          Lernstand zurücksetzen
+        </button>
+
+      </div>
+
+    </section>
+
+
+    <!-- Session-Auswertung -->
+    <section
+      id="sessionAuswertung"
+      class="session-auswertung versteckt"
+      aria-labelledby="sessionTitel"
+    >
+
+      <h2 id="sessionTitel">
+        Session-Auswertung
+      </h2>
+
+      <p>
+        Bearbeitete Bewertungen:
+        <strong id="sessionBearbeitet">0</strong>
+      </p>
+
+      <p>
+        🟢 Sicher:
+        <strong id="sessionSicher">0</strong>
+      </p>
+
+      <p>
+        🟡 Teilweise:
+        <strong id="sessionTeilweise">0</strong>
+      </p>
+
+      <p>
+        🔴 Unsicher:
+        <strong id="sessionUnsicher">0</strong>
+      </p>
+
+      <p>
+        Dauer:
+        <strong id="sessionDauer">00:00</strong>
+      </p>
+
+    </section>
+
+
+    <!-- Tastaturhinweise -->
+    <details class="tastatur-hinweise">
+
+      <summary>
+        Tastatursteuerung
+      </summary>
+
+      <ul>
+        <li>
+          Leertaste: Antwort anzeigen oder ausblenden
+        </li>
+
+        <li>
+          1: Unsicher
+        </li>
+
+        <li>
+          2: Teilweise
+        </li>
+
+        <li>
+          3: Sicher
+        </li>
+
+        <li>
+          Enter: Quizantwort prüfen
+        </li>
+
+        <li>
+          Pfeil rechts: nächste Karte
+        </li>
+      </ul>
+
+    </details>
+
+  </main>
+
+
+  <script src="app.js"></script>
+
+</body>
+
+</html>

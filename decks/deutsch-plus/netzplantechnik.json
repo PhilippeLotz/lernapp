@@ -1,0 +1,18 @@
+[
+  {
+    "frage": "Was ist der kritische Pfad?",
+    "antwort": "Der kritische Pfad ist die Kette aller Vorgänge, deren Verzögerung das gesamte Projekt verzögert."
+  },
+  {
+    "frage": "Was bedeutet GP?",
+    "antwort": "GP steht für Gesamtpuffer."
+  },
+  {
+    "frage": "Was bedeutet FP?",
+    "antwort": "FP steht für freien Puffer."
+  },
+  {
+    "frage": "Was ist ein Vorteil eines Gantt-Diagramms?",
+    "antwort": "Zeitliche Abläufe eines Projekts lassen sich übersichtlich darstellen."
+  }
+]
