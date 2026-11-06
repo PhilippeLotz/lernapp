@@ -42,28 +42,132 @@
     "antwort": "*Klare Zuständigkeiten\n *Geregelte Vertretungen\n *Saubere Übergaben\n *Zentrales Ticketsystem oder Auftragssystem\n"
   },
   {
-    "id": "bgwp-ablauforganisation-008",
-    "bereich": "Aufbau- und Ablauforganisation",
-    "frage": "Was regelt die Aufbauorganisation?",
-    "antwort": "Die Aufbauorganisation regelt die Struktur eines Unternehmens:\n\n *Abteilungen\n *Stellen\n *Hierarchien\n *Verantwortlichkeiten"
+  "id": "bgwp-ablauforganisation-008",
+  "bereich": "Aufbau- und Ablauforganisation",
+  "frage": "Was regelt die Aufbauorganisation?",
+  "antwort": "Die Aufbauorganisation regelt die Struktur eines Unternehmens:\n\n*Abteilungen\n*Stellen\n*Hierarchien\n*Verantwortlichkeiten",
+  "multipleChoice": {
+    "typ": "single",
+    "optionen": [
+      {
+        "id": "a",
+        "text": "Die Struktur des Unternehmens mit Abteilungen, Stellen, Hierarchien und Verantwortlichkeiten.",
+        "richtig": true
+      },
+      {
+        "id": "b",
+        "text": "Die Reihenfolge, den Zeitpunkt und den Ort der einzelnen Arbeitsschritte.",
+        "richtig": false
+      },
+      {
+        "id": "c",
+        "text": "Die Auslastung von Mitarbeitern und Betriebsmitteln sowie die Wirtschaftlichkeit einzelner Arbeitsabläufe.",
+        "richtig": false
+      },
+      {
+        "id": "d",
+        "text": "Die grafische Darstellung von Geschäftsprozessen mithilfe von ePK oder BPMN.",
+        "richtig": false
+      }
+    ],
+    "erklaerung": "Die Aufbauorganisation beschreibt die grundlegende Struktur eines Unternehmens. Dazu gehören Abteilungen, Stellen, Hierarchien und Verantwortlichkeiten. Merksatz: Aufbauorganisation = Wer macht was? Ablauforganisation = Wie wird es gemacht?"
+  }
+  },
+{
+  "id": "bgwp-ablauforganisation-009",
+  "bereich": "Aufbau- und Ablauforganisation",
+  "frage": "Was regelt die Ablauforganisation?",
+  "antwort": "Die Ablauforganisation legt fest:\n*Reihenfolge der Arbeitsschritte\n*Zeitpunkt\n*Ort der Durchführung\n*Konkrete Durchführung der Arbeit\n\nMerksatz:\nAufbauorganisation = Wer macht was?\nAblauforganisation = Wie wird es gemacht?",
+  "multipleChoice": {
+    "typ": "single",
+    "optionen": [
+      {
+        "id": "a",
+        "text": "Reihenfolge, Zeitpunkt, Ort und konkrete Durchführung der Arbeitsschritte.",
+        "richtig": true
+      },
+      {
+        "id": "b",
+        "text": "Abteilungen, Stellen, Hierarchien und Verantwortlichkeiten des Unternehmens.",
+        "richtig": false
+      },
+      {
+        "id": "c",
+        "text": "Ausschließlich die langfristige Unternehmensstrategie und die Qualitätsziele.",
+        "richtig": false
+      },
+      {
+        "id": "d",
+        "text": "Ausschließlich die personelle Besetzung der einzelnen Abteilungen.",
+        "richtig": false
+      }
+    ],
+    "erklaerung": "Die Ablauforganisation beschreibt, wie die Arbeit durchgeführt wird. Sie legt Reihenfolge, Zeitpunkt, Ort und konkrete Durchführung der Arbeitsschritte fest. Die Aufbauorganisation beschreibt dagegen die Struktur des Unternehmens."
+   }
   },
   {
-    "id": "bgwp-ablauforganisation-009",
-    "bereich": "Aufbau- und Ablauforganisation",
-    "frage": "Was regelt die Ablauforganisation?",
-    "antwort": "Die Ablauforganisation legt fest:\n *Reihenfolge der Arbeitsschritte\n *Zeitpunkt\n *Ort der Durchführung\n *Konkrete Durchführung der Arbeit\n\n Merksatz:\n Aufbauorganisation = Wer macht was?\n Ablauforganisation = Wie wird es gemacht?"
+  "id": "bgwp-ablauforganisation-010",
+  "bereich": "Dilemma der Ablaufplanung",
+  "frage": "Was ist das Dilemma der Ablaufplanung?",
+  "antwort": "Konflikt zwischen hoher Wirtschaftlichkeit und hoher Servicequalität.",
+  "multipleChoice": {
+    "typ": "single",
+    "optionen": [
+      {
+        "id": "a",
+        "text": "Der Zielkonflikt zwischen hoher Wirtschaftlichkeit und hoher Servicequalität.",
+        "richtig": true
+      },
+      {
+        "id": "b",
+        "text": "Der Konflikt zwischen Aufbauorganisation und Unternehmenshierarchie.",
+        "richtig": false
+      },
+      {
+        "id": "c",
+        "text": "Die Entscheidung zwischen BPMN und ePK.",
+        "richtig": false
+      },
+      {
+        "id": "d",
+        "text": "Die Trennung von Führungsprozessen und Unterstützungsprozessen.",
+        "richtig": false
+      }
+    ],
+    "erklaerung": "Eine hohe Auslastung verbessert häufig die Wirtschaftlichkeit. Gleichzeitig werden freie Kapazitäten benötigt, um unerwartete Probleme schnell zu bearbeiten und eine hohe Servicequalität zu gewährleisten."
+  }
   },
   {
-    "id": "bgwp-ablauforganisation-010",
-    "bereich": "Dilemma der Ablaufplanung",
-    "frage": "Was ist das Dilemma der Ablaufplanung?",
-    "antwort": "Konflikt zwischen: *hoher Wirtschaftlichkeit\n *hoher Servicequalität"
-  },
-  {
-    "id": "bgwp-ablauforganisation-011",
-    "bereich": "Dilemma der Ablaufplanung",
-    "frage": "Warum entsteht dieser Konflikt?",
-    "antwort": "Volle Auslastung erhöht die Effizienz, lässt aber keinen Spielraum für unerwartete Probleme."
+  "id": "bgwp-ablauforganisation-011",
+  "bereich": "Dilemma der Ablaufplanung",
+  "frage": "Warum entsteht dieser Konflikt?",
+  "antwort": "Volle Auslastung erhöht die Effizienz, lässt aber keinen Spielraum für unerwartete Probleme.",
+  "multipleChoice": {
+    "typ": "single",
+    "optionen": [
+      {
+        "id": "a",
+        "text": "Weil eine volle Auslastung die Effizienz erhöht, aber kaum Spielraum für unerwartete Probleme lässt.",
+        "richtig": true
+      },
+      {
+        "id": "b",
+        "text": "Weil eine geringe Auslastung automatisch zu schlechter Servicequalität führt.",
+        "richtig": false
+      },
+      {
+        "id": "c",
+        "text": "Weil Servicequalität und Wirtschaftlichkeit grundsätzlich nicht gleichzeitig möglich sind.",
+        "richtig": false
+      },
+      {
+        "id": "d",
+        "text": "Weil jeder unerwartete Vorgang grundsätzlich eine neue Abteilung erfordert.",
+        "richtig": false
+      }
+    ],
+    "erklaerung": "Bei voller Auslastung werden die vorhandenen Ressourcen wirtschaftlich genutzt. Es fehlen dann jedoch Reserven, um Störungen, Ausfälle oder zusätzliche Kundenanfragen schnell zu bearbeiten."
+  }
   },
   {
     "id": "bgwp-ablauforganisation-012",
@@ -72,100 +176,516 @@
     "antwort": "*Mehr Personal\n *Backup-Ressourcen\n *Schulungen\n *Reserve-Kapazitäten"
   },
   {
-    "id": "bgwp-ablauforganisation-013",
-    "bereich": "Prozesse",
-    "frage": "Was ist ein Prozess nach ISO-9001?",
-    "antwort": "Eine Reihe zusammenhängender Tätigkeiten, die Input in Output umwandeln und einen Mehrwert für den Kunden schaffen."
+  "id": "bgwp-ablauforganisation-013",
+  "bereich": "Prozesse",
+  "frage": "Was ist ein Prozess nach ISO 9001?",
+  "antwort": "Eine Reihe zusammenhängender Tätigkeiten, die Input in Output umwandeln und einen Mehrwert für den Kunden schaffen.",
+  "multipleChoice": {
+    "typ": "single",
+    "optionen": [
+      {
+        "id": "a",
+        "text": "Eine Reihe zusammenhängender Tätigkeiten, die Input in Output umwandeln und einen Mehrwert schaffen.",
+        "richtig": true
+      },
+      {
+        "id": "b",
+        "text": "Eine einzelne Tätigkeit ohne festgelegten Input oder Output.",
+        "richtig": false
+      },
+      {
+        "id": "c",
+        "text": "Eine grafische Darstellung der Unternehmenshierarchie.",
+        "richtig": false
+      },
+      {
+        "id": "d",
+        "text": "Eine ausschließlich technische Prüfung von Daten und Dokumenten.",
+        "richtig": false
+      }
+    ],
+    "erklaerung": "Ein Prozess besteht aus zusammenhängenden Tätigkeiten. Dabei wird ein Input verarbeitet und in einen Output umgewandelt. Das Ergebnis soll einen Nutzen oder Mehrwert erzeugen."
+  }
   },
   {
-    "id": "bgwp-ablauforganisation-014",
-    "bereich": "Prozesskategorien",
-    "frage": "Was sind Führungsprozesse?",
-    "antwort": "Prozesse zur Planung, Steuerung und Kontrolle des Unternehmens.\n\n *Unternehmensstrategie\n *Qualitätsziele\n *Jahresplanung"
+  "id": "bgwp-ablauforganisation-014",
+  "bereich": "Prozesskategorien",
+  "frage": "Was sind Führungsprozesse?",
+  "antwort": "Prozesse zur Planung, Steuerung und Kontrolle des Unternehmens.\n\n*Unternehmensstrategie\n*Qualitätsziele\n*Jahresplanung",
+  "multipleChoice": {
+    "typ": "single",
+    "optionen": [
+      {
+        "id": "a",
+        "text": "Prozesse zur Planung, Steuerung und Kontrolle des Unternehmens.",
+        "richtig": true
+      },
+      {
+        "id": "b",
+        "text": "Prozesse, die unmittelbar Produkte oder Dienstleistungen für Kunden erzeugen.",
+        "richtig": false
+      },
+      {
+        "id": "c",
+        "text": "Prozesse wie Buchhaltung, IT-Support und Personalverwaltung.",
+        "richtig": false
+      },
+      {
+        "id": "d",
+        "text": "Ausschließlich Prozesse zur Bearbeitung von Kundenbeschwerden.",
+        "richtig": false
+      }
+    ],
+    "erklaerung": "Führungsprozesse dienen der Leitung des Unternehmens. Beispiele sind Unternehmensstrategie, Qualitätsziele und Jahresplanung."
+  }
   },
   {
-    "id": "bgwp-ablauforganisation-015",
-    "bereich": "Prozesskategorien",
-    "frage": "Was sind Kernprozesse?",
-    "antwort": "Kernprozesse sind die zentralen Prozesse eines Unternehmens, die direkt zur Wertschöpfung beitragen."
+  "id": "bgwp-ablauforganisation-015",
+  "bereich": "Prozesskategorien",
+  "frage": "Was sind Kernprozesse?",
+  "antwort": "Kernprozesse sind die zentralen Prozesse eines Unternehmens, die direkt zur Wertschöpfung beitragen.",
+  "multipleChoice": {
+    "typ": "single",
+    "optionen": [
+      {
+        "id": "a",
+        "text": "Zentrale Unternehmensprozesse, die direkt zur Wertschöpfung beitragen.",
+        "richtig": true
+      },
+      {
+        "id": "b",
+        "text": "Prozesse, die ausschließlich der Kontrolle der Unternehmensleitung dienen.",
+        "richtig": false
+      },
+      {
+        "id": "c",
+        "text": "Hilfsprozesse ohne direkten Beitrag zur Wertschöpfung.",
+        "richtig": false
+      },
+      {
+        "id": "d",
+        "text": "Alle Prozesse, die ausschließlich von externen Dienstleistern ausgeführt werden.",
+        "richtig": false
+      }
+    ],
+    "erklaerung": "Kernprozesse stehen im Mittelpunkt der betrieblichen Leistungserstellung. Sie tragen unmittelbar zur Wertschöpfung und zum Kundennutzen bei."
+  }
   },
   {
-    "id": "bgwp-ablauforganisation-016",
-    "bereich": "Prozesskategorien",
-    "frage": "Was sind Unterstützungsprozesse?",
-    "antwort": "Prozesse, die die Kernprozesse unterszützen, aber keinen direkten Kundennutzen schaffen:\n\n *Personalverwaltung\n *Buchhaltung\n *IT-Support\n *Beschaffung"
+  "id": "bgwp-ablauforganisation-016",
+  "bereich": "Prozesskategorien",
+  "frage": "Was sind Unterstützungsprozesse?",
+  "antwort": "Prozesse, die die Kernprozesse unterstützen, aber keinen direkten Kundennutzen schaffen:\n\n*Personalverwaltung\n*Buchhaltung\n*IT-Support\n*Beschaffung",
+  "multipleChoice": {
+    "typ": "single",
+    "optionen": [
+      {
+        "id": "a",
+        "text": "Prozesse, die Kernprozesse unterstützen, aber keinen direkten Kundennutzen schaffen.",
+        "richtig": true
+      },
+      {
+        "id": "b",
+        "text": "Zentrale Prozesse, die unmittelbar zur Wertschöpfung beitragen.",
+        "richtig": false
+      },
+      {
+        "id": "c",
+        "text": "Prozesse zur strategischen Planung und Kontrolle des Unternehmens.",
+        "richtig": false
+      },
+      {
+        "id": "d",
+        "text": "Ausschließlich Prozesse, die außerhalb des Unternehmens durchgeführt werden.",
+        "richtig": false
+      }
+    ],
+    "erklaerung": "Unterstützungsprozesse stellen Ressourcen und Leistungen für die Kernprozesse bereit. Beispiele sind Personalverwaltung, Buchhaltung, IT-Support und Beschaffung."
+  }
   },
   {
-    "id": "bgwp-ablauforganisation-017",
-    "bereich": "Wertschöpfungskettendiagramm",
-    "frage": "Was ist ein WKD?",
-    "antwort": "Eine grafische Übersicht aller wichtigen Unternehmensprozesse und ihre Zusammenhänge."
+  "id": "bgwp-ablauforganisation-017",
+  "bereich": "Wertschöpfungskettendiagramm",
+  "frage": "Was ist ein WKD?",
+  "antwort": "Eine grafische Übersicht aller wichtigen Unternehmensprozesse und ihrer Zusammenhänge.",
+  "multipleChoice": {
+    "typ": "single",
+    "optionen": [
+      {
+        "id": "a",
+        "text": "Eine grafische Übersicht wichtiger Unternehmensprozesse und ihrer Zusammenhänge.",
+        "richtig": true
+      },
+      {
+        "id": "b",
+        "text": "Eine detaillierte Darstellung jedes einzelnen Arbeitsschritts mit Ereignissen und Funktionen.",
+        "richtig": false
+      },
+      {
+        "id": "c",
+        "text": "Ein Organigramm zur Darstellung von Stellen und Hierarchien.",
+        "richtig": false
+      },
+      {
+        "id": "d",
+        "text": "Eine Tabelle zur Erfassung von Arbeitszeiten und Personalkosten.",
+        "richtig": false
+      }
+    ],
+    "erklaerung": "Das Wertschöpfungskettendiagramm stellt die wesentlichen Unternehmensprozesse und ihre Beziehungen übersichtlich dar. Es bietet damit eine übergeordnete Prozessübersicht."
+  }
   },
   {
-    "id": "bgwp-ablauforganisation-018",
-    "bereich": "Wertschöpfungskettendiagramm",
-    "frage": "Wie wird das WKD noch genannt?",
-    "antwort": "Wertschöpfungskettendiagramm = Prozesslandkarte"
+  "id": "bgwp-ablauforganisation-018",
+  "bereich": "Wertschöpfungskettendiagramm",
+  "frage": "Wie wird das WKD noch genannt?",
+  "antwort": "Wertschöpfungskettendiagramm = Prozesslandkarte",
+  "multipleChoice": {
+    "typ": "single",
+    "optionen": [
+      {
+        "id": "a",
+        "text": "Prozesslandkarte",
+        "richtig": true
+      },
+      {
+        "id": "b",
+        "text": "Organigramm",
+        "richtig": false
+      },
+      {
+        "id": "c",
+        "text": "Ereignisgesteuerte Prozesskette",
+        "richtig": false
+      },
+      {
+        "id": "d",
+        "text": "Swimlane-Diagramm",
+        "richtig": false
+      }
+    ],
+    "erklaerung": "Das Wertschöpfungskettendiagramm wird auch Prozesslandkarte genannt, weil es einen Überblick über die wesentlichen Prozesse des Unternehmens gibt."
+  }
   },
   {
-    "id": "bgwp-ablauforganisation-019",
-    "bereich": "Wertschöpfungskettendiagramm",
-    "frage": "Welche Prozessarten zeigt das WKD?",
-    "antwort": "*Führungsprozesse\n *Kernprozesse\n *Unterstützungsprozesse\n"
+  "id": "bgwp-ablauforganisation-019",
+  "bereich": "Wertschöpfungskettendiagramm",
+  "frage": "Welche Prozessarten zeigt das WKD?",
+  "antwort": "*Führungsprozesse\n*Kernprozesse\n*Unterstützungsprozesse",
+  "multipleChoice": {
+    "typ": "single",
+    "optionen": [
+      {
+        "id": "a",
+        "text": "Führungsprozesse, Kernprozesse und Unterstützungsprozesse.",
+        "richtig": true
+      },
+      {
+        "id": "b",
+        "text": "Stammdatenprozesse, Bewegungsdatenprozesse und Metadatenprozesse.",
+        "richtig": false
+      },
+      {
+        "id": "c",
+        "text": "Aufbauprozesse, Hierarchieprozesse und Stellenprozesse.",
+        "richtig": false
+      },
+      {
+        "id": "d",
+        "text": "Ereignisse, Funktionen und Organisationseinheiten.",
+        "richtig": false
+      }
+    ],
+    "erklaerung": "Eine Prozesslandkarte unterscheidet typischerweise Führungsprozesse, wertschöpfende Kernprozesse und unterstützende Prozesse."
+  }
   },
   {
-    "id": "bgwp-ablauforganisation-020",
-    "bereich": "ePK - Ereignisgesteuerte Prozesskette",
-    "frage": "Wozu dient die ePK?",
-    "antwort": "Zur detaillierten Darstellung von Geschäftsprozessen und Arbeitsschritten."
+  "id": "bgwp-ablauforganisation-020",
+  "bereich": "ePK - Ereignisgesteuerte Prozesskette",
+  "frage": "Wozu dient die ePK?",
+  "antwort": "Zur detaillierten Darstellung von Geschäftsprozessen und Arbeitsschritten.",
+  "multipleChoice": {
+    "typ": "single",
+    "optionen": [
+      {
+        "id": "a",
+        "text": "Zur detaillierten Darstellung von Geschäftsprozessen und ihren Arbeitsschritten.",
+        "richtig": true
+      },
+      {
+        "id": "b",
+        "text": "Zur Darstellung der Unternehmenshierarchie und der Weisungswege.",
+        "richtig": false
+      },
+      {
+        "id": "c",
+        "text": "Zur Berechnung von Personalkosten und Bearbeitungszeiten.",
+        "richtig": false
+      },
+      {
+        "id": "d",
+        "text": "Zur ausschließlichen Darstellung strategischer Unternehmensziele.",
+        "richtig": false
+      }
+    ],
+    "erklaerung": "Eine ePK modelliert Geschäftsprozesse detailliert. Dabei werden insbesondere Ereignisse, Funktionen, Verknüpfungen und weitere zugehörige Elemente dargestellt."
+  }
   },
   {
-    "id": "bgwp-ablauforganisation-021",
-    "bereich": "ePK - Ereignisgesteuerte Prozesskette",
-    "frage": "Was ist ein Ereignis?",
-    "antwort": "Ein Zustand, der eine Funktion auslöst oder deren Ereignis darstellt."
+  "id": "bgwp-ablauforganisation-021",
+  "bereich": "ePK - Ereignisgesteuerte Prozesskette",
+  "frage": "Was ist ein Ereignis?",
+  "antwort": "Ein Zustand, der eine Funktion auslöst oder das Ergebnis einer Funktion darstellt.",
+  "multipleChoice": {
+    "typ": "single",
+    "optionen": [
+      {
+        "id": "a",
+        "text": "Ein Zustand, der eine Funktion auslöst oder durch eine Funktion entsteht.",
+        "richtig": true
+      },
+      {
+        "id": "b",
+        "text": "Eine auszuführende Tätigkeit oder Handlung.",
+        "richtig": false
+      },
+      {
+        "id": "c",
+        "text": "Eine verantwortliche Stelle oder Person.",
+        "richtig": false
+      },
+      {
+        "id": "d",
+        "text": "Ein Dokument oder Datensatz, der für eine Tätigkeit benötigt wird.",
+        "richtig": false
+      }
+    ],
+    "erklaerung": "Ein Ereignis beschreibt einen eingetretenen Zustand. Es kann eine Funktion auslösen oder als Ergebnis einer ausgeführten Funktion entstehen."
+  }
   },
   {
-    "id": "bgwp-ablauforganisation-022",
-    "bereich": "ePK - Ereignisgesteuerte Prozesskette",
-    "frage": "Was ist eine Funktion?",
-    "antwort": "Eine auszuführende Tätigkeit oder Handlung."
+  "id": "bgwp-ablauforganisation-022",
+  "bereich": "ePK - Ereignisgesteuerte Prozesskette",
+  "frage": "Was ist eine Funktion?",
+  "antwort": "Eine auszuführende Tätigkeit oder Handlung.",
+  "multipleChoice": {
+    "typ": "single",
+    "optionen": [
+      {
+        "id": "a",
+        "text": "Eine auszuführende Tätigkeit oder Handlung.",
+        "richtig": true
+      },
+      {
+        "id": "b",
+        "text": "Ein eingetretener Zustand vor oder nach einer Tätigkeit.",
+        "richtig": false
+      },
+      {
+        "id": "c",
+        "text": "Eine verantwortliche Abteilung oder Person.",
+        "richtig": false
+      },
+      {
+        "id": "d",
+        "text": "Ein benötigtes Dokument oder ein Datensatz.",
+        "richtig": false
+      }
+    ],
+    "erklaerung": "Eine Funktion beschreibt in einer ePK eine aktive Tätigkeit oder Handlung. Ereignisse beschreiben dagegen Zustände."
+  }
   },
   {
-    "id": "bgwp-ablauforganisation-023",
-    "bereich": "ePK - Ereignisgesteuerte Prozesskette",
-    "frage": "Was ist eine Organisationseinheit?",
-    "antwort": "Die Verantwortliche Stelle oder Person für eine Funktion."
+  "id": "bgwp-ablauforganisation-023",
+  "bereich": "ePK - Ereignisgesteuerte Prozesskette",
+  "frage": "Was ist eine Organisationseinheit?",
+  "antwort": "Die verantwortliche Stelle oder Person für eine Funktion.",
+  "multipleChoice": {
+    "typ": "single",
+    "optionen": [
+      {
+        "id": "a",
+        "text": "Die für eine Funktion verantwortliche Stelle oder Person.",
+        "richtig": true
+      },
+      {
+        "id": "b",
+        "text": "Der Zustand, der eine Funktion auslöst.",
+        "richtig": false
+      },
+      {
+        "id": "c",
+        "text": "Die auszuführende Tätigkeit innerhalb eines Prozesses.",
+        "richtig": false
+      },
+      {
+        "id": "d",
+        "text": "Das Dokument, das während einer Tätigkeit verarbeitet wird.",
+        "richtig": false
+      }
+    ],
+    "erklaerung": "Die Organisationseinheit ordnet einer Funktion die verantwortliche Stelle, Abteilung oder Person zu."
+  }
   },
   {
-    "id": "bgwp-ablauforganisation-024",
-    "bereich": "ePK - Ereignisgesteuerte Prozesskette",
-    "frage": "Was ist ein Informationsobjekt?",
-    "antwort": "Ein Dokument oder Datensatz, der für die Durchführung einer Funktion benötigt wird"
+  "id": "bgwp-ablauforganisation-024",
+  "bereich": "ePK - Ereignisgesteuerte Prozesskette",
+  "frage": "Was ist ein Informationsobjekt?",
+  "antwort": "Ein Dokument oder Datensatz, der für die Durchführung einer Funktion benötigt wird.",
+  "multipleChoice": {
+    "typ": "single",
+    "optionen": [
+      {
+        "id": "a",
+        "text": "Ein Dokument oder Datensatz, der für die Durchführung einer Funktion benötigt wird.",
+        "richtig": true
+      },
+      {
+        "id": "b",
+        "text": "Die Person oder Stelle, die eine Funktion ausführt.",
+        "richtig": false
+      },
+      {
+        "id": "c",
+        "text": "Ein Zustand, der vor oder nach einer Funktion eintritt.",
+        "richtig": false
+      },
+      {
+        "id": "d",
+        "text": "Eine logische Verknüpfung zwischen mehreren Prozesszweigen.",
+        "richtig": false
+      }
+    ],
+    "erklaerung": "Informationsobjekte sind beispielsweise Dokumente, Formulare oder Datensätze, die für eine Funktion benötigt oder durch eine Funktion erzeugt werden."
+  }
   },
   {
-    "id": "bgwp-ablauforganisation-025",
-    "bereich": "ePK - Ereignisgesteuerte Prozesskette",
-    "frage": "Womit beginnt und endet eine ePK?",
-    "antwort": "Eine ePK beginnt und endet immer mit einem Ereignis."
+  "id": "bgwp-ablauforganisation-025",
+  "bereich": "ePK - Ereignisgesteuerte Prozesskette",
+  "frage": "Womit beginnt und endet eine ePK?",
+  "antwort": "Eine ePK beginnt und endet immer mit einem Ereignis.",
+  "multipleChoice": {
+    "typ": "single",
+    "optionen": [
+      {
+        "id": "a",
+        "text": "Sie beginnt und endet mit einem Ereignis.",
+        "richtig": true
+      },
+      {
+        "id": "b",
+        "text": "Sie beginnt mit einer Funktion und endet mit einer Organisationseinheit.",
+        "richtig": false
+      },
+      {
+        "id": "c",
+        "text": "Sie beginnt und endet mit einer Funktion.",
+        "richtig": false
+      },
+      {
+        "id": "d",
+        "text": "Sie beginnt mit einem Informationsobjekt und endet mit einem Gateway.",
+        "richtig": false
+      }
+    ],
+    "erklaerung": "Eine ePK beginnt mit einem auslösenden Ereignis. Nach der letzten Funktion beschreibt ein abschließendes Ereignis den erreichten Endzustand."
+  }
   },
   {
-    "id": "bgwp-ablauforganisation-026",
-    "bereich": "ePK - Ereignisgesteuerte Prozesskette",
-    "frage": "Wie wechseln sich Ereignisse und Funktionen in einer ePK ab?",
-    "antwort": "Ereignis --> Funktion --> Ereignis --> Funktion"
+  "id": "bgwp-ablauforganisation-026",
+  "bereich": "ePK - Ereignisgesteuerte Prozesskette",
+  "frage": "Wie wechseln sich Ereignisse und Funktionen in einer ePK ab?",
+  "antwort": "Ereignis → Funktion → Ereignis → Funktion",
+  "multipleChoice": {
+    "typ": "single",
+    "optionen": [
+      {
+        "id": "a",
+        "text": "Ereignis → Funktion → Ereignis → Funktion",
+        "richtig": true
+      },
+      {
+        "id": "b",
+        "text": "Funktion → Funktion → Ereignis → Ereignis",
+        "richtig": false
+      },
+      {
+        "id": "c",
+        "text": "Ereignis → Ereignis → Funktion → Funktion",
+        "richtig": false
+      },
+      {
+        "id": "d",
+        "text": "Organisationseinheit → Funktion → Informationsobjekt → Ereignis",
+        "richtig": false
+      }
+    ],
+    "erklaerung": "In einer ePK wechseln sich Ereignisse und Funktionen grundsätzlich ab. Ein Ereignis löst eine Funktion aus, und die Funktion führt zu einem neuen Ereignis."
+  }
   },
   {
-    "id": "bgwp-ablauforganisation-027",
-    "bereich": "ePK - Ereignisgesteuerte Prozesskette",
-    "frage": "Welche logischen Verknüpfungen gibt es in einer ePK und was bedeuten sie?",
-    "antwort": "*A=UND-Verknüpfung: Alle Zweige werden parallel ausgeführt\n *V=ODER-Verknüpfung: Mindestens ein Zweig wird ausgeührt\n *X=XOR-Verknüpfung: Genau ein Zweig wird ausgeführt"
+  "id": "bgwp-ablauforganisation-027",
+  "bereich": "ePK - Ereignisgesteuerte Prozesskette",
+  "frage": "Welche logischen Verknüpfungen gibt es in einer ePK und was bedeuten sie?",
+  "antwort": "*UND-Verknüpfung: Alle Zweige werden parallel ausgeführt\n*ODER-Verknüpfung: Mindestens ein Zweig wird ausgeführt\n*XOR-Verknüpfung: Genau ein Zweig wird ausgeführt",
+  "multipleChoice": {
+    "typ": "single",
+    "optionen": [
+      {
+        "id": "a",
+        "text": "UND: alle Zweige; ODER: mindestens ein Zweig; XOR: genau ein Zweig.",
+        "richtig": true
+      },
+      {
+        "id": "b",
+        "text": "UND: genau ein Zweig; ODER: alle Zweige; XOR: mindestens ein Zweig.",
+        "richtig": false
+      },
+      {
+        "id": "c",
+        "text": "UND: mindestens ein Zweig; ODER: genau ein Zweig; XOR: alle Zweige.",
+        "richtig": false
+      },
+      {
+        "id": "d",
+        "text": "UND: kein Zweig; ODER: alle Zweige; XOR: beliebig viele Zweige.",
+        "richtig": false
+      }
+    ],
+    "erklaerung": "Bei UND werden alle Zweige ausgeführt. Bei ODER wird mindestens ein Zweig ausgeführt, wobei auch mehrere möglich sind. Bei XOR wird genau ein Zweig ausgewählt."
+  }
   },
   {
-    "id": "bgwp-ablauforganisation-028",
-    "bereich": "BPMN",
-    "frage": "Wofür steht BPMN?",
-    "antwort": "Business Process Model and Notation"
+  "id": "bgwp-ablauforganisation-028",
+  "bereich": "BPMN",
+  "frage": "Wofür steht BPMN?",
+  "antwort": "Business Process Model and Notation",
+  "multipleChoice": {
+    "typ": "single",
+    "optionen": [
+      {
+        "id": "a",
+        "text": "Business Process Model and Notation",
+        "richtig": true
+      },
+      {
+        "id": "b",
+        "text": "Business Process Management Network",
+        "richtig": false
+      },
+      {
+        "id": "c",
+        "text": "Basic Process Modeling Notation",
+        "richtig": false
+      },
+      {
+        "id": "d",
+        "text": "Business Planning Method and Navigation",
+        "richtig": false
+      }
+    ],
+    "erklaerung": "BPMN steht für Business Process Model and Notation. Es handelt sich um eine standardisierte Notation zur grafischen Modellierung von Geschäftsprozessen."
+  }
   },
   {
     "id": "bgwp-ablauforganisation-029",
@@ -174,16 +694,68 @@
     "antwort": "Zuständigkeiten und Übergaben zwischen Abteilungen können gut dargestellt werden."
   },
   {
-    "id": "bgwp-ablauforganisation-030",
-    "bereich": "BPMN",
-    "frage": "Welche Grundelemente gibt es in BPMN und wie sehen sie aus?",
-    "antwort": "*Ereignis: Kreis\n *Aktivität: Rechteck mit abgerundeten Ecken\n *Gateway: Raute\n *Verbindungspfeil: Pfeil\n *Pool: Rechteck mit Name der Organisationseinheit\n *Lane: Unterteilung eines Pools"
-  },
+  "id": "bgwp-ablauforganisation-030",
+  "bereich": "BPMN",
+  "frage": "Welche Grundelemente gibt es in BPMN und wie sehen sie aus?",
+  "antwort": "*Ereignis: Kreis\n*Aktivität: Rechteck mit abgerundeten Ecken\n*Gateway: Raute\n*Verbindungspfeil: Pfeil\n*Pool: Rechteck mit Name der Organisationseinheit\n*Lane: Unterteilung eines Pools",
+  "multipleChoice": {
+    "typ": "single",
+    "optionen": [
+      {
+        "id": "a",
+        "text": "Ereignis: Kreis; Aktivität: abgerundetes Rechteck; Gateway: Raute.",
+        "richtig": true
+      },
+      {
+        "id": "b",
+        "text": "Ereignis: Raute; Aktivität: Kreis; Gateway: abgerundetes Rechteck.",
+        "richtig": false
+      },
+      {
+        "id": "c",
+        "text": "Ereignis: Rechteck; Aktivität: Raute; Gateway: Pfeil.",
+        "richtig": false
+      },
+      {
+        "id": "d",
+        "text": "Ereignis: Pfeil; Aktivität: Kreis; Gateway: Pool.",
+        "richtig": false
+      }
+    ],
+    "erklaerung": "Zu den BPMN-Grundelementen gehören Ereignisse als Kreise, Aktivitäten als abgerundete Rechtecke, Gateways als Rauten und Verbindungen als Pfeile. Pools und Lanes stellen beteiligte Organisationseinheiten und deren Unterteilungen dar."
+  }
+ },
   {
-    "id": "bgwp-ablauforganisation-031",
-    "bereich": "Prozessmanagement",
-    "frage": "Was ist Prozessmanagement?",
-    "antwort": "Prozessmanagement bezeichnet die Planung, Organisation, Steuerung und Verbesserung von Geschäftsprozessen."
+  "id": "bgwp-ablauforganisation-031",
+  "bereich": "Prozessmanagement",
+  "frage": "Was ist Prozessmanagement?",
+  "antwort": "Prozessmanagement bezeichnet die Planung, Organisation, Steuerung und Verbesserung von Geschäftsprozessen.",
+  "multipleChoice": {
+    "typ": "single",
+    "optionen": [
+      {
+        "id": "a",
+        "text": "Die Planung, Organisation, Steuerung und Verbesserung von Geschäftsprozessen.",
+        "richtig": true
+      },
+      {
+        "id": "b",
+        "text": "Die ausschließliche grafische Darstellung von Prozessen mit BPMN.",
+        "richtig": false
+      },
+      {
+        "id": "c",
+        "text": "Die einmalige Dokumentation der Stellen und Hierarchien eines Unternehmens.",
+        "richtig": false
+      },
+      {
+        "id": "d",
+        "text": "Die ausschließliche Kontrolle von Kosten und Arbeitszeiten.",
+        "richtig": false
+      }
+    ],
+    "erklaerung": "Prozessmanagement umfasst den gesamten Umgang mit Geschäftsprozessen: Prozesse werden geplant, organisiert, gesteuert, überwacht und kontinuierlich verbessert."
+  }
   },
   {
     "id": "bgwp-ablauforganisation-032",

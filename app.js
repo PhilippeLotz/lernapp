@@ -1405,6 +1405,30 @@ function multipleChoiceAntwortPruefen() {
     )
     .forEach(input => {
       input.disabled = true;
+
+      const label = input.closest(
+        ".multiple-choice-option"
+      );
+
+      label?.classList.remove(
+        "richtig",
+        "falsch"
+      );
+
+      if (input.value === richtigeOption?.id) {
+        label?.classList.add(
+          "richtig"
+        );
+      }
+
+      if (
+        input.checked &&
+        input.value !== richtigeOption?.id
+      ) {
+        label?.classList.add(
+          "falsch"
+        );
+      }
     });
 
   if (gewaehlteOption?.richtig === true) {

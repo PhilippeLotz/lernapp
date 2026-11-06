@@ -31,35 +31,166 @@
       "erklaerung": "Daten bestehen aus Zeichen oder Zeichenfolgen in einer vereinbarten Struktur. Digitale Daten werden im Computer als Bitfolgen dargestellt. Erst mit bekannter Codierung, Struktur und Bedeutung koennen sie sinnvoll interpretiert und genutzt werden."
     }
   },
+  
   {
-    "id": "aeup-daten-002",
-    "bereich": "Grundlagen: Daten",
-    "frage": "Was ist der Unterschied zwischen Zeichen, Daten, Informationen und Wissen?",
-    "antwort": "Zeichen sind einzelne Buchstaben, Ziffern oder andere Symbole. Daten sind Zeichen in einer vereinbarten Struktur. Informationen entstehen, wenn die Bedeutung der Daten bekannt ist. Wissen entsteht, wenn Informationen mit weiterem Wissen verknüpft und in einem konkreten Zusammenhang genutzt werden."
+  "id": "aeup-daten-002",
+  "bereich": "Grundlagen: Daten",
+  "frage": "Was ist der Unterschied zwischen Zeichen, Daten, Informationen und Wissen?",
+  "antwort": "Zeichen sind einzelne Buchstaben, Ziffern oder andere Symbole. Daten sind Zeichen in einer vereinbarten Struktur. Informationen entstehen, wenn die Bedeutung der Daten bekannt ist. Wissen entsteht, wenn Informationen mit weiterem Wissen verknüpft und in einem konkreten Zusammenhang genutzt werden.",
+  "multipleChoice": {
+    "typ": "single",
+    "optionen": [
+      {
+        "id": "a",
+        "text": "Zeichen sind einzelne Symbole. Daten sind Zeichen in einer vereinbarten Struktur. Informationen entstehen durch die Bedeutung der Daten. Wissen entsteht, wenn Informationen mit weiterem Wissen verknüpft und in einem konkreten Zusammenhang genutzt werden.",
+        "richtig": true
+      },
+      {
+        "id": "b",
+        "text": "Zeichen und Daten sind dasselbe. Informationen entstehen erst, wenn Daten gespeichert werden. Wissen bezeichnet die technische Verarbeitung dieser Informationen.",
+        "richtig": false
+      },
+      {
+        "id": "c",
+        "text": "Zeichen besitzen bereits eine eindeutige Bedeutung. Daten entstehen aus interpretierten Informationen, und Wissen ist lediglich eine größere Sammlung von Daten.",
+        "richtig": false
+      },
+      {
+        "id": "d",
+        "text": "Daten sind einzelne Zeichen ohne Struktur. Informationen sind strukturierte Zeichenfolgen, und Wissen entsteht automatisch, sobald Informationen digital gespeichert werden.",
+        "richtig": false
+      }
+    ],
+    "erklaerung": "Die Begriffe bauen aufeinander auf: Zeichen → Daten → Informationen → Wissen. Zeichen werden durch eine vereinbarte Struktur zu Daten. Werden diese Daten interpretiert und ihre Bedeutung ist bekannt, entstehen Informationen. Durch Verknüpfung und Anwendung von Informationen in einem Kontext entsteht Wissen."
+  }
+ },  
+  {
+  "id": "aeup-daten-003",
+  "bereich": "Grundlagen: Daten",
+  "frage": "Was bedeuten Syntax, Semantik und Pragmatik bei Daten?",
+  "antwort": "Syntax beschreibt den Aufbau der Daten. Semantik beschreibt die Bedeutung der Daten. Pragmatik beschreibt, wozu die Informationen in einem konkreten Zusammenhang genutzt werden. Merksatz: Syntax = Aufbau, Semantik = Bedeutung, Pragmatik = Verwendung.",
+  "multipleChoice": {
+    "typ": "single",
+    "optionen": [
+      {
+        "id": "a",
+        "text": "Syntax beschreibt den Aufbau, Semantik die Bedeutung und Pragmatik die Verwendung der Daten beziehungsweise Informationen.",
+        "richtig": true
+      },
+      {
+        "id": "b",
+        "text": "Syntax beschreibt die Bedeutung, Semantik den Aufbau und Pragmatik die Speicherung der Daten.",
+        "richtig": false
+      },
+      {
+        "id": "c",
+        "text": "Syntax beschreibt die Speicherung, Semantik die Übertragung und Pragmatik die Verschlüsselung der Daten.",
+        "richtig": false
+      },
+      {
+        "id": "d",
+        "text": "Syntax beschreibt die Verwendung, Semantik die Speicherung und Pragmatik den Aufbau der Daten.",
+        "richtig": false
+      }
+    ],
+    "erklaerung": "Merksatz: Syntax = Aufbau, Semantik = Bedeutung, Pragmatik = Verwendung. Syntax legt fest, wie Daten strukturiert sind. Semantik beschreibt, was diese Daten bedeuten. Pragmatik betrachtet, wozu die daraus gewonnenen Informationen in einem konkreten Zusammenhang verwendet werden."
+  }
+},
+  {
+  "id": "aeup-daten-004",
+  "bereich": "Datenarten",
+  "frage": "Was sind Stammdaten?",
+  "antwort": "Stammdaten sind grundlegende und relativ dauerhafte Daten. Beispiele sind Bewerber-ID, Name, Anschrift, Geburtsdatum und Geburtsort.",
+  "multipleChoice": {
+    "typ": "single",
+    "optionen": [
+      {
+        "id": "a",
+        "text": "Grundlegende und relativ dauerhafte Daten, die ein Objekt oder eine Person beschreiben. Zum Beispiel Geburtsdatum und Geburtsort.",
+        "richtig": true
+      },
+      {
+        "id": "b",
+        "text": "Daten, die ausschließlich bei einzelnen Vorgängen oder Geschäftsprozessen entstehen.",
+        "richtig": false
+      },
+      {
+        "id": "c",
+        "text": "Daten, die andere Daten oder Dateien beschreiben, beispielsweise Dateiformat und Dateigröße.",
+        "richtig": false
+      },
+      {
+        "id": "d",
+        "text": "Daten, die nur kurzfristig während der Ausführung eines Programms existieren und anschließend gelöscht werden.",
+        "richtig": false
+      }
+    ],
+    "erklaerung": "Stammdaten sind grundlegende Daten, die sich im Vergleich zu Vorgangs- oder Bewegungsdaten nur relativ selten ändern. Beispiele sind Bewerber-ID, Name, Anschrift, Geburtsdatum und Geburtsort. Bewegungsdaten entstehen dagegen durch konkrete Vorgänge, während Metadaten andere Daten beschreiben."
+  }
+  },
+{
+  "id": "aeup-daten-005",
+  "bereich": "Datenarten",
+  "frage": "Was sind Bewegungsdaten?",
+  "antwort": "Bewegungsdaten entstehen durch Vorgänge oder Prozesse. Beispiele sind der Eingang einer Bewerbung, das Einladungsdatum, der Ort des Bewerbungsgesprächs und der zuständige Ansprechpartner.",
+  "multipleChoice": {
+    "typ": "single",
+    "optionen": [
+      {
+        "id": "a",
+        "text": "Daten, die durch Vorgänge oder Prozesse entstehen und sich dadurch regelmäßig verändern können. Zum Beispiel das Datum des Bewerbungsgesprächs.",
+        "richtig": true
+      },
+      {
+        "id": "b",
+        "text": "Grundlegende und relativ dauerhafte Daten, die eine Person oder ein Objekt beschreiben.",
+        "richtig": false
+      },
+      {
+        "id": "c",
+        "text": "Daten, die andere Daten oder Dateien beschreiben, beispielsweise Dateiformat und Dateigröße.",
+        "richtig": false
+      },
+      {
+        "id": "d",
+        "text": "Daten, die ausschließlich zur eindeutigen Identifikation einer Person oder eines Objekts verwendet werden.",
+        "richtig": false
+      }
+    ],
+    "erklaerung": "Bewegungsdaten entstehen im Zusammenhang mit konkreten Vorgängen oder Prozessen. Beispiele sind der Eingang einer Bewerbung, ein Einladungsdatum oder der Ort eines Bewerbungsgesprächs. Im Gegensatz dazu sind Stammdaten grundlegende, relativ dauerhafte Daten. Metadaten beschreiben wiederum andere Daten."
+  }
   },
   {
-    "id": "aeup-daten-003",
-    "bereich": "Grundlagen: Daten",
-    "frage": "Was bedeuten Syntax, Semantik und Pragmatik bei Daten?",
-    "antwort": "Syntax beschreibt den Aufbau der Daten. Semantik beschreibt die Bedeutung der Daten. Pragmatik beschreibt, wozu die Informationen in einem konkreten Zusammenhang genutzt werden. Merksatz: Syntax = Aufbau, Semantik = Bedeutung, Pragmatik = Verwendung."
-  },
-  {
-    "id": "aeup-daten-004",
-    "bereich": "Datenarten",
-    "frage": "Was sind Stammdaten?",
-    "antwort": "Stammdaten sind grundlegende und relativ dauerhafte Daten. Beispiele sind Bewerber-ID, Name, Anschrift, Geburtsdatum und Geburtsort."
-  },
-  {
-    "id": "aeup-daten-005",
-    "bereich": "Datenarten",
-    "frage": "Was sind Bewegungsdaten?",
-    "antwort": "Bewegungsdaten entstehen durch Vorgänge oder Prozesse. Beispiele sind der Eingang einer Bewerbung, das Einladungsdatum, der Ort des Bewerbungsgesprächs und der zuständige Ansprechpartner."
-  },
-  {
-    "id": "aeup-daten-006",
-    "bereich": "Datenarten",
-    "frage": "Was sind Metadaten?",
-    "antwort": "Metadaten sind Daten über andere Daten. Sie beschreiben Daten oder Dateien. Beispiele sind das Dateiformat und die Dateigröße eines Lebenslaufs."
+  "id": "aeup-daten-006",
+  "bereich": "Datenarten",
+  "frage": "Was sind Metadaten?",
+  "antwort": "Metadaten sind Daten über andere Daten. Sie beschreiben Daten oder Dateien. Beispiele sind das Dateiformat und die Dateigröße eines Lebenslaufs.",
+  "multipleChoice": {
+    "typ": "single",
+    "optionen": [
+      {
+        "id": "a",
+        "text": "Daten über andere Daten, die beispielsweise Eigenschaften einer Datei oder eines Datensatzes beschreiben.",
+        "richtig": true
+      },
+      {
+        "id": "b",
+        "text": "Grundlegende und relativ dauerhafte Daten, die eine Person oder ein Objekt beschreiben.",
+        "richtig": false
+      },
+      {
+        "id": "c",
+        "text": "Daten, die durch konkrete Vorgänge und Prozesse entstehen und sich regelmäßig verändern können.",
+        "richtig": false
+      },
+      {
+        "id": "d",
+        "text": "Ausschließlich Daten, die zur eindeutigen Identifikation einer Person oder eines Objekts verwendet werden.",
+        "richtig": false
+      }
+    ],
+    "erklaerung": "Metadaten sind Daten über andere Daten. Sie beschreiben Eigenschaften eines Datensatzes oder einer Datei. Beispiele sind Dateiformat, Dateigröße, Erstellungsdatum oder Änderungsdatum. Stammdaten beschreiben dagegen relativ dauerhafte Merkmale, während Bewegungsdaten bei Vorgängen oder Prozessen entstehen."
+  }
   },
   {
     "id": "aeup-daten-007",
@@ -68,33 +199,163 @@
     "antwort": "Fehlerhafte, fehlende, veraltete oder doppelte Daten können zu falschen Entscheidungen und fehlerhaften Prozessen führen. Beispielsweise kann eine Person zwei Einladungen erhalten, gar keine Einladung bekommen oder eine Nachricht kann an eine alte Adresse geschickt werden."
   },
   {
-    "id": "aeup-daten-008",
-    "bereich": "Datenqualität",
-    "frage": "Warum braucht man eindeutige Identifikationsmerkmale für Datensätze?",
-    "antwort": "Eindeutige Identifikationsmerkmale ermöglichen die sichere Zuordnung eines Datensatzes zu einer Person oder einem Objekt. Ein Name allein reicht häufig nicht aus, weil mehrere Personen denselben Namen haben können. Eine Bewerber-ID eignet sich besser zur eindeutigen Identifikation."
-  },
+  "id": "aeup-daten-008",
+  "bereich": "Datenqualität",
+  "frage": "Warum braucht man eindeutige Identifikationsmerkmale für Datensätze?",
+  "antwort": "Eindeutige Identifikationsmerkmale ermöglichen die sichere Zuordnung eines Datensatzes zu einer Person oder einem Objekt. Ein Name allein reicht häufig nicht aus, weil mehrere Personen denselben Namen haben können. Eine Bewerber-ID eignet sich besser zur eindeutigen Identifikation.",
+  "multipleChoice": {
+    "typ": "single",
+    "optionen": [
+      {
+        "id": "a",
+        "text": "Damit ein Datensatz eindeutig einer bestimmten Person oder einem bestimmten Objekt zugeordnet werden kann.",
+        "richtig": true
+      },
+      {
+        "id": "b",
+        "text": "Damit alle Datensätze automatisch alphabetisch sortiert werden können.",
+        "richtig": false
+      },
+      {
+        "id": "c",
+        "text": "Damit für mehrere Personen mit demselben Namen immer derselbe Datensatz verwendet werden kann.",
+        "richtig": false
+      },
+      {
+        "id": "d",
+        "text": "Damit personenbezogene Daten ohne weitere Prüfung zwischen verschiedenen Systemen ausgetauscht werden können.",
+        "richtig": false
+      }
+    ],
+    "erklaerung": "Ein eindeutiges Identifikationsmerkmal verhindert Verwechslungen zwischen Datensätzen. Ein Name allein ist dafür ungeeignet, weil mehrere Personen denselben Namen besitzen können. Eine eindeutige Bewerber-ID kann dagegen genau einem Datensatz zugeordnet werden."
+}
+ },
+{
+  "id": "aeup-daten-009",
+  "bereich": "Datenaustauschformate",
+  "frage": "Warum brauchen wir Datenaustauschformate?",
+  "antwort": "Datenaustauschformate ermöglichen die Kompatibilität zwischen verschiedenen Systemen und Programmen. Sie bieten ein einheitliches Format zum Speichern und Übertragen von Daten und erleichtern die strukturierte Weiterverwendung.",
+  "multipleChoice": {
+    "typ": "single",
+    "optionen": [
+      {
+        "id": "a",
+        "text": "Damit Daten zwischen verschiedenen Systemen und Programmen in einem einheitlichen Format gespeichert, übertragen und weiterverarbeitet werden können.",
+        "richtig": true
+      },
+      {
+        "id": "b",
+        "text": "Damit jedes Programm Daten ausschließlich in seinem eigenen Format speichern kann und keine Konvertierung notwendig ist.",
+        "richtig": false
+      },
+      {
+        "id": "c",
+        "text": "Damit Daten automatisch verschlüsselt werden und ausschließlich vom ursprünglichen Programm gelesen werden können.",
+        "richtig": false
+      },
+      {
+        "id": "d",
+        "text": "Damit unterschiedliche Systeme dieselben Daten unabhängig von deren Struktur oder Format immer direkt verstehen können.",
+        "richtig": false
+      }
+    ],
+    "erklaerung": "Datenaustauschformate schaffen eine gemeinsame Struktur für Daten. Dadurch können unterschiedliche Systeme und Programme Daten austauschen und weiterverarbeiten. Beispiele für solche Formate sind JSON, XML und CSV."
+  }  
+},
+{
+  "id": "aeup-daten-010",
+  "bereich": "Datenaustauschformate",
+  "frage": "In welchen Strukturierungsformen können Daten vorliegen?",
+  "antwort": "Daten können strukturiert, semistrukturiert oder unstrukturiert vorliegen. Datenaustauschformate helfen dabei, Daten so aufzubereiten, dass andere Systeme sie verarbeiten können.",
+  "multipleChoice": {
+    "typ": "single",
+    "optionen": [
+      {
+        "id": "a",
+        "text": "Strukturiert, semistrukturiert oder unstrukturiert.",
+        "richtig": true
+      },
+      {
+        "id": "b",
+        "text": "Statisch, dynamisch oder temporär.",
+        "richtig": false
+      },
+      {
+        "id": "c",
+        "text": "Primär, sekundär oder tertiär.",
+        "richtig": false
+      },
+      {
+        "id": "d",
+        "text": "Lokal, verteilt oder verschlüsselt.",
+        "richtig": false
+      }
+    ],
+    "erklaerung": "Daten werden hinsichtlich ihrer Struktur typischerweise in strukturierte, semistrukturierte und unstrukturierte Daten eingeteilt. Strukturierte Daten folgen einem festen Schema, semistrukturierte Daten besitzen eine teilweise erkennbare Struktur und unstrukturierte Daten haben kein fest vorgegebenes Datenmodell."
+  }  
+},
+{
+  "id": "aeup-daten-011",
+  "bereich": "Marshalling",
+  "frage": "Was ist Marshalling?",
+  "antwort": "Marshalling ist der Prozess, bei dem ein Objekt oder eine Datenstruktur in ein übertragbares Format umgewandelt wird. Dadurch können die Daten gespeichert oder an ein anderes System übertragen werden.",
+  "multipleChoice": {
+    "typ": "single",
+    "optionen": [
+      {
+        "id": "a",
+        "text": "Die Umwandlung eines Objekts oder einer Datenstruktur in ein Format, das gespeichert oder übertragen werden kann.",
+        "richtig": true
+      },
+      {
+        "id": "b",
+        "text": "Die Verschlüsselung von Daten, damit sie ausschließlich vom Empfänger gelesen werden können.",
+        "richtig": false
+      },
+      {
+        "id": "c",
+        "text": "Die dauerhafte Speicherung von Daten in einer relationalen Datenbank.",
+        "richtig": false
+      },
+      {
+        "id": "d",
+        "text": "Die Prüfung von Daten auf Vollständigkeit, Korrektheit und doppelte Einträge.",
+        "richtig": false
+      }
+    ],
+    "erklaerung": "Beim Marshalling wird ein Objekt oder eine Datenstruktur in eine übertragbare beziehungsweise speicherbare Darstellung umgewandelt. Ein Beispiel ist die Umwandlung strukturierter Programmdaten in JSON oder XML. Der umgekehrte Vorgang, bei dem die Daten wieder in eine verwendbare Objekt- oder Datenstruktur überführt werden, wird als Unmarshalling bezeichnet."
+  }  
+},
   {
-    "id": "aeup-daten-009",
-    "bereich": "Datenaustauschformate",
-    "frage": "Warum brauchen wir Datenaustauschformate?",
-    "antwort": "Datenaustauschformate ermöglichen die Kompatibilität zwischen verschiedenen Systemen und Programmen. Sie bieten ein einheitliches Format zum Speichern und Übertragen von Daten und erleichtern die strukturierte Weiterverwendung."
-  },
-  {
-    "id": "aeup-daten-010",
-    "bereich": "Datenaustauschformate",
-    "frage": "In welchen Strukturierungsformen können Daten vorliegen?",
-    "antwort": "Daten können strukturiert, semistrukturiert oder unstrukturiert vorliegen. Datenaustauschformate helfen dabei, Daten so aufzubereiten, dass andere Systeme sie verarbeiten können."
-  },
-  {
-    "id": "aeup-daten-011",
-    "bereich": "Marshalling",
-    "frage": "Was ist Marshalling?",
-    "antwort": "Marshalling ist der Prozess, bei dem ein Objekt oder eine Datenstruktur in ein übertragbares Format umgewandelt wird. Dadurch können die Daten gespeichert oder an ein anderes System übertragen werden."
-  },
-  {
-    "id": "aeup-daten-012",
-    "bereich": "Marshalling",
-    "frage": "Nenne ein Beispiel für Marshalling.",
-    "antwort": "Eine Datenstruktur mit Patienten-ID, Patientenname und Aufenthaltsort kann in eine XML-Struktur umgewandelt werden. Die Daten erhalten dadurch ein festes, übertragbares Format."
+  "id": "aeup-daten-012",
+  "bereich": "Marshalling",
+  "frage": "Nenne ein Beispiel für Marshalling.",
+  "antwort": "Eine Datenstruktur mit Patienten-ID, Patientenname und Aufenthaltsort kann in eine XML-Struktur umgewandelt werden. Die Daten erhalten dadurch ein festes, übertragbares Format.",
+  "multipleChoice": {
+    "typ": "single",
+    "optionen": [
+      {
+        "id": "a",
+        "text": "Eine Datenstruktur mit Patienten-ID, Patientenname und Aufenthaltsort wird in eine XML-Struktur umgewandelt.",
+        "richtig": true
+      },
+      {
+        "id": "b",
+        "text": "Eine XML-Datei wird verschlüsselt und anschließend mit einem Passwort geschützt.",
+        "richtig": false
+      },
+      {
+        "id": "c",
+        "text": "Patientendaten werden auf doppelte Einträge geprüft und fehlerhafte Datensätze gelöscht.",
+        "richtig": false
+      },
+      {
+        "id": "d",
+        "text": "Eine Datenbanktabelle wird nach der Patienten-ID sortiert und anschließend auf der Festplatte gespeichert.",
+        "richtig": false
+      }
+    ],
+    "erklaerung": "Beim Marshalling wird eine vorhandene Datenstruktur in ein übertragbares oder speicherbares Format umgewandelt. Beispielsweise können Patienten-ID, Patientenname und Aufenthaltsort aus einer internen Datenstruktur in XML oder JSON überführt werden. Entscheidend ist die Umwandlung der Datenstruktur, nicht lediglich das Speichern, Sortieren oder Verschlüsseln der Daten."
   }
+}
 ]

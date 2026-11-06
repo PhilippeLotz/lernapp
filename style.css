@@ -813,6 +813,23 @@ button:disabled {
   cursor: default;
 }
 
+.multiple-choice-option.richtig {
+  border-color: #86efac;
+  background: #ecfdf5;
+  box-shadow: 0 0 0 1px rgba(34, 197, 94, .08);
+}
+
+.multiple-choice-option.falsch {
+  border-color: #fca5a5;
+  background: #fef2f2;
+  box-shadow: 0 0 0 1px rgba(239, 68, 68, .08);
+}
+
+.multiple-choice-option.richtig:has(input:checked),
+.multiple-choice-option.falsch:has(input:checked) {
+  border-width: 2px;
+}
+
 #multipleChoicePruefenButton {
   display: block;
   margin-right: auto;
@@ -826,6 +843,10 @@ button:disabled {
   border-radius: 10px;
   background: #f8fafc;
   text-align: left;
+  transition:
+    border-color .15s ease,
+    background-color .15s ease,
+    box-shadow .15s ease;
 }
 
 .multiple-choice-rueckmeldung {
