@@ -7,12 +7,64 @@
   {
     "id": "aeup-softwareergonomie-002",
     "frage": "Was ist Software-Ergonomie?",
-    "antwort": "Software-Ergonomie ist die Disziplin, die sich mit der Gestaltung von Software für optimale Benutzererfahrung befasst."
+    "antwort": "Software-Ergonomie ist die Disziplin, die sich mit der Gestaltung von Software für optimale Benutzererfahrung befasst.",
+    "multipleChoice": {
+      "typ": "single",
+      "optionen": [
+        {
+          "id": "a",
+          "text": "Software-Ergonomie ist die Disziplin, die sich mit der Gestaltung von Software für optimale Benutzererfahrung befasst.",
+          "richtig": true
+        },
+        {
+          "id": "b",
+          "text": "Software-Ergonomie beschäftigt sich ausschließlich mit der technischen Leistungsfähigkeit und Geschwindigkeit von Software.",
+          "richtig": false
+        },
+        {
+          "id": "c",
+          "text": "Software-Ergonomie beschreibt ausschließlich die Gestaltung von Farben, Schriftarten und grafischen Elementen.",
+          "richtig": false
+        },
+        {
+          "id": "d",
+          "text": "Software-Ergonomie ist ein Verfahren zur automatischen Fehlerbehebung und Optimierung von Programmcode.",
+          "richtig": false
+        }
+      ],
+      "erklaerung": "Software-Ergonomie beschäftigt sich mit der benutzerfreundlichen Gestaltung von Software. Ziel ist eine möglichst gute Benutzererfahrung und eine Software, die effektiv, effizient und verständlich bedient werden kann."
+    }
   },
   {
     "id": "aeup-softwareergonomie-003",
     "frage": "Was ist die Farblehre?",
-    "antwort": "Die Farblehre ist die Lehre von den Eigenschaften und dem Verhalten von Farben.\n Sie umfasst Aspekte wie Farbwirkung, Farbharmonie und Farbkontraste."
+    "antwort": "Die Farblehre ist die Lehre von den Eigenschaften und dem Verhalten von Farben.\n Sie umfasst Aspekte wie Farbwirkung, Farbharmonie und Farbkontraste.",
+    "multipleChoice": {
+      "typ": "single",
+      "optionen": [
+        {
+          "id": "a",
+          "text": "Die Farblehre ist die Lehre von den Eigenschaften und dem Verhalten von Farben. Sie umfasst Aspekte wie Farbwirkung, Farbharmonie und Farbkontraste.",
+          "richtig": true
+        },
+        {
+          "id": "b",
+          "text": "Die Farblehre beschreibt ausschließlich, welche Farben für Text und Hintergrund technisch zulässig sind.",
+          "richtig": false
+        },
+        {
+          "id": "c",
+          "text": "Die Farblehre beschäftigt sich hauptsächlich mit der Auswahl und Kombination verschiedener Schriftarten.",
+          "richtig": false
+        },
+        {
+          "id": "d",
+          "text": "Die Farblehre legt fest, wie Bedienelemente und Inhalte auf einer Benutzeroberfläche räumlich angeordnet werden.",
+          "richtig": false
+        }
+      ],
+      "erklaerung": "Die Farblehre untersucht Eigenschaften und Wirkung von Farben. Für die Gestaltung von Benutzeroberflächen sind insbesondere Farbwirkung, Farbharmonie und ausreichende Farbkontraste relevant."
+    }
   },
   {
     "id": "aeup-softwareergonomie-004",
@@ -22,7 +74,33 @@
   {
     "id": "aeup-softwareergonomie-005",
     "frage": "Nenne die vier Phasen der Gestaltung:",
-    "antwort": "1. Grobe Skizzen\n 2. strukturierte Wireframes \n 3. detaillierte Mockups\n 4. interaktive Prototypen"
+    "antwort": "1. Grobe Skizzen\n 2. strukturierte Wireframes \n 3. detaillierte Mockups\n 4. interaktive Prototypen",
+    "multipleChoice": {
+      "typ": "single",
+      "optionen": [
+        {
+          "id": "a",
+          "text": "Grobe Skizzen → strukturierte Wireframes → detaillierte Mockups → interaktive Prototypen",
+          "richtig": true
+        },
+        {
+          "id": "b",
+          "text": "Strukturierte Wireframes → grobe Skizzen → interaktive Prototypen → detaillierte Mockups",
+          "richtig": false
+        },
+        {
+          "id": "c",
+          "text": "Detaillierte Mockups → interaktive Prototypen → grobe Skizzen → strukturierte Wireframes",
+          "richtig": false
+        },
+        {
+          "id": "d",
+          "text": "Interaktive Prototypen → detaillierte Mockups → strukturierte Wireframes → grobe Skizzen",
+          "richtig": false
+        }
+      ],
+      "erklaerung": "Die Gestaltung entwickelt sich schrittweise von einer groben Idee zu einer immer konkreteren und schließlich interaktiven Darstellung: Skizze → Wireframe → Mockup → Prototyp."
+    }
   },
   {
     "id": "aeup-softwareergonomie-006",

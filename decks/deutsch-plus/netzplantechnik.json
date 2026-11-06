@@ -1,22 +1,710 @@
 [
   {
     "id": "deutsch-plus-netzplantechnik-001",
+    "bereich": "Kritischer Pfad",
     "frage": "Was ist der kritische Pfad?",
-    "antwort": "Der kritische Pfad ist die Kette aller Vorgänge, deren Verzögerung das gesamte Projekt verzögert."
+    "antwort": "Der kritische Pfad ist die Kette aller Vorgänge, deren Verzögerung das gesamte Projekt verzögert.",
+    "multipleChoice": {
+      "typ": "single",
+      "optionen": [
+        {
+          "id": "a",
+          "text": "Der kritische Pfad ist die Kette aller Vorgänge, deren Verzögerung das gesamte Projekt verzögert.",
+          "richtig": true
+        },
+        {
+          "id": "b",
+          "text": "Der kritische Pfad enthält alle Vorgänge mit dem größten freien Puffer.",
+          "richtig": false
+        },
+        {
+          "id": "c",
+          "text": "Der kritische Pfad ist immer der kürzeste Weg durch einen Netzplan.",
+          "richtig": false
+        },
+        {
+          "id": "d",
+          "text": "Der kritische Pfad umfasst nur den ersten und den letzten Vorgang eines Projekts.",
+          "richtig": false
+        }
+      ],
+      "erklaerung": "Der kritische Pfad besteht aus Vorgängen ohne zeitlichen Spielraum. Verzögert sich ein kritischer Vorgang, verzögert sich das Projekt."
+    }
   },
   {
     "id": "deutsch-plus-netzplantechnik-002",
+    "bereich": "Pufferzeiten",
     "frage": "Was bedeutet GP?",
-    "antwort": "GP steht für Gesamtpuffer."
+    "antwort": "GP steht für Gesamtpuffer.",
+    "multipleChoice": {
+      "typ": "single",
+      "optionen": [
+        {
+          "id": "a",
+          "text": "GP steht für Gesamtpuffer.",
+          "richtig": true
+        },
+        {
+          "id": "b",
+          "text": "GP steht für Gesamtprojekt.",
+          "richtig": false
+        },
+        {
+          "id": "c",
+          "text": "GP steht für größten Puffer.",
+          "richtig": false
+        },
+        {
+          "id": "d",
+          "text": "GP steht für geplante Projektdauer.",
+          "richtig": false
+        }
+      ],
+      "erklaerung": "GP ist die Abkürzung für Gesamtpuffer."
+    }
   },
   {
     "id": "deutsch-plus-netzplantechnik-003",
+    "bereich": "Pufferzeiten",
     "frage": "Was bedeutet FP?",
-    "antwort": "FP steht für freien Puffer."
+    "antwort": "FP steht für freien Puffer.",
+    "multipleChoice": {
+      "typ": "single",
+      "optionen": [
+        {
+          "id": "a",
+          "text": "FP steht für freien Puffer.",
+          "richtig": true
+        },
+        {
+          "id": "b",
+          "text": "FP steht für frühesten Projektbeginn.",
+          "richtig": false
+        },
+        {
+          "id": "c",
+          "text": "FP steht für festen Puffer.",
+          "richtig": false
+        },
+        {
+          "id": "d",
+          "text": "FP steht für spätesten Endzeitpunkt.",
+          "richtig": false
+        }
+      ],
+      "erklaerung": "FP ist die Abkürzung für freien Puffer."
+    }
   },
   {
     "id": "deutsch-plus-netzplantechnik-004",
-    "frage": "Was ist ein Vorteil eines Gantt-Diagramms?",
-    "antwort": "Zeitliche Abläufe eines Projekts lassen sich übersichtlich darstellen."
+    "bereich": "Gantt-Diagramm",
+    "frage": "Was sind die Vorteile eines Gantt-Diagramms?",
+    "antwort": "* Dauer der Vorgänge sofort sichtbar\n* Engpässe und kritische Vorgänge erkennbar\n* Einfach zu erstellen\n* Schnell verständlich"
+  },
+  {
+    "id": "deutsch-plus-netzplantechnik-005",
+    "bereich": "Grundlagen",
+    "frage": "Was ist die Netzplantechnik?",
+    "antwort": "Methode zur Planung, Steuerung und Kontrolle von Projekten.",
+    "multipleChoice": {
+      "typ": "single",
+      "optionen": [
+        {
+          "id": "a",
+          "text": "Methode zur Planung, Steuerung und Kontrolle von Projekten.",
+          "richtig": true
+        },
+        {
+          "id": "b",
+          "text": "Methode zur ausschließlichen Darstellung von Projektkosten.",
+          "richtig": false
+        },
+        {
+          "id": "c",
+          "text": "Methode zur Gestaltung von Organigrammen und Hierarchien.",
+          "richtig": false
+        },
+        {
+          "id": "d",
+          "text": "Methode zur Dokumentation abgeschlossener Projekte ohne Zeitbezug.",
+          "richtig": false
+        }
+      ],
+      "erklaerung": "Die Netzplantechnik unterstützt Planung, Steuerung und Kontrolle von Projekten und macht Abhängigkeiten, Zeitpunkte, Puffer und kritische Vorgänge sichtbar."
+    }
+  },
+  {
+    "id": "deutsch-plus-netzplantechnik-006",
+    "bereich": "Grundlagen",
+    "frage": "Welche Fragen beantwortet ein Netzplan?",
+    "antwort": "* Wie lange dauert das Projekt?\n* Wann beginnen und enden Vorgänge?\n* Welche Folgen haben Verzögerungen?\n* Welche Vorgänge bestimmen die Projektdauer?"
+  },
+  {
+    "id": "deutsch-plus-netzplantechnik-007",
+    "bereich": "Zeitpunkte",
+    "frage": "Was bedeutet FAZ?",
+    "antwort": "Frühester Anfangszeitpunkt.",
+    "multipleChoice": {
+      "typ": "single",
+      "optionen": [
+        {
+          "id": "a",
+          "text": "Frühester Anfangszeitpunkt.",
+          "richtig": true
+        },
+        {
+          "id": "b",
+          "text": "Frühester Endzeitpunkt.",
+          "richtig": false
+        },
+        {
+          "id": "c",
+          "text": "Spätester Anfangszeitpunkt.",
+          "richtig": false
+        },
+        {
+          "id": "d",
+          "text": "Freier Anfangszeitraum.",
+          "richtig": false
+        }
+      ],
+      "erklaerung": "FAZ steht für frühester Anfangszeitpunkt."
+    }
+  },
+  {
+    "id": "deutsch-plus-netzplantechnik-008",
+    "bereich": "Zeitpunkte",
+    "frage": "Was bedeutet FEZ?",
+    "antwort": "Frühester Endzeitpunkt.",
+    "multipleChoice": {
+      "typ": "single",
+      "optionen": [
+        {
+          "id": "a",
+          "text": "Frühester Endzeitpunkt.",
+          "richtig": true
+        },
+        {
+          "id": "b",
+          "text": "Frühester Anfangszeitpunkt.",
+          "richtig": false
+        },
+        {
+          "id": "c",
+          "text": "Spätester Endzeitpunkt.",
+          "richtig": false
+        },
+        {
+          "id": "d",
+          "text": "Freier Endzeitraum.",
+          "richtig": false
+        }
+      ],
+      "erklaerung": "FEZ steht für frühester Endzeitpunkt."
+    }
+  },
+  {
+    "id": "deutsch-plus-netzplantechnik-009",
+    "bereich": "Zeitpunkte",
+    "frage": "Was bedeutet SAZ?",
+    "antwort": "Spätester Anfangszeitpunkt ohne Projektverzögerung.",
+    "multipleChoice": {
+      "typ": "single",
+      "optionen": [
+        {
+          "id": "a",
+          "text": "Spätester Anfangszeitpunkt ohne Projektverzögerung.",
+          "richtig": true
+        },
+        {
+          "id": "b",
+          "text": "Frühester Anfangszeitpunkt eines Vorgangs.",
+          "richtig": false
+        },
+        {
+          "id": "c",
+          "text": "Spätester Endzeitpunkt ohne Projektverzögerung.",
+          "richtig": false
+        },
+        {
+          "id": "d",
+          "text": "Startzeitpunkt des gesamten Projekts.",
+          "richtig": false
+        }
+      ],
+      "erklaerung": "SAZ steht für spätester Anfangszeitpunkt ohne Projektverzögerung."
+    }
+  },
+  {
+    "id": "deutsch-plus-netzplantechnik-010",
+    "bereich": "Zeitpunkte",
+    "frage": "Was bedeutet SEZ?",
+    "antwort": "Spätester Endzeitpunkt ohne Projektverzögerung.",
+    "multipleChoice": {
+      "typ": "single",
+      "optionen": [
+        {
+          "id": "a",
+          "text": "Spätester Endzeitpunkt ohne Projektverzögerung.",
+          "richtig": true
+        },
+        {
+          "id": "b",
+          "text": "Frühester Endzeitpunkt eines Vorgangs.",
+          "richtig": false
+        },
+        {
+          "id": "c",
+          "text": "Spätester Anfangszeitpunkt ohne Projektverzögerung.",
+          "richtig": false
+        },
+        {
+          "id": "d",
+          "text": "Endzeitpunkt des kritischen Pfads.",
+          "richtig": false
+        }
+      ],
+      "erklaerung": "SEZ steht für spätester Endzeitpunkt ohne Projektverzögerung."
+    }
+  },
+  {
+    "id": "deutsch-plus-netzplantechnik-011",
+    "bereich": "Gantt-Diagramm",
+    "frage": "Was ist ein Gantt-Diagramm?",
+    "antwort": "Ein Balkendiagramm zur Darstellung von Projektvorgängen auf einer Zeitachse. Es zeigt Dauer, Reihenfolge und zeitliche Lage der Aufgaben.",
+    "multipleChoice": {
+      "typ": "single",
+      "optionen": [
+        {
+          "id": "a",
+          "text": "Ein Balkendiagramm zur Darstellung von Projektvorgängen auf einer Zeitachse.",
+          "richtig": true
+        },
+        {
+          "id": "b",
+          "text": "Ein Diagramm, das ausschließlich Abhängigkeiten und Pufferzeiten zeigt.",
+          "richtig": false
+        },
+        {
+          "id": "c",
+          "text": "Ein Organigramm zur Darstellung der Projektorganisation.",
+          "richtig": false
+        },
+        {
+          "id": "d",
+          "text": "Eine Tabelle zur Berechnung des kritischen Pfads ohne Zeitachse.",
+          "richtig": false
+        }
+      ],
+      "erklaerung": "Ein Gantt-Diagramm stellt Projektvorgänge als Balken auf einer Zeitachse dar und zeigt Dauer, Reihenfolge und zeitliche Lage."
+    }
+  },
+  {
+    "id": "deutsch-plus-netzplantechnik-012",
+    "bereich": "Gantt-Diagramm",
+    "frage": "Was sind die Nachteile eines Gantt-Diagramms?",
+    "antwort": "* Bei vielen Vorgängen unübersichtlich\n* Bei langen Zeiträumen schwer überschaubar\n* Abhängigkeiten nicht auf den ersten Blick erkennbar"
+  },
+  {
+    "id": "deutsch-plus-netzplantechnik-013",
+    "bereich": "Netzplan und Gantt-Diagramm",
+    "frage": "Was sind die Unterschiede zwischen Netzplan und Gantt-Diagramm?",
+    "antwort": "Der Netzplan zeigt Abhängigkeiten, Pufferzeiten und kritische Vorgänge besonders gut.\nDas Gantt-Diagramm zeigt zeitliche Abläufe und Dauern besonders anschaulich."
+  },
+  {
+    "id": "deutsch-plus-netzplantechnik-014",
+    "bereich": "Netzplan erstellen",
+    "frage": "Wie erstellt man einen Netzplan?",
+    "antwort": "1. Vorgänge erfassen\n2. Abhängigkeiten festlegen\n3. Vorwärtsrechnung durchführen\n4. Rückwärtsrechnung durchführen\n5. Pufferzeiten berechnen\n6. Kritischen Weg bestimmen"
+  },
+  {
+    "id": "deutsch-plus-netzplantechnik-015",
+    "bereich": "Kritische Vorgänge",
+    "frage": "Woran erkennt man kritische Vorgänge?",
+    "antwort": "Gesamtpuffer und freier Puffer sind 0 oder FAZ = SAZ und FEZ = SEZ.",
+    "multipleChoice": {
+      "typ": "single",
+      "optionen": [
+        {
+          "id": "a",
+          "text": "Gesamtpuffer und freier Puffer sind 0 oder FAZ = SAZ und FEZ = SEZ.",
+          "richtig": true
+        },
+        {
+          "id": "b",
+          "text": "Der Gesamtpuffer ist größer als der freie Puffer.",
+          "richtig": false
+        },
+        {
+          "id": "c",
+          "text": "FAZ und FEZ sind bei kritischen Vorgängen immer 0.",
+          "richtig": false
+        },
+        {
+          "id": "d",
+          "text": "SAZ und SEZ sind bei kritischen Vorgängen immer identisch.",
+          "richtig": false
+        }
+      ],
+      "erklaerung": "Kritische Vorgänge besitzen keinen zeitlichen Spielraum. Insbesondere gilt GP = 0; frühe und späte Zeitpunkte stimmen überein."
+    }
+  },
+  {
+    "id": "deutsch-plus-netzplantechnik-016",
+    "bereich": "Pufferzeiten",
+    "frage": "Was zeigt der Gesamtpuffer?",
+    "antwort": "Wie lange ein Vorgang verschoben werden kann.",
+    "multipleChoice": {
+      "typ": "single",
+      "optionen": [
+        {
+          "id": "a",
+          "text": "Wie lange ein Vorgang verschoben werden kann.",
+          "richtig": true
+        },
+        {
+          "id": "b",
+          "text": "Wie lange das gesamte Projekt maximal dauern darf.",
+          "richtig": false
+        },
+        {
+          "id": "c",
+          "text": "Wie früh der Nachfolger beginnen kann.",
+          "richtig": false
+        },
+        {
+          "id": "d",
+          "text": "Wie viele Vorgänge gleichzeitig ausgeführt werden können.",
+          "richtig": false
+        }
+      ],
+      "erklaerung": "Der Gesamtpuffer beschreibt den zeitlichen Spielraum eines Vorgangs, ohne den Projektendtermin zu verschieben."
+    }
+  },
+  {
+    "id": "deutsch-plus-netzplantechnik-017",
+    "bereich": "Pufferzeiten",
+    "frage": "Wie lautet die Formel für den Gesamtpuffer?",
+    "antwort": "GP = SEZ - FEZ oder GP = SAZ - FAZ.",
+    "multipleChoice": {
+      "typ": "single",
+      "optionen": [
+        {
+          "id": "a",
+          "text": "GP = SEZ - FEZ oder GP = SAZ - FAZ.",
+          "richtig": true
+        },
+        {
+          "id": "b",
+          "text": "GP = FEZ - FAZ oder GP = SEZ - SAZ.",
+          "richtig": false
+        },
+        {
+          "id": "c",
+          "text": "GP = FAZ + Dauer oder GP = SAZ + Dauer.",
+          "richtig": false
+        },
+        {
+          "id": "d",
+          "text": "GP = größter FEZ - kleinster SAZ.",
+          "richtig": false
+        }
+      ],
+      "erklaerung": "Der Gesamtpuffer wird mit GP = SEZ - FEZ beziehungsweise GP = SAZ - FAZ berechnet."
+    }
+  },
+  {
+    "id": "deutsch-plus-netzplantechnik-018",
+    "bereich": "Pufferzeiten",
+    "frage": "Was ist der freie Puffer?",
+    "antwort": "Die Zeit, um die ein Vorgang verschoben werden kann, ohne den frühesten Start des Nachfolgers zu beeinflussen.",
+    "multipleChoice": {
+      "typ": "single",
+      "optionen": [
+        {
+          "id": "a",
+          "text": "Die Zeit, um die ein Vorgang verschoben werden kann, ohne den frühesten Start des Nachfolgers zu beeinflussen.",
+          "richtig": true
+        },
+        {
+          "id": "b",
+          "text": "Die Zeit, um die das gesamte Projekt ohne Auswirkungen verlängert werden kann.",
+          "richtig": false
+        },
+        {
+          "id": "c",
+          "text": "Die Differenz zwischen Projektdauer und kritischem Pfad.",
+          "richtig": false
+        },
+        {
+          "id": "d",
+          "text": "Die Zeit zwischen frühestem und spätestem Projektende.",
+          "richtig": false
+        }
+      ],
+      "erklaerung": "Der freie Puffer betrachtet den direkten Nachfolger: Dessen frühester Start darf nicht beeinflusst werden."
+    }
+  },
+  {
+    "id": "deutsch-plus-netzplantechnik-019",
+    "bereich": "Rückwärtsrechnung",
+    "frage": "Wozu dient die Rückwärtsrechnung?",
+    "antwort": "Ermittlung von SAZ und SEZ.",
+    "multipleChoice": {
+      "typ": "single",
+      "optionen": [
+        {
+          "id": "a",
+          "text": "Ermittlung von SAZ und SEZ.",
+          "richtig": true
+        },
+        {
+          "id": "b",
+          "text": "Ermittlung von FAZ und FEZ.",
+          "richtig": false
+        },
+        {
+          "id": "c",
+          "text": "Ermittlung ausschließlich des freien Puffers.",
+          "richtig": false
+        },
+        {
+          "id": "d",
+          "text": "Ermittlung der Vorgangsdauern aus dem Gantt-Diagramm.",
+          "richtig": false
+        }
+      ],
+      "erklaerung": "Die Rückwärtsrechnung bestimmt SAZ und SEZ."
+    }
+  },
+  {
+    "id": "deutsch-plus-netzplantechnik-020",
+    "bereich": "Rückwärtsrechnung",
+    "frage": "Wie lautet die Formel für die Rückwärtsrechnung?",
+    "antwort": "SAZ = SEZ - Dauer.",
+    "multipleChoice": {
+      "typ": "single",
+      "optionen": [
+        {
+          "id": "a",
+          "text": "SAZ = SEZ - Dauer.",
+          "richtig": true
+        },
+        {
+          "id": "b",
+          "text": "SAZ = SEZ + Dauer.",
+          "richtig": false
+        },
+        {
+          "id": "c",
+          "text": "SAZ = FAZ + Dauer.",
+          "richtig": false
+        },
+        {
+          "id": "d",
+          "text": "SAZ = FEZ - FAZ.",
+          "richtig": false
+        }
+      ],
+      "erklaerung": "Bei der Rückwärtsrechnung gilt SAZ = SEZ - Dauer."
+    }
+  },
+  {
+    "id": "deutsch-plus-netzplantechnik-021",
+    "bereich": "Rückwärtsrechnung",
+    "frage": "Wo beginnt die Rückwärtsrechnung?",
+    "antwort": "Beim letzten Vorgang.",
+    "multipleChoice": {
+      "typ": "single",
+      "optionen": [
+        {
+          "id": "a",
+          "text": "Beim letzten Vorgang.",
+          "richtig": true
+        },
+        {
+          "id": "b",
+          "text": "Beim ersten Vorgang.",
+          "richtig": false
+        },
+        {
+          "id": "c",
+          "text": "Beim Vorgang mit dem größten FAZ.",
+          "richtig": false
+        },
+        {
+          "id": "d",
+          "text": "Beim Vorgang mit dem größten Gesamtpuffer.",
+          "richtig": false
+        }
+      ],
+      "erklaerung": "Die Rückwärtsrechnung beginnt beim letzten Vorgang beziehungsweise am Projektende."
+    }
+  },
+  {
+    "id": "deutsch-plus-netzplantechnik-022",
+    "bereich": "Rückwärtsrechnung",
+    "frage": "Welche Regel gilt bei der Rückwärtsrechnung bei mehreren Vorgängern?",
+    "antwort": "Mit dem kleinsten SAZ weiterrechnen.",
+    "multipleChoice": {
+      "typ": "single",
+      "optionen": [
+        {
+          "id": "a",
+          "text": "Mit dem kleinsten SAZ weiterrechnen.",
+          "richtig": true
+        },
+        {
+          "id": "b",
+          "text": "Mit dem größten SAZ weiterrechnen.",
+          "richtig": false
+        },
+        {
+          "id": "c",
+          "text": "Mit dem kleinsten FEZ weiterrechnen.",
+          "richtig": false
+        },
+        {
+          "id": "d",
+          "text": "Mit dem größten Gesamtpuffer weiterrechnen.",
+          "richtig": false
+        }
+      ],
+      "erklaerung": "Bei mehreren nachfolgenden Vorgängen ist der kleinste SAZ maßgeblich."
+    }
+  },
+  {
+    "id": "deutsch-plus-netzplantechnik-023",
+    "bereich": "Vorwärtsrechnung",
+    "frage": "Wozu dient die Vorwärtsrechnung?",
+    "antwort": "Ermittlung von FAZ und FEZ.",
+    "multipleChoice": {
+      "typ": "single",
+      "optionen": [
+        {
+          "id": "a",
+          "text": "Ermittlung von FAZ und FEZ.",
+          "richtig": true
+        },
+        {
+          "id": "b",
+          "text": "Ermittlung von SAZ und SEZ.",
+          "richtig": false
+        },
+        {
+          "id": "c",
+          "text": "Ermittlung ausschließlich des Gesamtpuffers.",
+          "richtig": false
+        },
+        {
+          "id": "d",
+          "text": "Ermittlung der spätesten Projektdauer.",
+          "richtig": false
+        }
+      ],
+      "erklaerung": "Die Vorwärtsrechnung bestimmt FAZ und FEZ."
+    }
+  },
+  {
+    "id": "deutsch-plus-netzplantechnik-024",
+    "bereich": "Vorwärtsrechnung",
+    "frage": "Wie lautet die Formel für die Vorwärtsrechnung?",
+    "antwort": "FEZ = FAZ + Dauer.",
+    "multipleChoice": {
+      "typ": "single",
+      "optionen": [
+        {
+          "id": "a",
+          "text": "FEZ = FAZ + Dauer.",
+          "richtig": true
+        },
+        {
+          "id": "b",
+          "text": "FEZ = FAZ - Dauer.",
+          "richtig": false
+        },
+        {
+          "id": "c",
+          "text": "FEZ = SAZ + Dauer.",
+          "richtig": false
+        },
+        {
+          "id": "d",
+          "text": "FEZ = SEZ - Dauer.",
+          "richtig": false
+        }
+      ],
+      "erklaerung": "Bei der Vorwärtsrechnung gilt FEZ = FAZ + Dauer."
+    }
+  },
+  {
+    "id": "deutsch-plus-netzplantechnik-025",
+    "bereich": "Vorwärtsrechnung",
+    "frage": "Mit welchem Wert startet ein Netzplan?",
+    "antwort": "Er startet immer mit 0.",
+    "multipleChoice": {
+      "typ": "single",
+      "optionen": [
+        {
+          "id": "a",
+          "text": "Er startet immer mit 0.",
+          "richtig": true
+        },
+        {
+          "id": "b",
+          "text": "Er startet immer mit 1.",
+          "richtig": false
+        },
+        {
+          "id": "c",
+          "text": "Er startet mit der Dauer des ersten Vorgangs.",
+          "richtig": false
+        },
+        {
+          "id": "d",
+          "text": "Er startet mit dem kleinsten SAZ.",
+          "richtig": false
+        }
+      ],
+      "erklaerung": "Die Vorwärtsrechnung beginnt beim ersten Vorgang mit FAZ = 0."
+    }
+  },
+  {
+    "id": "deutsch-plus-netzplantechnik-026",
+    "bereich": "Vorwärtsrechnung",
+    "frage": "Welche Regel gilt bei der Vorwärtsrechnung bei mehreren Vorgängern?",
+    "antwort": "Mit dem größten FEZ weiterrechnen.",
+    "multipleChoice": {
+      "typ": "single",
+      "optionen": [
+        {
+          "id": "a",
+          "text": "Mit dem größten FEZ weiterrechnen.",
+          "richtig": true
+        },
+        {
+          "id": "b",
+          "text": "Mit dem kleinsten FEZ weiterrechnen.",
+          "richtig": false
+        },
+        {
+          "id": "c",
+          "text": "Mit dem größten SAZ weiterrechnen.",
+          "richtig": false
+        },
+        {
+          "id": "d",
+          "text": "Mit dem kleinsten Gesamtpuffer weiterrechnen.",
+          "richtig": false
+        }
+      ],
+      "erklaerung": "Bei mehreren Vorgängern kann der Nachfolger erst beginnen, wenn alle beendet sind. Daher wird der größte FEZ verwendet."
+    }
+  },
+  {
+    "id": "deutsch-plus-netzplantechnik-027",
+    "bereich": "Grundlagen",
+    "frage": "Welche Fragen beantwortet die Netzplantechnik?",
+    "antwort": "* Wie lange dauert das Projekt?\n* Wann beginnen und enden Vorgänge?\n* Welche Folgen haben Verzögerungen?\n* Welche Vorgänge bestimmen die Projektdauer?"
   }
 ]
