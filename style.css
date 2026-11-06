@@ -735,3 +735,149 @@ button:disabled {
     font-size: 16px;
   }
 }
+/* --------------------------------------------------
+   MULTIPLE CHOICE
+-------------------------------------------------- */
+
+.multiple-choice-bereich {
+  margin-top: 24px;
+  text-align: left;
+}
+
+#multipleChoiceOptionen {
+  display: grid;
+  gap: 12px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+#multipleChoiceOptionen legend {
+  width: 100%;
+  margin-bottom: 12px;
+  padding: 0;
+  color: #475569;
+  font-weight: 700;
+  text-align: center;
+}
+
+.multiple-choice-option {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  width: 100%;
+  min-height: 52px;
+  padding: 14px 16px;
+  border: 1px solid #cbd5e1;
+  border-radius: 10px;
+  background: #fff;
+  color: #202124;
+  line-height: 1.45;
+  text-align: left;
+  cursor: pointer;
+  transition:
+    border-color .15s ease,
+    background-color .15s ease,
+    box-shadow .15s ease;
+}
+
+.multiple-choice-option:hover {
+  border-color: #2563eb;
+  background: #eff6ff;
+}
+
+.multiple-choice-option:focus-within {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, .2);
+}
+
+.multiple-choice-option input {
+  flex: 0 0 auto;
+  width: 20px;
+  height: 20px;
+  margin: 1px 0 0;
+  accent-color: #2563eb;
+}
+
+.multiple-choice-option span {
+  flex: 1;
+  overflow-wrap: anywhere;
+}
+
+.multiple-choice-option:has(input:checked) {
+  border-color: #2563eb;
+  background: #dbeafe;
+}
+
+.multiple-choice-option:has(input:disabled) {
+  cursor: default;
+}
+
+#multipleChoicePruefenButton {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.multiple-choice-ergebnis {
+  margin-top: 22px;
+  padding: 18px;
+  border: 1px solid #cbd5e1;
+  border-radius: 10px;
+  background: #f8fafc;
+  text-align: left;
+}
+
+.multiple-choice-rueckmeldung {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.multiple-choice-richtige-antwort {
+  margin: 12px 0 0;
+  font-weight: 600;
+  overflow-wrap: anywhere;
+}
+
+.multiple-choice-erklaerung {
+  margin-top: 18px;
+  padding-top: 16px;
+  border-top: 1px solid #e2e8f0;
+}
+
+.multiple-choice-erklaerung .label {
+  margin-top: 0;
+}
+
+#multipleChoiceErklaerung {
+  margin-bottom: 0;
+  white-space: pre-line;
+  overflow-wrap: anywhere;
+}
+
+@media (max-width: 520px) {
+  .multiple-choice-bereich {
+    margin-top: 20px;
+  }
+
+  #multipleChoiceOptionen {
+    gap: 10px;
+  }
+
+  .multiple-choice-option {
+    min-height: 56px;
+    padding: 14px;
+  }
+
+  .multiple-choice-ergebnis {
+    padding: 16px 14px;
+  }
+}
+
+@media (max-width: 380px) {
+  .multiple-choice-option,
+  .multiple-choice-ergebnis {
+    font-size: 16px;
+  }
+}

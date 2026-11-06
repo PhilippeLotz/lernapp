@@ -73,6 +73,10 @@ let anzahlSicher = 0;
 
 let gespeicherterLernstand = {};
 
+// Multiple-Choice-Zustand
+let multipleChoiceOptionenAktuell = [];
+let multipleChoiceGeprueft = false;
+
 
 // --------------------------------------------------
 // SESSION
@@ -133,6 +137,30 @@ const quizAntwort =
 
 const quizPruefenButton =
   document.getElementById("quizPruefenButton");
+
+const multipleChoiceBereich =
+  document.getElementById("multipleChoiceBereich");
+
+const multipleChoiceOptionen =
+  document.getElementById("multipleChoiceOptionen");
+
+const multipleChoicePruefenButton =
+  document.getElementById("multipleChoicePruefenButton");
+
+const multipleChoiceErgebnis =
+  document.getElementById("multipleChoiceErgebnis");
+
+const multipleChoiceRueckmeldung =
+  document.getElementById("multipleChoiceRueckmeldung");
+
+const multipleChoiceRichtigeAntwort =
+  document.getElementById("multipleChoiceRichtigeAntwort");
+
+const multipleChoiceErklaerungBereich =
+  document.getElementById("multipleChoiceErklaerungBereich");
+
+const multipleChoiceErklaerung =
+  document.getElementById("multipleChoiceErklaerung");
 
 
 const bewertungBereich =
@@ -229,6 +257,31 @@ function aktuelleLernartLesen() {
 
 function quizAktiv() {
   return aktuelleLernartLesen() === "quiz";
+}
+
+function multipleChoiceAktiv() {
+  return aktuelleLernartLesen() === "multiplechoice";
+}
+
+function karteHatGueltigesMultipleChoice(karte) {
+  const multipleChoice =
+    karte?.multipleChoice;
+
+  if (
+    !multipleChoice ||
+    multipleChoice.typ !== "single" ||
+    !Array.isArray(multipleChoice.optionen) ||
+    multipleChoice.optionen.length < 2
+  ) {
+    return false;
+  }
+
+  const richtigeOptionen =
+    multipleChoice.optionen.filter(
+      option => option?.richtig === true
+    );
+
+  return richtigeOptionen.length === 1;
 }
 
 
@@ -414,7 +467,7 @@ function kartenNachLernmodusFiltern() {
     return alleKarten.filter(karte => {
       const status =
         gespeicherterLernstand[
-          karte.frage
+          karte.id
         ];
 
       return (
@@ -427,7 +480,7 @@ function kartenNachLernmodusFiltern() {
     return alleKarten.filter(karte => {
       const status =
         gespeicherterLernstand[
-          karte.frage
+          karte.id
         ];
 
       return (
@@ -440,7 +493,7 @@ function kartenNachLernmodusFiltern() {
   return alleKarten.filter(karte => {
     const status =
       gespeicherterLernstand[
-        karte.frage
+        karte.id
       ];
 
     return (
@@ -458,8 +511,15 @@ function lernrundeErstellen() {
     return;
   }
 
-  const gefilterteKarten =
+  let gefilterteKarten =
     kartenNachLernmodusFiltern();
+
+  if (multipleChoiceAktiv()) {
+    gefilterteKarten =
+      gefilterteKarten.filter(
+        karteHatGueltigesMultipleChoice
+      );
+  }
 
   karten =
     lernrundeVorbereiten(
@@ -548,7 +608,7 @@ function lernstandSpeichern(
   }
 
   gespeicherterLernstand[
-    karte.frage
+    karte.id
   ] = {
     bewertung: bewertung,
 
@@ -587,7 +647,7 @@ function lernstandZaehlen() {
   alleKarten.forEach(karte => {
     const status =
       gespeicherterLernstand[
-        karte.frage
+        karte.id
       ];
 
     if (
@@ -824,6 +884,22 @@ async function deckLaden() {
       );
     }
 
+    const ungueltigeKarte =
+      daten.find(karte => (
+        !karte ||
+        typeof karte !== "object" ||
+        typeof karte.id !== "string" ||
+        !karte.id.trim() ||
+        typeof karte.frage !== "string" ||
+        typeof karte.antwort !== "string"
+      ));
+
+    if (ungueltigeKarte) {
+      throw new Error(
+        "Mindestens eine Karte besitzt keine gültige ID, Frage oder Antwort."
+      );
+    }
+
     alleKarten =
       [...daten];
 
@@ -917,6 +993,10 @@ function lernbereicheVerstecken() {
   quizBereich.classList.add(
     "versteckt"
   );
+
+  multipleChoiceBereich.classList.add(
+    "versteckt"
+  );
 }
 
 
@@ -929,18 +1009,27 @@ function lernartOberflaecheAktualisieren() {
     "versteckt"
   );
 
+  quizBereich.classList.add(
+    "versteckt"
+  );
+
+  multipleChoiceBereich.classList.add(
+    "versteckt"
+  );
+
+  antwortButton.classList.add(
+    "versteckt"
+  );
+
   quizAntwort.value = "";
   quizAntwort.disabled = false;
   quizAntwort.setCustomValidity("");
-
   quizPruefenButton.disabled = false;
+
+  multipleChoiceZuruecksetzen();
 
   if (quizAktiv()) {
     quizBereich.classList.remove(
-      "versteckt"
-    );
-
-    antwortButton.classList.add(
       "versteckt"
     );
 
@@ -949,20 +1038,28 @@ function lernartOberflaecheAktualisieren() {
       0
     );
 
-  } else {
-    quizBereich.classList.add(
-      "versteckt"
-    );
-
-    antwortButton.classList.remove(
-      "versteckt"
-    );
-
-    antwortButton.textContent =
-      "Antwort anzeigen";
+    return;
   }
-}
 
+  if (multipleChoiceAktiv()) {
+    multipleChoiceBereich.classList.remove(
+      "versteckt"
+    );
+
+    multipleChoiceAnzeigen(
+      karten[aktuelleKarte]
+    );
+
+    return;
+  }
+
+  antwortButton.classList.remove(
+    "versteckt"
+  );
+
+  antwortButton.textContent =
+    "Antwort anzeigen";
+}
 
 function leereLernrundeAnzeigen() {
   const lernmodus =
@@ -1018,6 +1115,7 @@ function leereLernrundeAnzeigen() {
 
   antwortButton.disabled = true;
   quizPruefenButton.disabled = true;
+  multipleChoicePruefenButton.disabled = true;
   weiterButton.disabled = true;
 
   sessionAuswertungAnzeigen();
@@ -1178,7 +1276,182 @@ function karteBewerten(bewertung) {
 
 
 // --------------------------------------------------
-// QUIZ
+// MULTIPLE CHOICE
+// --------------------------------------------------
+
+function multipleChoiceZuruecksetzen() {
+  multipleChoiceOptionenAktuell = [];
+  multipleChoiceGeprueft = false;
+
+  multipleChoiceOptionen.innerHTML = `
+    <legend>Wähle eine Antwort aus</legend>
+  `;
+
+  multipleChoicePruefenButton.disabled = true;
+
+  multipleChoiceErgebnis.classList.add(
+    "versteckt"
+  );
+
+  multipleChoiceRueckmeldung.textContent = "";
+  multipleChoiceRichtigeAntwort.textContent = "";
+  multipleChoiceErklaerung.textContent = "";
+
+  multipleChoiceErklaerungBereich.classList.add(
+    "versteckt"
+  );
+
+  unsicherButton.disabled = false;
+  teilweiseButton.disabled = false;
+  sicherButton.disabled = false;
+}
+
+function multipleChoiceAnzeigen(karte) {
+  if (!karteHatGueltigesMultipleChoice(karte)) {
+    multipleChoiceOptionen.innerHTML = `
+      <legend>Multiple Choice</legend>
+      <p>Für diese Karte sind keine gültigen Antwortoptionen vorhanden.</p>
+    `;
+
+    multipleChoicePruefenButton.disabled = true;
+    return;
+  }
+
+  multipleChoiceOptionenAktuell =
+    kartenMischen(
+      karte.multipleChoice.optionen
+    );
+
+  multipleChoiceOptionen.innerHTML = `
+    <legend>Wähle eine Antwort aus</legend>
+  `;
+
+  multipleChoiceOptionenAktuell.forEach(
+    option => {
+      const label =
+        document.createElement("label");
+
+      label.className =
+        "multiple-choice-option";
+
+      const input =
+        document.createElement("input");
+
+      input.type = "radio";
+      input.name = "multipleChoiceAntwort";
+      input.value = option.id;
+
+      const text =
+        document.createElement("span");
+
+      text.textContent = option.text;
+
+      label.append(
+        input,
+        text
+      );
+
+      multipleChoiceOptionen.appendChild(
+        label
+      );
+    }
+  );
+}
+
+function multipleChoiceAntwortPruefen() {
+  if (
+    !multipleChoiceAktiv() ||
+    karten.length === 0 ||
+    multipleChoiceGeprueft
+  ) {
+    return;
+  }
+
+  const auswahl =
+    multipleChoiceOptionen.querySelector(
+      'input[name="multipleChoiceAntwort"]:checked'
+    );
+
+  if (!auswahl) {
+    multipleChoiceRueckmeldung.textContent =
+      "Bitte wähle zuerst eine Antwort aus.";
+
+    multipleChoiceErgebnis.classList.remove(
+      "versteckt"
+    );
+
+    return;
+  }
+
+  const karte =
+    karten[aktuelleKarte];
+
+  const gewaehlteOption =
+    multipleChoiceOptionenAktuell.find(
+      option => option.id === auswahl.value
+    );
+
+  const richtigeOption =
+    karte.multipleChoice.optionen.find(
+      option => option.richtig === true
+    );
+
+  multipleChoiceGeprueft = true;
+  multipleChoicePruefenButton.disabled = true;
+
+  multipleChoiceOptionen
+    .querySelectorAll(
+      'input[name="multipleChoiceAntwort"]'
+    )
+    .forEach(input => {
+      input.disabled = true;
+    });
+
+  if (gewaehlteOption?.richtig === true) {
+    multipleChoiceRueckmeldung.textContent =
+      "✅ Richtig!";
+
+    multipleChoiceRichtigeAntwort.textContent =
+      "";
+
+    unsicherButton.disabled = true;
+    teilweiseButton.disabled = false;
+    sicherButton.disabled = false;
+  } else {
+    multipleChoiceRueckmeldung.textContent =
+      "❌ Leider falsch.";
+
+    multipleChoiceRichtigeAntwort.textContent =
+      `Richtige Antwort: ${richtigeOption?.text || "nicht gefunden"}`;
+
+    unsicherButton.disabled = false;
+    teilweiseButton.disabled = true;
+    sicherButton.disabled = true;
+  }
+
+  const erklaerung =
+    karte.multipleChoice.erklaerung?.trim();
+
+  if (erklaerung) {
+    multipleChoiceErklaerung.textContent =
+      erklaerung;
+
+    multipleChoiceErklaerungBereich.classList.remove(
+      "versteckt"
+    );
+  }
+
+  multipleChoiceErgebnis.classList.remove(
+    "versteckt"
+  );
+
+  bewertungBereich.classList.remove(
+    "versteckt"
+  );
+}
+
+// --------------------------------------------------
+// FREITEXT
 // --------------------------------------------------
 
 function quizAntwortPruefen() {
@@ -1227,10 +1500,7 @@ function alleKartenWiederholen() {
     return;
   }
 
-  karten =
-    lernrundeVorbereiten(
-      alleKarten
-    );
+  lernrundeErstellen();
 
   aktuelleKarte = 0;
 
@@ -1320,6 +1590,7 @@ function lernrundeBeenden() {
 
   antwortButton.disabled = true;
   quizPruefenButton.disabled = true;
+  multipleChoicePruefenButton.disabled = true;
   weiterButton.disabled = true;
 
   alleWiederholenButton.disabled =
@@ -1385,6 +1656,7 @@ function ansichtZuruecksetzen() {
 
   antwortButton.disabled = true;
   quizPruefenButton.disabled = true;
+  multipleChoicePruefenButton.disabled = true;
   weiterButton.disabled = true;
 
   alleWiederholenButton.disabled =
@@ -1421,7 +1693,7 @@ function lernmodusWechseln() {
 
 
 function lernartWechseln() {
-  if (karten.length === 0) {
+  if (alleKarten.length === 0) {
     lernbereicheVerstecken();
 
     antwortButton.classList.remove(
@@ -1430,7 +1702,16 @@ function lernartWechseln() {
 
     antwortButton.disabled = true;
     quizPruefenButton.disabled = true;
+    multipleChoicePruefenButton.disabled = true;
 
+    return;
+  }
+
+  lernrundeErstellen();
+  sessionStarten();
+
+  if (karten.length === 0) {
+    leereLernrundeAnzeigen();
     return;
   }
 
@@ -1473,6 +1754,19 @@ function tastaturSteuern(event) {
     return;
   }
 
+  if (
+    event.key === "Enter" &&
+    multipleChoiceAktiv()
+  ) {
+    event.preventDefault();
+
+    if (!multipleChoicePruefenButton.disabled) {
+      multipleChoiceAntwortPruefen();
+    }
+
+    return;
+  }
+
   if (schreibtGerade) {
     return;
   }
@@ -1482,6 +1776,7 @@ function tastaturSteuern(event) {
 
     if (
       !quizAktiv() &&
+      !multipleChoiceAktiv() &&
       !antwortButton.disabled
     ) {
       antwortButton.click();
@@ -1541,7 +1836,10 @@ function tastaturSteuern(event) {
 antwortButton.addEventListener(
   "click",
   () => {
-    if (quizAktiv()) {
+    if (
+      quizAktiv() ||
+      multipleChoiceAktiv()
+    ) {
       return;
     }
 
@@ -1572,6 +1870,29 @@ antwortButton.addEventListener(
 quizPruefenButton.addEventListener(
   "click",
   quizAntwortPruefen
+);
+
+multipleChoicePruefenButton.addEventListener(
+  "click",
+  multipleChoiceAntwortPruefen
+);
+
+multipleChoiceOptionen.addEventListener(
+  "change",
+  event => {
+    if (
+      event.target.matches(
+        'input[name="multipleChoiceAntwort"]'
+      ) &&
+      !multipleChoiceGeprueft
+    ) {
+      multipleChoicePruefenButton.disabled = false;
+
+      multipleChoiceErgebnis.classList.add(
+        "versteckt"
+      );
+    }
+  }
 );
 
 

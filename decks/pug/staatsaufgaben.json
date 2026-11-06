@@ -1,49 +1,61 @@
 [
   {
+    "id": "pug-staatsaufgaben-001",
     "frage": "Was ist ein Staat?",
     "antwort": "Ein Staat ist eine politische Organisation, die aus drei grundlegenden Elementen besteht:\n 1. Staatsgebiet\n 2. Staatsvolk\n 3. Staatsgewalt"
   },
   {
+    "id": "pug-staatsaufgaben-002",
     "frage": "Was bedeutet Staatsvolk?",
     "antwort": "Das Staatsvolk umfasst alle Menschen, die die Staatsangehörigkeit eines bestimmten Staates besitzen. Es ist das rechtliche Band, das die Bürger mit dem Staat verbindet."
   },
   {
+    "id": "pug-staatsaufgaben-003",
     "frage": "Was bedeutet Staatsgebiet?",
     "antwort": "Das Staatsgebiet umfasst das räumlich abgegrenzte Gebiet, auf dem die Staatsgewalt ausgeübt wird."
   },
   {
+    "id": "pug-staatsaufgaben-004",
     "frage": "Was bedeutet Staatsgewalt?",
     "antwort": "Die Staatsgewalt ist die Befugnis des Staates, Gesetze zu erlassen und durchzusetzen. Sie umfasst die legislative, exekutive und judikative Gewalt."
   },
   {
+    "id": "pug-staatsaufgaben-005",
     "frage": "Welche Aufgaben hat der Staat im Bereich der äußeren Sicherheit?",
     "antwort": "Der Staat hat die Aufgabe, die äußere Sicherheit seines Territoriums zu gewährleisten.\n Dazu gehören Maßnahmen zur Verteidigung gegen auswärtige Angriffe sowie Diplomatie und internationale Verteidigungsbündnisse."
   },
   {
+    "id": "pug-staatsaufgaben-006",
     "frage": "Welche Einrichtungen sind für die innere Sicherheit zuständig?",
     "antwort": "Polizei und Gerichte sorgen für Sicherheit, Ordnung und Rechtsdurchsetzung im Staat."
   },
   {
+    "id": "pug-staatsaufgaben-007",
     "frage": "Warum ist die Rechtsordnung eine Staatsaufgabe?",
     "antwort": "Der Staat schafft, erhält und entwickelt Gesetze, die das Zusammenleben der Menschen regeln. Die Rechtsordnung sorgt für Gerechtigkeit und schützt die Rechte der Bürger."
   },
   {
+    "id": "pug-staatsaufgaben-008",
     "frage": "Was sind öffentliche Leistungen des Staates?",
     "antwort": "Der Staat stellt wichtige Infrastrukturen und Dienstleistungen bereit, wie Bildung, Gesundheitsversorgung, Verkehrssysteme und soziale Sicherheit."
   },
   {
+    "id": "pug-staatsaufgaben-009",
     "frage": "Was bedeutet soziale Sicherung?",
     "antwort": "Der Staat schützt Menschen vor sozialen Risiken und unterstützt sie in besonderen Lebenslagen."
   },
   {
-    "frage": "Warum fördert der Staat die Wirtschaft?", 
+    "id": "pug-staatsaufgaben-010",
+    "frage": "Warum fördert der Staat die Wirtschaft?",
     "antwort": "Um wirtschaftliche Entwicklung, Wohlstand und Arbeitsplätze zu sichern."
   },
   {
+    "id": "pug-staatsaufgaben-011",
     "frage": "Welche Aufgaben hat der Staat im Bereich der Umwelt?",
     "antwort": "Der Staat schützt die Umwelt durch Gesetze und Maßnahmen, um die natürlichen Lebensgrundlagen zu erhalten."
   },
   {
+    "id": "pug-staatsaufgaben-012",
     "frage": "Warum braucht der Staat eine öffentliche Verwaltung?",
     "antwort": "Die öffentliche Verwaltung sorgt dafür, dass staatliche Aufgaben organisiert geplant und effizient umgesetzt werden."
   }

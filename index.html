@@ -41,39 +41,9 @@
         </label>
 
         <select id="fachAuswahl">
-
           <option value="" selected>
             Fach auswählen
           </option>
-
-          <option value="deutsch-plus">
-            Deutsch+
-          </option>
-
-          <option value="aeup">
-            AEuP
-          </option>
-
-          <option value="pug">
-            PuG
-          </option>
-
-          <option value="bgwp">
-            BGWP
-          </option>
-
-          <option value="fu-it">
-            FU-IT
-          </option>
-
-          <option value="englisch">
-            Englisch
-          </option>
-
-          <option value="r-plus">
-            R-Plus
-          </option>
-
         </select>
 
       </div>
@@ -108,15 +78,15 @@
         </label>
 
         <select id="lernartAuswahl">
-
           <option value="lernkarten" selected>
             Lernkarten
           </option>
-
           <option value="quiz">
-            Quiz
+            Freitext
           </option>
-
+          <option value="multiplechoice">
+            Multiple Choice
+          </option>
         </select>
 
       </div>
@@ -249,7 +219,7 @@
       </h2>
 
 
-      <!-- Quizmodus -->
+      <!-- Freitextmodus -->
       <div
         id="quizBereich"
         class="quiz-bereich versteckt"
@@ -274,6 +244,47 @@
 
       </div>
 
+      <!-- Multiple-Choice-Modus -->
+      <div
+        id="multipleChoiceBereich"
+        class="multiple-choice-bereich versteckt"
+      >
+        <fieldset id="multipleChoiceOptionen">
+          <legend>
+            Wähle eine Antwort aus
+          </legend>
+        </fieldset>
+        <button
+          id="multipleChoicePruefenButton"
+          type="button"
+          disabled
+        >
+          Antwort prüfen
+        </button>
+        <div
+          id="multipleChoiceErgebnis"
+          class="multiple-choice-ergebnis versteckt"
+          aria-live="polite"
+        >
+          <p
+            id="multipleChoiceRueckmeldung"
+            class="multiple-choice-rueckmeldung"
+          ></p>
+          <p
+            id="multipleChoiceRichtigeAntwort"
+            class="multiple-choice-richtige-antwort"
+          ></p>
+          <div
+            id="multipleChoiceErklaerungBereich"
+            class="multiple-choice-erklaerung versteckt"
+          >
+            <p class="label">
+              Erklärung
+            </p>
+            <p id="multipleChoiceErklaerung"></p>
+          </div>
+        </div>
+      </div>
 
       <!-- Lernkartenmodus -->
       <button
@@ -435,7 +446,7 @@
         </li>
 
         <li>
-          Enter: Quizantwort prüfen
+          Enter: Freitext- oder Multiple-Choice-Antwort prüfen
         </li>
 
         <li>

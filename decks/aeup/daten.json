@@ -1,60 +1,98 @@
 [
   {
+    "id": "aeup-daten-001",
     "bereich": "Grundlagen: Daten",
     "frage": "Was sind Daten?",
-    "antwort": "Daten sind Zeichen oder Zeichenfolgen, die nach einer bestimmten Struktur angeordnet sind. Digitale Daten werden im Computer als Bitfolgen dargestellt. Damit sie sinnvoll genutzt werden können, müssen ihre Codierung, Struktur und Bedeutung bekannt sein."
+    "antwort": "Daten sind Zeichen oder Zeichenfolgen, die nach einer bestimmten Struktur angeordnet sind. Digitale Daten werden im Computer als Bitfolgen dargestellt. Damit sie sinnvoll genutzt werden können, müssen ihre Codierung, Struktur und Bedeutung bekannt sein.",
+    "multipleChoice": {
+      "typ": "single",
+      "optionen": [
+        {
+          "id": "a",
+          "text": "Zeichen oder Zeichenfolgen, die nach einer bestimmten Struktur angeordnet sind.",
+          "richtig": true
+        },
+        {
+          "id": "b",
+          "text": "Ausschliesslich Informationen, deren Bedeutung bereits eindeutig bekannt ist.",
+          "richtig": false
+        },
+        {
+          "id": "c",
+          "text": "Nur Dateien, die dauerhaft auf einem Datentraeger gespeichert sind.",
+          "richtig": false
+        },
+        {
+          "id": "d",
+          "text": "Beliebige Zeichen ohne festgelegte Struktur oder Bedeutung.",
+          "richtig": false
+        }
+      ],
+      "erklaerung": "Daten bestehen aus Zeichen oder Zeichenfolgen in einer vereinbarten Struktur. Digitale Daten werden im Computer als Bitfolgen dargestellt. Erst mit bekannter Codierung, Struktur und Bedeutung koennen sie sinnvoll interpretiert und genutzt werden."
+    }
   },
   {
+    "id": "aeup-daten-002",
     "bereich": "Grundlagen: Daten",
     "frage": "Was ist der Unterschied zwischen Zeichen, Daten, Informationen und Wissen?",
     "antwort": "Zeichen sind einzelne Buchstaben, Ziffern oder andere Symbole. Daten sind Zeichen in einer vereinbarten Struktur. Informationen entstehen, wenn die Bedeutung der Daten bekannt ist. Wissen entsteht, wenn Informationen mit weiterem Wissen verknüpft und in einem konkreten Zusammenhang genutzt werden."
   },
   {
+    "id": "aeup-daten-003",
     "bereich": "Grundlagen: Daten",
     "frage": "Was bedeuten Syntax, Semantik und Pragmatik bei Daten?",
     "antwort": "Syntax beschreibt den Aufbau der Daten. Semantik beschreibt die Bedeutung der Daten. Pragmatik beschreibt, wozu die Informationen in einem konkreten Zusammenhang genutzt werden. Merksatz: Syntax = Aufbau, Semantik = Bedeutung, Pragmatik = Verwendung."
   },
   {
+    "id": "aeup-daten-004",
     "bereich": "Datenarten",
     "frage": "Was sind Stammdaten?",
     "antwort": "Stammdaten sind grundlegende und relativ dauerhafte Daten. Beispiele sind Bewerber-ID, Name, Anschrift, Geburtsdatum und Geburtsort."
   },
   {
+    "id": "aeup-daten-005",
     "bereich": "Datenarten",
     "frage": "Was sind Bewegungsdaten?",
     "antwort": "Bewegungsdaten entstehen durch Vorgänge oder Prozesse. Beispiele sind der Eingang einer Bewerbung, das Einladungsdatum, der Ort des Bewerbungsgesprächs und der zuständige Ansprechpartner."
   },
   {
+    "id": "aeup-daten-006",
     "bereich": "Datenarten",
     "frage": "Was sind Metadaten?",
     "antwort": "Metadaten sind Daten über andere Daten. Sie beschreiben Daten oder Dateien. Beispiele sind das Dateiformat und die Dateigröße eines Lebenslaufs."
   },
   {
+    "id": "aeup-daten-007",
     "bereich": "Datenqualität",
     "frage": "Warum ist eine gute Datenqualität wichtig?",
     "antwort": "Fehlerhafte, fehlende, veraltete oder doppelte Daten können zu falschen Entscheidungen und fehlerhaften Prozessen führen. Beispielsweise kann eine Person zwei Einladungen erhalten, gar keine Einladung bekommen oder eine Nachricht kann an eine alte Adresse geschickt werden."
   },
   {
+    "id": "aeup-daten-008",
     "bereich": "Datenqualität",
     "frage": "Warum braucht man eindeutige Identifikationsmerkmale für Datensätze?",
     "antwort": "Eindeutige Identifikationsmerkmale ermöglichen die sichere Zuordnung eines Datensatzes zu einer Person oder einem Objekt. Ein Name allein reicht häufig nicht aus, weil mehrere Personen denselben Namen haben können. Eine Bewerber-ID eignet sich besser zur eindeutigen Identifikation."
   },
   {
+    "id": "aeup-daten-009",
     "bereich": "Datenaustauschformate",
     "frage": "Warum brauchen wir Datenaustauschformate?",
     "antwort": "Datenaustauschformate ermöglichen die Kompatibilität zwischen verschiedenen Systemen und Programmen. Sie bieten ein einheitliches Format zum Speichern und Übertragen von Daten und erleichtern die strukturierte Weiterverwendung."
   },
   {
+    "id": "aeup-daten-010",
     "bereich": "Datenaustauschformate",
     "frage": "In welchen Strukturierungsformen können Daten vorliegen?",
     "antwort": "Daten können strukturiert, semistrukturiert oder unstrukturiert vorliegen. Datenaustauschformate helfen dabei, Daten so aufzubereiten, dass andere Systeme sie verarbeiten können."
   },
   {
+    "id": "aeup-daten-011",
     "bereich": "Marshalling",
     "frage": "Was ist Marshalling?",
     "antwort": "Marshalling ist der Prozess, bei dem ein Objekt oder eine Datenstruktur in ein übertragbares Format umgewandelt wird. Dadurch können die Daten gespeichert oder an ein anderes System übertragen werden."
   },
   {
+    "id": "aeup-daten-012",
     "bereich": "Marshalling",
     "frage": "Nenne ein Beispiel für Marshalling.",
     "antwort": "Eine Datenstruktur mit Patienten-ID, Patientenname und Aufenthaltsort kann in eine XML-Struktur umgewandelt werden. Die Daten erhalten dadurch ein festes, übertragbares Format."

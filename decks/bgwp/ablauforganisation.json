@@ -1,165 +1,194 @@
 [
   {
+    "id": "bgwp-ablauforganisation-001",
     "bereich": "Ablauforganisation",
     "frage": "Welche unmittelbaren Folgen entstehen durch schlechte Organisation?",
     "antwort": "*Stress für Mitarbeiter\n *Doppelte Arbeit\n *Umsatzverluste\n *Unbearbeitete Tickets\n *Kundenverluste"
   },
   {
+    "id": "bgwp-ablauforganisation-002",
     "bereich": "Ablauforganisation",
     "frage": "Welches Problem hat die DataSol?",
     "antwort": "Ein Kundenauftrag wurde wegen fehlender Bearbeitung während der Urlaubszeit nicht bearbeitet. Der Kunde hat ist vom Vertrag zurückgetreten."
   },
   {
+    "id": "bgwp-ablauforganisation-003",
     "bereich": "Ablauforganisation",
     "frage": "Welche langfristigen Folgen können durch schlechte Organisation entstehen?",
     "antwort": "*Imageschaden\n *Kündigung von Mitarbeitern\n *Verlust von Kunden\n *Kein Wachstum"
   },
   {
+    "id": "bgwp-ablauforganisation-004",
     "bereich": "Ablauforganisation",
     "frage": "War der verlorene Auftrag der DataSol ein Einzelfall?",
     "antwort": "Nein, es war ein strukurelles Organisationsproblem der Ablauforganisation."
   },
   {
+    "id": "bgwp-ablauforganisation-005",
     "bereich": "Ablauforganisation",
     "frage": "Welche weiteren organisatorischen Problem traten auf?",
     "antwort": "Angebot doppelt kalkuliert\n Service-Tickets blieben liegen\n Unklare Urlaubsvertretungen\n Widersprüchliche Informationen an den Kunden"
   },
   {
+    "id": "bgwp-ablauforganisation-006",
     "bereich": "Ablauforganisation",
     "frage": "Wie können Abläufe transparenter werden?",
     "antwort": "*Regelmäßige Meetings\n *Kommunikation von Abwesenheiten\n *Klare Statusübersicht von Projekten\n *Dokumentierte Prozesse\n"
   },
   {
+    "id": "bgwp-ablauforganisation-007",
     "bereich": "Ablauforganisation",
     "frage": "Wie lassen sich solche Probleme vermeiden?",
     "antwort": "*Klare Zuständigkeiten\n *Geregelte Vertretungen\n *Saubere Übergaben\n *Zentrales Ticketsystem oder Auftragssystem\n"
   },
   {
+    "id": "bgwp-ablauforganisation-008",
     "bereich": "Aufbau- und Ablauforganisation",
     "frage": "Was regelt die Aufbauorganisation?",
     "antwort": "Die Aufbauorganisation regelt die Struktur eines Unternehmens:\n\n *Abteilungen\n *Stellen\n *Hierarchien\n *Verantwortlichkeiten"
   },
   {
+    "id": "bgwp-ablauforganisation-009",
     "bereich": "Aufbau- und Ablauforganisation",
     "frage": "Was regelt die Ablauforganisation?",
     "antwort": "Die Ablauforganisation legt fest:\n *Reihenfolge der Arbeitsschritte\n *Zeitpunkt\n *Ort der Durchführung\n *Konkrete Durchführung der Arbeit\n\n Merksatz:\n Aufbauorganisation = Wer macht was?\n Ablauforganisation = Wie wird es gemacht?"
   },
-
   {
+    "id": "bgwp-ablauforganisation-010",
     "bereich": "Dilemma der Ablaufplanung",
     "frage": "Was ist das Dilemma der Ablaufplanung?",
     "antwort": "Konflikt zwischen: *hoher Wirtschaftlichkeit\n *hoher Servicequalität"
   },
   {
+    "id": "bgwp-ablauforganisation-011",
     "bereich": "Dilemma der Ablaufplanung",
     "frage": "Warum entsteht dieser Konflikt?",
     "antwort": "Volle Auslastung erhöht die Effizienz, lässt aber keinen Spielraum für unerwartete Probleme."
   },
   {
+    "id": "bgwp-ablauforganisation-012",
     "bereich": "Dilemma der Ablaufplanung",
     "frage": "Welche Lösungen gibt es?",
     "antwort": "*Mehr Personal\n *Backup-Ressourcen\n *Schulungen\n *Reserve-Kapazitäten"
   },
   {
+    "id": "bgwp-ablauforganisation-013",
     "bereich": "Prozesse",
     "frage": "Was ist ein Prozess nach ISO-9001?",
     "antwort": "Eine Reihe zusammenhängender Tätigkeiten, die Input in Output umwandeln und einen Mehrwert für den Kunden schaffen."
   },
   {
+    "id": "bgwp-ablauforganisation-014",
     "bereich": "Prozesskategorien",
     "frage": "Was sind Führungsprozesse?",
     "antwort": "Prozesse zur Planung, Steuerung und Kontrolle des Unternehmens.\n\n *Unternehmensstrategie\n *Qualitätsziele\n *Jahresplanung"
   },
   {
+    "id": "bgwp-ablauforganisation-015",
     "bereich": "Prozesskategorien",
     "frage": "Was sind Kernprozesse?",
     "antwort": "Kernprozesse sind die zentralen Prozesse eines Unternehmens, die direkt zur Wertschöpfung beitragen."
   },
   {
+    "id": "bgwp-ablauforganisation-016",
     "bereich": "Prozesskategorien",
     "frage": "Was sind Unterstützungsprozesse?",
     "antwort": "Prozesse, die die Kernprozesse unterszützen, aber keinen direkten Kundennutzen schaffen:\n\n *Personalverwaltung\n *Buchhaltung\n *IT-Support\n *Beschaffung"
   },
   {
+    "id": "bgwp-ablauforganisation-017",
     "bereich": "Wertschöpfungskettendiagramm",
     "frage": "Was ist ein WKD?",
     "antwort": "Eine grafische Übersicht aller wichtigen Unternehmensprozesse und ihre Zusammenhänge."
   },
   {
+    "id": "bgwp-ablauforganisation-018",
     "bereich": "Wertschöpfungskettendiagramm",
     "frage": "Wie wird das WKD noch genannt?",
     "antwort": "Wertschöpfungskettendiagramm = Prozesslandkarte"
   },
   {
+    "id": "bgwp-ablauforganisation-019",
     "bereich": "Wertschöpfungskettendiagramm",
     "frage": "Welche Prozessarten zeigt das WKD?",
     "antwort": "*Führungsprozesse\n *Kernprozesse\n *Unterstützungsprozesse\n"
   },
   {
+    "id": "bgwp-ablauforganisation-020",
     "bereich": "ePK - Ereignisgesteuerte Prozesskette",
     "frage": "Wozu dient die ePK?",
     "antwort": "Zur detaillierten Darstellung von Geschäftsprozessen und Arbeitsschritten."
   },
   {
+    "id": "bgwp-ablauforganisation-021",
     "bereich": "ePK - Ereignisgesteuerte Prozesskette",
     "frage": "Was ist ein Ereignis?",
     "antwort": "Ein Zustand, der eine Funktion auslöst oder deren Ereignis darstellt."
   },
   {
+    "id": "bgwp-ablauforganisation-022",
     "bereich": "ePK - Ereignisgesteuerte Prozesskette",
     "frage": "Was ist eine Funktion?",
     "antwort": "Eine auszuführende Tätigkeit oder Handlung."
   },
   {
+    "id": "bgwp-ablauforganisation-023",
     "bereich": "ePK - Ereignisgesteuerte Prozesskette",
     "frage": "Was ist eine Organisationseinheit?",
     "antwort": "Die Verantwortliche Stelle oder Person für eine Funktion."
   },
   {
+    "id": "bgwp-ablauforganisation-024",
     "bereich": "ePK - Ereignisgesteuerte Prozesskette",
     "frage": "Was ist ein Informationsobjekt?",
     "antwort": "Ein Dokument oder Datensatz, der für die Durchführung einer Funktion benötigt wird"
   },
   {
+    "id": "bgwp-ablauforganisation-025",
     "bereich": "ePK - Ereignisgesteuerte Prozesskette",
     "frage": "Womit beginnt und endet eine ePK?",
     "antwort": "Eine ePK beginnt und endet immer mit einem Ereignis."
   },
   {
-    "bereich": "ePK - Ereignisgesteuerte Prozesskette", 
+    "id": "bgwp-ablauforganisation-026",
+    "bereich": "ePK - Ereignisgesteuerte Prozesskette",
     "frage": "Wie wechseln sich Ereignisse und Funktionen in einer ePK ab?",
     "antwort": "Ereignis --> Funktion --> Ereignis --> Funktion"
   },
   {
+    "id": "bgwp-ablauforganisation-027",
     "bereich": "ePK - Ereignisgesteuerte Prozesskette",
     "frage": "Welche logischen Verknüpfungen gibt es in einer ePK und was bedeuten sie?",
     "antwort": "*A=UND-Verknüpfung: Alle Zweige werden parallel ausgeführt\n *V=ODER-Verknüpfung: Mindestens ein Zweig wird ausgeührt\n *X=XOR-Verknüpfung: Genau ein Zweig wird ausgeführt"
   },
   {
-    "bereich": "BPMN", 
+    "id": "bgwp-ablauforganisation-028",
+    "bereich": "BPMN",
     "frage": "Wofür steht BPMN?",
     "antwort": "Business Process Model and Notation"
   },
   {
+    "id": "bgwp-ablauforganisation-029",
     "bereich": "BPMN",
     "frage": "Warum wird BPMN häufig verwendet?",
     "antwort": "Zuständigkeiten und Übergaben zwischen Abteilungen können gut dargestellt werden."
   },
   {
+    "id": "bgwp-ablauforganisation-030",
     "bereich": "BPMN",
     "frage": "Welche Grundelemente gibt es in BPMN und wie sehen sie aus?",
     "antwort": "*Ereignis: Kreis\n *Aktivität: Rechteck mit abgerundeten Ecken\n *Gateway: Raute\n *Verbindungspfeil: Pfeil\n *Pool: Rechteck mit Name der Organisationseinheit\n *Lane: Unterteilung eines Pools"
   },
   {
+    "id": "bgwp-ablauforganisation-031",
     "bereich": "Prozessmanagement",
     "frage": "Was ist Prozessmanagement?",
     "antwort": "Prozessmanagement bezeichnet die Planung, Organisation, Steuerung und Verbesserung von Geschäftsprozessen."
   },
   {
+    "id": "bgwp-ablauforganisation-032",
     "bereich": "Prozessmanagement",
     "frage": "Welche Ziele verfolgt das Prozessmanagement?",
     "antwort": "*Höhere Qualität\n *Kürzere Bearbeitungszeiten\n *Geringere Kosten\n *Höhere Kundenzufriedenheit\n Mehr Transparenz"
   }
-  
 ]
-

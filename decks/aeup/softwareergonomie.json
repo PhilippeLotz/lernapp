@@ -1,33 +1,41 @@
 [
   {
+    "id": "aeup-softwareergonomie-001",
     "frage": "Erläutere das Gestaltgesetz:",
     "antwort": "Ähnlichkeit: Ähnliche Elemente werden als zusammengehörig wahrgenommen.\n Nähe: Elemente, die nahe beieinander liegen, werden als zusammengehörig wahrgenommen.\n Geschlossenheit: Unvollständige Figuren werden als vollständig wahrgenommen. Kontinuität: Linien und Kurven werden als fortlaufend wahrgenommen."
   },
   {
+    "id": "aeup-softwareergonomie-002",
     "frage": "Was ist Software-Ergonomie?",
     "antwort": "Software-Ergonomie ist die Disziplin, die sich mit der Gestaltung von Software für optimale Benutzererfahrung befasst."
   },
   {
+    "id": "aeup-softwareergonomie-003",
     "frage": "Was ist die Farblehre?",
     "antwort": "Die Farblehre ist die Lehre von den Eigenschaften und dem Verhalten von Farben.\n Sie umfasst Aspekte wie Farbwirkung, Farbharmonie und Farbkontraste."
   },
   {
+    "id": "aeup-softwareergonomie-004",
     "frage": "Was ist Typografie?",
     "antwort": "Passende Schrift: Schrift muss zum Inhalt passen.\n Wenige Schriftarten: Maximal 2-3 Schriftarten verwenden.\n Hierarchie: Unterschiede schaffen Aufmerksamkeit.\n Kontrast: Schriftfarbe muss sich vom Hintergrund abheben.\n Konsistenz: Schriftgrößen einheiltich verwenden.\n Stilvarianten: Fett und kursiv gezielt einsetzen.\n Ausrichtung: Linksbündig statt Blocksatz. Zeilenlänge: 50-75 Zeichen pro Zeile."
   },
   {
+    "id": "aeup-softwareergonomie-005",
     "frage": "Nenne die vier Phasen der Gestaltung:",
     "antwort": "1. Grobe Skizzen\n 2. strukturierte Wireframes \n 3. detaillierte Mockups\n 4. interaktive Prototypen"
   },
-    {
+  {
+    "id": "aeup-softwareergonomie-006",
     "frage": "Beschreibe User Experience (UX):",
     "antwort": "Vor der Nutzung: Vorstellungen, Erwartungen, Vorteile.\n Während der Nutzung: Zufriedenheit, Effektivität, Effizienz, Einfach zu lernen, Fehlertolerant.\n Nach der Nutzung: Gemachte Erfahrungen, emotionale Verbindungen."
   },
   {
+    "id": "aeup-softwareergonomie-007",
     "frage": "Nenne die fünf E's der Usability:",
     "antwort": "1. Effektivität \n 2. Effizienz \n 3. Einfach zu lernen \n 4. Error tolerance \n 5. Engaging"
   },
   {
+    "id": "aeup-softwareergonomie-008",
     "frage": "Beschreibe die Barrierefreiheit:",
     "antwort": "Auditiv: Hören eingeschränkt --> Untertitel, Transkripte, Audiodeskription.\n Visuell: Sehen eingeschränkt --> Screenreader, Farbkontraste.\n Physisch: Bewegung eingeschränkt --> Große Buttons, Sprachsteuerung.\n Kognitiv: Lernen/Verstehen eingeschränkt --> Einfache Sprache, klare Struktur.\n Sprache: Sprechen eingeschränkt --> Nicht nur Spracheingabe anbieten."
   }
