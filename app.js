@@ -59,6 +59,8 @@ const faecher = {
   }
 };
 
+const ALLE_THEMEN_WERT = "__alle__";
+
 
 // --------------------------------------------------
 // LERNKARTEN UND LERNSTAND
@@ -246,6 +248,28 @@ function mischenAktiv() {
 }
 
 
+function alleThemenAktiv() {
+  return themaAuswahl.value === ALLE_THEMEN_WERT;
+}
+
+
+function mischenSteuerungAktualisieren() {
+  if (!mischenCheckbox) {
+    return;
+  }
+
+  if (alleThemenAktiv()) {
+    mischenCheckbox.checked = true;
+    mischenCheckbox.disabled = true;
+    mischenCheckbox.title =
+      "Bei Alle Themen werden die Karten immer gemischt.";
+  } else {
+    mischenCheckbox.disabled = false;
+    mischenCheckbox.title = "";
+  }
+}
+
+
 function aktuelleLernartLesen() {
   if (!lernartAuswahl) {
     return "lernkarten";
@@ -360,6 +384,7 @@ function themenAktualisieren() {
     '<option value="">Thema auswählen</option>';
 
   if (!fachId) {
+    mischenSteuerungAktualisieren();
     return;
   }
 
@@ -370,7 +395,7 @@ function themenAktualisieren() {
     console.error(
       `Das Fach "${fachId}" ist nicht eingetragen.`
     );
-
+    mischenSteuerungAktualisieren();
     return;
   }
 
@@ -383,9 +408,16 @@ function themenAktualisieren() {
       "Noch keine Themen vorhanden";
 
     themaAuswahl.appendChild(option);
-
+    mischenSteuerungAktualisieren();
     return;
   }
+
+  const alleOption =
+    document.createElement("option");
+
+  alleOption.value = ALLE_THEMEN_WERT;
+  alleOption.textContent = "Alle Themen";
+  themaAuswahl.appendChild(alleOption);
 
   const sortierteThemen =
     [...fach.themen].sort(
@@ -393,9 +425,7 @@ function themenAktualisieren() {
         themaA.name.localeCompare(
           themaB.name,
           "de",
-          {
-            sensitivity: "base"
-          }
+          { sensitivity: "base" }
         )
     );
 
@@ -405,9 +435,10 @@ function themenAktualisieren() {
 
     option.value = thema.datei;
     option.textContent = thema.name;
-
     themaAuswahl.appendChild(option);
   });
+
+  mischenSteuerungAktualisieren();
 }
 
 
@@ -443,7 +474,10 @@ function kartenMischen(liste) {
 
 
 function lernrundeVorbereiten(liste) {
-  if (mischenAktiv()) {
+  if (
+    alleThemenAktiv() ||
+    mischenAktiv()
+  ) {
     return kartenMischen(liste);
   }
 
@@ -534,14 +568,23 @@ function lernrundeErstellen() {
 // LOCALSTORAGE
 // --------------------------------------------------
 
-function speicherSchluesselErstellen() {
+function speicherSchluesselErstellen(
+  karte = null,
+  themaOverride = ""
+) {
   const fach =
-    fachAuswahl.value;
+    karte?.__fach || fachAuswahl.value;
 
   const thema =
+    karte?.__thema ||
+    themaOverride ||
     themaAuswahl.value;
 
-  if (!fach || !thema) {
+  if (
+    !fach ||
+    !thema ||
+    thema === ALLE_THEMEN_WERT
+  ) {
     return "";
   }
 
@@ -549,10 +592,9 @@ function speicherSchluesselErstellen() {
 }
 
 
-function lernstandLaden() {
-  const speicherSchluessel =
-    speicherSchluesselErstellen();
-
+function lernstandAusSchluesselLaden(
+  speicherSchluessel
+) {
   if (!speicherSchluessel) {
     return {};
   }
@@ -568,9 +610,7 @@ function lernstandLaden() {
     }
 
     const daten =
-      JSON.parse(
-        gespeicherterText
-      );
+      JSON.parse(gespeicherterText);
 
     if (
       daten === null ||
@@ -581,7 +621,6 @@ function lernstandLaden() {
     }
 
     return daten;
-
   } catch (fehler) {
     console.error(
       "Lernstand konnte nicht geladen werden:",
@@ -593,38 +632,78 @@ function lernstandLaden() {
 }
 
 
+function lernstandLaden() {
+  if (!alleThemenAktiv()) {
+    return lernstandAusSchluesselLaden(
+      speicherSchluesselErstellen()
+    );
+  }
+
+  const fachId =
+    fachAuswahl.value;
+  const fach =
+    faecher[fachId];
+  const zusammengefuehrt = {};
+
+  if (!fach) {
+    return zusammengefuehrt;
+  }
+
+  fach.themen.forEach(thema => {
+    const schluessel =
+      speicherSchluesselErstellen(
+        null,
+        thema.datei
+      );
+
+    Object.assign(
+      zusammengefuehrt,
+      lernstandAusSchluesselLaden(
+        schluessel
+      )
+    );
+  });
+
+  return zusammengefuehrt;
+}
+
+
 function lernstandSpeichern(
   karte,
   bewertung
 ) {
-  const speicherSchluessel =
-    speicherSchluesselErstellen();
-
-  if (
-    !speicherSchluessel ||
-    !karte
-  ) {
+  if (!karte) {
     return;
   }
 
-  gespeicherterLernstand[
-    karte.id
-  ] = {
-    bewertung: bewertung,
+  const speicherSchluessel =
+    speicherSchluesselErstellen(karte);
 
+  if (!speicherSchluessel) {
+    return;
+  }
+
+  const eintrag = {
+    bewertung: bewertung,
     zuletztGelernt:
       new Date().toISOString()
   };
 
+  gespeicherterLernstand[karte.id] =
+    eintrag;
+
+  const themenLernstand =
+    lernstandAusSchluesselLaden(
+      speicherSchluessel
+    );
+
+  themenLernstand[karte.id] = eintrag;
+
   try {
     localStorage.setItem(
       speicherSchluessel,
-
-      JSON.stringify(
-        gespeicherterLernstand
-      )
+      JSON.stringify(themenLernstand)
     );
-
   } catch (fehler) {
     console.error(
       "Lernstand konnte nicht gespeichert werden:",
@@ -852,56 +931,115 @@ function sessionAuswertungAnzeigen() {
 // DECK LADEN
 // --------------------------------------------------
 
+async function deckDatenValidieren(
+  daten,
+  dateiName
+) {
+  if (!Array.isArray(daten)) {
+    throw new Error(
+      `${dateiName}: JSON enthält keine Kartenliste.`
+    );
+  }
+
+  const ungueltigeKarte =
+    daten.find(karte => (
+      !karte ||
+      typeof karte !== "object" ||
+      typeof karte.id !== "string" ||
+      !karte.id.trim() ||
+      typeof karte.frage !== "string" ||
+      typeof karte.antwort !== "string"
+    ));
+
+  if (ungueltigeKarte) {
+    throw new Error(
+      `${dateiName}: Mindestens eine Karte besitzt keine gültige ID, Frage oder Antwort.`
+    );
+  }
+}
+
+
+async function einzelnesDeckLaden(
+  fachId,
+  thema
+) {
+  const response =
+    await fetch(
+      `decks/${fachId}/${thema.datei}.json`
+    );
+
+  if (!response.ok) {
+    throw new Error(
+      `${thema.datei}.json: HTTP ${response.status}`
+    );
+  }
+
+  const daten =
+    await response.json();
+
+  deckDatenValidieren(
+    daten,
+    thema.datei
+  );
+
+  return daten.map(karte => ({
+    ...karte,
+    __fach: fachId,
+    __thema: thema.datei,
+    __themaName: thema.name
+  }));
+}
+
+
 async function deckLaden() {
-  const fach =
+  const fachId =
     fachAuswahl.value;
-
-  const thema =
+  const themaId =
     themaAuswahl.value;
+  const fach =
+    faecher[fachId];
 
-  if (!fach || !thema) {
+  if (
+    !fachId ||
+    !themaId ||
+    !fach
+  ) {
     return;
   }
 
   try {
-    const response =
-      await fetch(
-        `decks/${fach}/${thema}.json`
-      );
+    if (alleThemenAktiv()) {
+      const deckListen =
+        await Promise.all(
+          fach.themen.map(thema =>
+            einzelnesDeckLaden(
+              fachId,
+              thema
+            )
+          )
+        );
 
-    if (!response.ok) {
-      throw new Error(
-        `HTTP ${response.status}`
-      );
+      alleKarten =
+        deckListen.flat();
+    } else {
+      const thema =
+        fach.themen.find(
+          eintrag =>
+            eintrag.datei === themaId
+        );
+
+      if (!thema) {
+        throw new Error(
+          `Thema "${themaId}" wurde nicht gefunden.`
+        );
+      }
+
+      alleKarten =
+        await einzelnesDeckLaden(
+          fachId,
+          thema
+        );
     }
-
-    const daten =
-      await response.json();
-
-    if (!Array.isArray(daten)) {
-      throw new Error(
-        "JSON enthält keine Kartenliste."
-      );
-    }
-
-    const ungueltigeKarte =
-      daten.find(karte => (
-        !karte ||
-        typeof karte !== "object" ||
-        typeof karte.id !== "string" ||
-        !karte.id.trim() ||
-        typeof karte.frage !== "string" ||
-        typeof karte.antwort !== "string"
-      ));
-
-    if (ungueltigeKarte) {
-      throw new Error(
-        "Mindestens eine Karte besitzt keine gültige ID, Frage oder Antwort."
-      );
-    }
-
-    alleKarten =
-      [...daten];
 
     anzahlOriginal =
       alleKarten.length;
@@ -913,14 +1051,11 @@ async function deckLaden() {
       sichereKartenZaehlen();
 
     lernrundeErstellen();
-
     lernstandUebersichtAktualisieren();
-
     sessionStarten();
 
     alleWiederholenButton.disabled =
       alleKarten.length === 0;
-
     lernstandResetButton.disabled =
       alleKarten.length === 0;
 
@@ -930,7 +1065,6 @@ async function deckLaden() {
     }
 
     karteAnzeigen();
-
   } catch (fehler) {
     console.error(
       "Deck konnte nicht geladen werden:",
@@ -939,40 +1073,31 @@ async function deckLaden() {
 
     alleKarten = [];
     karten = [];
-
     aktuelleKarte = 0;
     anzahlOriginal = 0;
     anzahlSicher = 0;
-
     gespeicherterLernstand = {};
 
     bereich.textContent = "";
-
     frage.textContent =
       "Lernkarten konnten nicht geladen werden.";
-
     antwortText.textContent = "";
     fortschritt.textContent = "";
 
     lernbereicheVerstecken();
-
     lernstandUebersicht.classList.add(
       "versteckt"
     );
-
     sessionAuswertung.classList.add(
       "versteckt"
     );
 
     antwortButton.disabled = true;
     quizPruefenButton.disabled = true;
+    multipleChoicePruefenButton.disabled = true;
     weiterButton.disabled = true;
-
-    alleWiederholenButton.disabled =
-      true;
-
-    lernstandResetButton.disabled =
-      true;
+    alleWiederholenButton.disabled = true;
+    lernstandResetButton.disabled = true;
   }
 }
 
@@ -1128,21 +1253,24 @@ function karteAnzeigen() {
     return;
   }
 
-  if (
-    aktuelleKarte >= karten.length
-  ) {
+  if (aktuelleKarte >= karten.length) {
     aktuelleKarte = 0;
   }
 
   const karte =
     karten[aktuelleKarte];
 
-  bereich.textContent =
+  const bereichText =
     karte.bereich || "";
+
+  bereich.textContent =
+    alleThemenAktiv()
+      ? `${karte.__themaName} · ${bereichText}`
+          .replace(/ · $/, "")
+      : bereichText;
 
   frage.textContent =
     karte.frage;
-
   antwortText.textContent =
     karte.antwort;
 
@@ -1293,6 +1421,11 @@ function multipleChoiceZuruecksetzen() {
     "versteckt"
   );
 
+  multipleChoiceErgebnis.classList.remove(
+    "richtig",
+    "falsch"
+  );
+
   multipleChoiceRueckmeldung.textContent = "";
   multipleChoiceRichtigeAntwort.textContent = "";
   multipleChoiceErklaerung.textContent = "";
@@ -1377,6 +1510,14 @@ function multipleChoiceAntwortPruefen() {
       "Bitte wähle zuerst eine Antwort aus.";
 
     multipleChoiceErgebnis.classList.remove(
+      "richtig"
+    );
+
+    multipleChoiceErgebnis.classList.add(
+      "falsch"
+    );
+
+    multipleChoiceErgebnis.classList.remove(
       "versteckt"
     );
 
@@ -1405,30 +1546,6 @@ function multipleChoiceAntwortPruefen() {
     )
     .forEach(input => {
       input.disabled = true;
-
-      const label = input.closest(
-        ".multiple-choice-option"
-      );
-
-      label?.classList.remove(
-        "richtig",
-        "falsch"
-      );
-
-      if (input.value === richtigeOption?.id) {
-        label?.classList.add(
-          "richtig"
-        );
-      }
-
-      if (
-        input.checked &&
-        input.value !== richtigeOption?.id
-      ) {
-        label?.classList.add(
-          "falsch"
-        );
-      }
     });
 
   if (gewaehlteOption?.richtig === true) {
@@ -1437,6 +1554,14 @@ function multipleChoiceAntwortPruefen() {
 
     multipleChoiceRichtigeAntwort.textContent =
       "";
+
+    multipleChoiceErgebnis.classList.remove(
+      "falsch"
+    );
+
+    multipleChoiceErgebnis.classList.add(
+      "richtig"
+    );
 
     unsicherButton.disabled = true;
     teilweiseButton.disabled = false;
@@ -1447,6 +1572,14 @@ function multipleChoiceAntwortPruefen() {
 
     multipleChoiceRichtigeAntwort.textContent =
       `Richtige Antwort: ${richtigeOption?.text || "nicht gefunden"}`;
+
+    multipleChoiceErgebnis.classList.remove(
+      "richtig"
+    );
+
+    multipleChoiceErgebnis.classList.add(
+      "falsch"
+    );
 
     unsicherButton.disabled = false;
     teilweiseButton.disabled = true;
@@ -1538,19 +1671,18 @@ function alleKartenWiederholen() {
 
 
 function lernstandZuruecksetzen() {
-  const speicherSchluessel =
-    speicherSchluesselErstellen();
-
-  if (
-    !speicherSchluessel ||
-    alleKarten.length === 0
-  ) {
+  if (alleKarten.length === 0) {
     return;
   }
 
+  const alleAktiv =
+    alleThemenAktiv();
+
   const bestaetigt =
     window.confirm(
-      "Möchtest du den Lernstand für dieses Thema wirklich zurücksetzen?"
+      alleAktiv
+        ? "Möchtest du den Lernstand für alle Themen dieses Fachs wirklich zurücksetzen?"
+        : "Möchtest du den Lernstand für dieses Thema wirklich zurücksetzen?"
     );
 
   if (!bestaetigt) {
@@ -1558,38 +1690,48 @@ function lernstandZuruecksetzen() {
   }
 
   try {
-    localStorage.removeItem(
-      speicherSchluessel
-    );
+    if (alleAktiv) {
+      const fach =
+        faecher[fachAuswahl.value];
 
+      fach.themen.forEach(thema => {
+        const schluessel =
+          speicherSchluesselErstellen(
+            null,
+            thema.datei
+          );
+
+        localStorage.removeItem(
+          schluessel
+        );
+      });
+    } else {
+      localStorage.removeItem(
+        speicherSchluesselErstellen()
+      );
+    }
   } catch (fehler) {
     console.error(
       "Lernstand konnte nicht gelöscht werden:",
       fehler
     );
-
     return;
   }
 
   gespeicherterLernstand = {};
   anzahlSicher = 0;
-
   lernrundeErstellen();
 
   if (
     karten.length === 0 &&
     alleKarten.length > 0
   ) {
-    lernmodusAuswahl.value =
-      "offen";
-
+    lernmodusAuswahl.value = "offen";
     lernrundeErstellen();
   }
 
   lernstandUebersichtAktualisieren();
-
   sessionStarten();
-
   karteAnzeigen();
 }
 
@@ -2005,9 +2147,10 @@ fachAuswahl.addEventListener(
 themaAuswahl.addEventListener(
   "change",
   () => {
+    mischenSteuerungAktualisieren();
+
     if (!themaAuswahl.value) {
       ansichtZuruecksetzen();
-
       return;
     }
 

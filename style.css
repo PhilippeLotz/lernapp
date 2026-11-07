@@ -902,3 +902,122 @@ button:disabled {
     font-size: 16px;
   }
 }
+
+
+/* --------------------------------------------------
+   FOREST DARK THEME OVERRIDES
+-------------------------------------------------- */
+
+body {
+  background: #151a18;
+  color: #edf3ef;
+}
+
+.untertitel,
+.fortschritt,
+.label,
+#multipleChoiceOptionen legend {
+  color: #9eaaa3;
+}
+
+#bereich {
+  color: #c7d2cc;
+}
+
+.karte,
+.lernstand-uebersicht,
+.session-auswertung {
+  background: #202724;
+  border: 1px solid #303a35;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, .28);
+}
+
+select,
+#quizAntwort {
+  background: #29312d;
+  color: #edf3ef;
+  border-color: #3a4740;
+}
+
+#quizAntwort::placeholder {
+  color: #7f8b84;
+}
+
+button {
+  background: #3f8f68;
+  color: #fff;
+}
+
+button:hover {
+  background: #347858;
+}
+
+button:focus-visible,
+select:focus-visible,
+#quizAntwort:focus-visible {
+  outline-color: rgba(88, 155, 114, .42);
+}
+
+.sekundaer {
+  background: #36413c;
+}
+
+.sekundaer:hover {
+  background: #414f48;
+}
+
+.antwort,
+.multiple-choice-erklaerung {
+  border-top-color: #3a4740;
+}
+
+.multiple-choice-option {
+  background: #29312d;
+  color: #edf3ef;
+  border-color: #3a4740;
+}
+
+.multiple-choice-option:hover {
+  background: #303b35;
+  border-color: #589b72;
+}
+
+.multiple-choice-option:focus-within {
+  border-color: #589b72;
+  box-shadow: 0 0 0 3px rgba(88, 155, 114, .24);
+}
+
+.multiple-choice-option:has(input:checked) {
+  background: #33483d;
+  border-color: #589b72;
+}
+
+.multiple-choice-option.richtig {
+  background: #173d2a;
+  color: #edf3ef;
+  border-color: #4ade80;
+}
+
+.multiple-choice-option.falsch {
+  background: #431f24;
+  color: #edf3ef;
+  border-color: #f87171;
+}
+
+.multiple-choice-ergebnis {
+  background: #252d29;
+  color: #edf3ef;
+  border-color: #3a4740;
+}
+
+input[type="checkbox"],
+input[type="radio"],
+progress {
+  accent-color: #3f8f68;
+}
+
+@media (max-width: 520px) {
+  body {
+    background: #151a18;
+  }
+}
