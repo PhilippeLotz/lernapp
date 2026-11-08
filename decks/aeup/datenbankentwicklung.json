@@ -1,0 +1,251 @@
+[
+  {
+    "id": "aeup-datenbankentwicklung-001",
+    "bereich": "Überblick",
+    "frage": "Bringe die vier Phasen der Datenbankentwicklung in die richtige Reihenfolge.",
+    "antwort": "Anforderungsanalyse → Konzeptioneller Entwurf → Logischer Entwurf → Physische Phase",
+    "sortierung": {
+      "elemente": [
+        {
+          "id": "a",
+          "text": "Anforderungsanalyse"
+        },
+        {
+          "id": "b",
+          "text": "Konzeptioneller Entwurf"
+        },
+        {
+          "id": "c",
+          "text": "Logischer Entwurf"
+        },
+        {
+          "id": "d",
+          "text": "Physische Phase"
+        }
+      ],
+      "richtigeReihenfolge": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ]
+    }
+  },
+  {
+    "id": "aeup-datenbankentwicklung-002",
+    "bereich": "Anforderungsanalyse",
+    "frage": "Welche Tätigkeit gehört zur Anforderungsanalyse?",
+    "antwort": "Anforderungen der Nutzer ermitteln und abstimmen.",
+    "multipleChoice": {
+      "typ": "single",
+      "optionen": [
+        {
+          "id": "a",
+          "text": "Indizes und Speicherstrukturen im DBMS festlegen.",
+          "richtig": false
+        },
+        {
+          "id": "b",
+          "text": "Anforderungen der Nutzer ermitteln und abstimmen.",
+          "richtig": true
+        },
+        {
+          "id": "c",
+          "text": "Entitäten und Kardinalitäten modellieren.",
+          "richtig": false
+        },
+        {
+          "id": "d",
+          "text": "Tabellen normalisieren und Fremdschlüssel festlegen.",
+          "richtig": false
+        }
+      ]
+    }
+  },
+  {
+    "id": "aeup-datenbankentwicklung-003",
+    "bereich": "Anforderungsanalyse",
+    "frage": "Welche Dokumente entstehen bei der Anforderungsanalyse?",
+    "antwort": "Ein Anforderungskatalog sowie ein Lastenheft beziehungsweise Fachkonzept.",
+    "multipleChoice": {
+      "typ": "single",
+      "optionen": [
+        {
+          "id": "a",
+          "text": "Ein ER-Diagramm und ein konzeptionelles Datenmodell.",
+          "richtig": false
+        },
+        {
+          "id": "b",
+          "text": "Ein Relationsmodell mit Primär- und Fremdschlüsseln.",
+          "richtig": false
+        },
+        {
+          "id": "c",
+          "text": "Ein SQL-DDL und ein physisches Datenbankschema.",
+          "richtig": false
+        },
+        {
+          "id": "d",
+          "text": "Ein Anforderungskatalog sowie ein Lastenheft beziehungsweise Fachkonzept.",
+          "richtig": true
+        }
+      ]
+    }
+  },
+  {
+    "id": "aeup-datenbankentwicklung-004",
+    "bereich": "Konzeptioneller Entwurf",
+    "frage": "Welche Tätigkeit gehört zum konzeptionellen Entwurf?",
+    "antwort": "Entitäten, Attribute, Beziehungen und Kardinalitäten festlegen.",
+    "multipleChoice": {
+      "typ": "single",
+      "optionen": [
+        {
+          "id": "a",
+          "text": "Entitäten, Attribute, Beziehungen und Kardinalitäten festlegen.",
+          "richtig": true
+        },
+        {
+          "id": "b",
+          "text": "Benutzerrechte und Speicherstrukturen im DBMS optimieren.",
+          "richtig": false
+        },
+        {
+          "id": "c",
+          "text": "Das Modell normalisieren und in Tabellen überführen.",
+          "richtig": false
+        },
+        {
+          "id": "d",
+          "text": "Nutzeranforderungen ermitteln und im Lastenheft dokumentieren.",
+          "richtig": false
+        }
+      ]
+    }
+  },
+  {
+    "id": "aeup-datenbankentwicklung-005",
+    "bereich": "Konzeptioneller Entwurf",
+    "frage": "Welches Ergebnis entsteht beim konzeptionellen Entwurf?",
+    "antwort": "Ein ER-Diagramm beziehungsweise ER-Modell und damit ein konzeptionelles Datenmodell.",
+    "multipleChoice": {
+      "typ": "single",
+      "optionen": [
+        {
+          "id": "a",
+          "text": "Ein Anforderungskatalog und ein Lastenheft.",
+          "richtig": false
+        },
+        {
+          "id": "b",
+          "text": "Ein fertiges SQL-DDL mit Speicherstrukturen und Indizes.",
+          "richtig": false
+        },
+        {
+          "id": "c",
+          "text": "Ein ER-Diagramm beziehungsweise ER-Modell und damit ein konzeptionelles Datenmodell.",
+          "richtig": true
+        },
+        {
+          "id": "d",
+          "text": "Eine implementierte Datenbank mit eingerichteten Benutzerrechten.",
+          "richtig": false
+        }
+      ]
+    }
+  },
+  {
+    "id": "aeup-datenbankentwicklung-006",
+    "bereich": "Logischer Entwurf",
+    "frage": "Welche Tätigkeit gehört zum logischen Entwurf?",
+    "antwort": "Das Modell in ein relationales Schema überführen und normalisieren.",
+    "multipleChoice": {
+      "typ": "single",
+      "optionen": [
+        {
+          "id": "a",
+          "text": "Anforderungen der Nutzer ermitteln und abstimmen.",
+          "richtig": false
+        },
+        {
+          "id": "b",
+          "text": "Das Modell in ein relationales Schema überführen und normalisieren.",
+          "richtig": true
+        },
+        {
+          "id": "c",
+          "text": "Indizes, Speicherstrukturen und Benutzerrechte optimieren.",
+          "richtig": false
+        },
+        {
+          "id": "d",
+          "text": "Entitäten und Kardinalitäten unabhängig vom DBMS bestimmen.",
+          "richtig": false
+        }
+      ]
+    }
+  },
+  {
+    "id": "aeup-datenbankentwicklung-007",
+    "bereich": "Physische Phase",
+    "frage": "Welche Tätigkeit gehört zur physischen Phase?",
+    "antwort": "Die Datenbank im gewählten DBMS umsetzen und Indizes sowie Speicherstrukturen festlegen.",
+    "multipleChoice": {
+      "typ": "single",
+      "optionen": [
+        {
+          "id": "a",
+          "text": "Ein fachliches ER-Modell unabhängig vom DBMS erstellen.",
+          "richtig": false
+        },
+        {
+          "id": "b",
+          "text": "Anforderungen, Abläufe und Systemgrenzen erfassen.",
+          "richtig": false
+        },
+        {
+          "id": "c",
+          "text": "Ein relationales Schema bilden und normalisieren.",
+          "richtig": false
+        },
+        {
+          "id": "d",
+          "text": "Die Datenbank im gewählten DBMS umsetzen und Indizes sowie Speicherstrukturen festlegen.",
+          "richtig": true
+        }
+      ]
+    }
+  },
+  {
+    "id": "aeup-datenbankentwicklung-008",
+    "bereich": "Physische Phase",
+    "frage": "Welches Ergebnis entsteht in der physischen Phase?",
+    "antwort": "Ein physisches Datenmodell beziehungsweise das konkrete SQL-DDL oder Datenbankschema.",
+    "multipleChoice": {
+      "typ": "single",
+      "optionen": [
+        {
+          "id": "a",
+          "text": "Ein physisches Datenmodell beziehungsweise das konkrete SQL-DDL oder Datenbankschema.",
+          "richtig": true
+        },
+        {
+          "id": "b",
+          "text": "Ein Lastenheft beziehungsweise Fachkonzept.",
+          "richtig": false
+        },
+        {
+          "id": "c",
+          "text": "Ein ER-Diagramm ohne Bezug zu einem DBMS.",
+          "richtig": false
+        },
+        {
+          "id": "d",
+          "text": "Ein relationales Schema ohne technische Umsetzung.",
+          "richtig": false
+        }
+      ]
+    }
+  }
+]

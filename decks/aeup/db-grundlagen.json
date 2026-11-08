@@ -1,0 +1,217 @@
+[
+  {
+    "id": "aeup-db-grundlagen-001",
+    "bereich": "Einführung",
+    "frage": "Welche Probleme entstehen ohne eine strukturierte Datenorganisation?",
+    "antwort": "Datenchaos, Redundanzen, Widersprüche und aufwendige Datenpflege."
+  },
+  {
+    "id": "aeup-db-grundlagen-002",
+    "bereich": "Einführung",
+    "frage": "Was bedeutet integrierte Informationsverarbeitung?",
+    "antwort": "Vorgangsintegration verbindet Prozesse über Abteilungen hinweg. Datenintegration ermöglicht verschiedenen Prozessen den Zugriff auf eine gemeinsame Datenbasis."
+  },
+  {
+    "id": "aeup-db-grundlagen-003",
+    "bereich": "Einführung",
+    "frage": "Was bilden Datenbasis und DBMS zusammen?",
+    "antwort": "Datenbasis und Datenbankmanagementsystem (DBMS) bilden zusammen eine Datenbank."
+  },
+  {
+    "id": "aeup-db-grundlagen-004",
+    "bereich": "DBMS",
+    "frage": "Welche fünf Kernfunktionen hat ein DBMS?",
+    "antwort": "Datendefinition, Datenmanipulation, Datenabfrage, Datenkontrolle und Datenübertragung.",
+    "multipleChoice": {
+      "typ": "single",
+      "optionen": [
+        {
+          "id": "a",
+          "text": "Datendefinition, Datenmanipulation, Datenabfrage, Datenkontrolle und Datenübertragung.",
+          "richtig": true
+        },
+        {
+          "id": "b",
+          "text": "Datensammlung, Datenberechnung, Datenformatierung, Datenanzeige und Datenvernichtung.",
+          "richtig": false
+        },
+        {
+          "id": "c",
+          "text": "Programmierung, Kompilierung, Installation, Wartung und Dokumentation.",
+          "richtig": false
+        },
+        {
+          "id": "d",
+          "text": "Planung, Beschaffung, Produktion, Vertrieb und Buchhaltung.",
+          "richtig": false
+        }
+      ]
+    }
+  },
+  {
+    "id": "aeup-db-grundlagen-005",
+    "bereich": "DBMS",
+    "frage": "Was bedeuten die fünf Kernfunktionen eines DBMS?",
+    "antwort": "Datendefinition: Struktur festlegen. Datenmanipulation: Daten eingeben, ändern und löschen. Datenabfrage: Daten gezielt abrufen. Datenkontrolle: Zugriffsrechte verwalten. Datenübertragung: Daten sichern, exportieren und importieren."
+  },
+  {
+    "id": "aeup-db-grundlagen-006",
+    "bereich": "Datenbankmodelle",
+    "frage": "Was ist ein Datenbankmodell?",
+    "antwort": "Der Bauplan einer Datenbank. Es beschreibt die Struktur der Daten und ihre Beziehungen untereinander."
+  },
+  {
+    "id": "aeup-db-grundlagen-007",
+    "bereich": "Datenbankmodelle",
+    "frage": "Welches Datenbankmodell organisiert Daten in Tabellen beziehungsweise Relationen?",
+    "antwort": "Das relationale Datenbankmodell.",
+    "multipleChoice": {
+      "typ": "single",
+      "optionen": [
+        {
+          "id": "a",
+          "text": "Das hierarchische Datenbankmodell.",
+          "richtig": false
+        },
+        {
+          "id": "b",
+          "text": "Das Netzwerkmodell.",
+          "richtig": false
+        },
+        {
+          "id": "c",
+          "text": "Das relationale Datenbankmodell.",
+          "richtig": true
+        },
+        {
+          "id": "d",
+          "text": "Das objektorientierte Datenbankmodell.",
+          "richtig": false
+        }
+      ]
+    }
+  },
+  {
+    "id": "aeup-db-grundlagen-008",
+    "bereich": "Datenbankmodelle",
+    "frage": "Was kennzeichnet das relationale Datenbankmodell?",
+    "antwort": "Daten werden in Tabellen beziehungsweise Relationen organisiert und typischerweise mit SQL verarbeitet."
+  },
+  {
+    "id": "aeup-db-grundlagen-009",
+    "bereich": "Datenbankmodelle",
+    "frage": "Wofür eignen sich NoSQL-Datenbanken?",
+    "antwort": "Für große oder unstrukturierte Datenmengen und Anforderungen, die relationale Systeme nicht optimal abdecken. Beispiele sind Key-Value-, Dokumenten- und Graphdatenbanken."
+  },
+  {
+    "id": "aeup-db-grundlagen-010",
+    "bereich": "Ziele der Datenorganisation",
+    "frage": "Welcher Begriff gehört nicht zu den neun Zielen der Datenorganisation?",
+    "antwort": "Datenvervielfachung.",
+    "multipleChoice": {
+      "typ": "single",
+      "optionen": [
+        {
+          "id": "a",
+          "text": "Datenintegrität",
+          "richtig": false
+        },
+        {
+          "id": "b",
+          "text": "Redundanzfreiheit",
+          "richtig": false
+        },
+        {
+          "id": "c",
+          "text": "Mehrfachzugriff",
+          "richtig": false
+        },
+        {
+          "id": "d",
+          "text": "Datenvervielfachung.",
+          "richtig": true
+        }
+      ]
+    }
+  },
+  {
+    "id": "aeup-db-grundlagen-011",
+    "bereich": "Ziele der Datenorganisation",
+    "frage": "Was bedeuten Datenintegrität und Redundanzfreiheit?",
+    "antwort": "Datenintegrität bedeutet, dass Daten vollständig, korrekt und widerspruchsfrei sind. Redundanzfreiheit bedeutet, dass Informationen möglichst nur einmal gespeichert werden."
+  },
+  {
+    "id": "aeup-db-grundlagen-012",
+    "bereich": "Ziele der Datenorganisation",
+    "frage": "Welcher Zielkonflikt kann bei Datenbanken auftreten?",
+    "antwort": "Stärkere Vertraulichkeit und Sicherheit können durch zusätzlichen Rechenaufwand die Effizienz verringern.",
+    "multipleChoice": {
+      "typ": "single",
+      "optionen": [
+        {
+          "id": "a",
+          "text": "Stärkere Vertraulichkeit und Sicherheit können durch zusätzlichen Rechenaufwand die Effizienz verringern.",
+          "richtig": true
+        },
+        {
+          "id": "b",
+          "text": "Eine höhere Datenintegrität verhindert grundsätzlich den Mehrfachzugriff.",
+          "richtig": false
+        },
+        {
+          "id": "c",
+          "text": "Redundanzfreiheit führt automatisch zu mehr widersprüchlichen Daten.",
+          "richtig": false
+        },
+        {
+          "id": "d",
+          "text": "Eine höhere Verfügbarkeit macht Datensicherungen grundsätzlich überflüssig.",
+          "richtig": false
+        }
+      ]
+    }
+  },
+  {
+    "id": "aeup-db-grundlagen-013",
+    "bereich": "ACID",
+    "frage": "Wofür steht ACID?",
+    "antwort": "Atomicity (Atomarität), Consistency (Konsistenz), Isolation und Durability (Dauerhaftigkeit).",
+    "multipleChoice": {
+      "typ": "single",
+      "optionen": [
+        {
+          "id": "a",
+          "text": "Atomicity (Atomarität), Consistency (Konsistenz), Isolation und Durability (Dauerhaftigkeit).",
+          "richtig": true
+        },
+        {
+          "id": "b",
+          "text": "Access, Control, Integration und Definition.",
+          "richtig": false
+        },
+        {
+          "id": "c",
+          "text": "Availability, Consistency, Integrity und Distribution.",
+          "richtig": false
+        },
+        {
+          "id": "d",
+          "text": "Atomicity, Control, Independence und Definition.",
+          "richtig": false
+        }
+      ]
+    }
+  },
+  {
+    "id": "aeup-db-grundlagen-014",
+    "bereich": "ACID",
+    "frage": "Was bedeuten Atomicity und Consistency?",
+    "antwort": "Atomicity: Eine Transaktion wird vollständig oder gar nicht ausgeführt. Consistency: Die Datenbank bleibt nach einer Transaktion gültig und widerspruchsfrei."
+  },
+  {
+    "id": "aeup-db-grundlagen-015",
+    "bereich": "ACID",
+    "frage": "Was bedeuten Isolation und Durability?",
+    "antwort": "Isolation: Gleichzeitige Transaktionen beeinflussen sich nicht gegenseitig. Durability: Erfolgreich gespeicherte Änderungen bleiben auch nach einem Systemausfall erhalten."
+  }
+]

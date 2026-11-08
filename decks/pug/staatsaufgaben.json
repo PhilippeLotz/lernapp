@@ -2,61 +2,361 @@
   {
     "id": "pug-staatsaufgaben-001",
     "frage": "Was ist ein Staat?",
-    "antwort": "Ein Staat ist eine politische Organisation, die aus drei grundlegenden Elementen besteht:\n 1. Staatsgebiet\n 2. Staatsvolk\n 3. Staatsgewalt"
+    "antwort": "Ein Staat ist eine politische Organisation, die aus drei grundlegenden Elementen besteht:\n 1. Staatsgebiet\n 2. Staatsvolk\n 3. Staatsgewalt",
+    "multipleChoice": {
+      "typ": "single",
+      "optionen": [
+        {
+          "id": "a",
+          "text": "Staatsgebiet, Staatsvolk und Staatsgewalt",
+          "richtig": true
+        },
+        {
+          "id": "b",
+          "text": "Regierung, Parteien und Wahlen",
+          "richtig": false
+        },
+        {
+          "id": "c",
+          "text": "Bevölkerung, Wirtschaft und Währung",
+          "richtig": false
+        },
+        {
+          "id": "d",
+          "text": "Verfassung, Parlament und Gerichte",
+          "richtig": false
+        }
+      ]
+    }
   },
   {
     "id": "pug-staatsaufgaben-002",
     "frage": "Was bedeutet Staatsvolk?",
-    "antwort": "Das Staatsvolk umfasst alle Menschen, die die Staatsangehörigkeit eines bestimmten Staates besitzen. Es ist das rechtliche Band, das die Bürger mit dem Staat verbindet."
+    "antwort": "Das Staatsvolk umfasst alle Menschen, die die Staatsangehörigkeit eines bestimmten Staates besitzen. Es ist das rechtliche Band, das die Bürger mit dem Staat verbindet.",
+    "multipleChoice": {
+      "typ": "single",
+      "optionen": [
+        {
+          "id": "a",
+          "text": "Alle Menschen, die sich gerade innerhalb des Staatsgebiets aufhalten",
+          "richtig": false
+        },
+        {
+          "id": "b",
+          "text": "Alle Menschen, die die Staatsangehörigkeit des Staates besitzen",
+          "richtig": true
+        },
+        {
+          "id": "c",
+          "text": "Nur die gewählten Vertreter und Beschäftigten des Staates",
+          "richtig": false
+        },
+        {
+          "id": "d",
+          "text": "Alle volljährigen Einwohner des Staates",
+          "richtig": false
+        }
+      ]
+    }
   },
   {
     "id": "pug-staatsaufgaben-003",
     "frage": "Was bedeutet Staatsgebiet?",
-    "antwort": "Das Staatsgebiet umfasst das räumlich abgegrenzte Gebiet, auf dem die Staatsgewalt ausgeübt wird."
+    "antwort": "Das Staatsgebiet umfasst das räumlich abgegrenzte Gebiet, auf dem die Staatsgewalt ausgeübt wird.",
+    "multipleChoice": {
+      "typ": "single",
+      "optionen": [
+        {
+          "id": "a",
+          "text": "Das Gebiet, in dem ausschließlich die Staatsangehörigen wohnen",
+          "richtig": false
+        },
+        {
+          "id": "b",
+          "text": "Alle Grundstücke, die dem Staat gehören",
+          "richtig": false
+        },
+        {
+          "id": "c",
+          "text": "Das räumlich abgegrenzte Gebiet, auf dem die Staatsgewalt ausgeübt wird",
+          "richtig": true
+        },
+        {
+          "id": "d",
+          "text": "Das Gebiet aller Staaten eines Verteidigungsbündnisses",
+          "richtig": false
+        }
+      ]
+    }
   },
   {
     "id": "pug-staatsaufgaben-004",
     "frage": "Was bedeutet Staatsgewalt?",
-    "antwort": "Die Staatsgewalt ist die Befugnis des Staates, Gesetze zu erlassen und durchzusetzen. Sie umfasst die legislative, exekutive und judikative Gewalt."
+    "antwort": "Die Staatsgewalt ist die Befugnis des Staates, Gesetze zu erlassen und durchzusetzen. Sie umfasst die legislative, exekutive und judikative Gewalt.",
+    "multipleChoice": {
+      "typ": "single",
+      "optionen": [
+        {
+          "id": "a",
+          "text": "Die Befugnis der Bürger, Gesetze eigenständig außer Kraft zu setzen",
+          "richtig": false
+        },
+        {
+          "id": "b",
+          "text": "Die militärische Stärke eines Staates gegenüber anderen Staaten",
+          "richtig": false
+        },
+        {
+          "id": "c",
+          "text": "Die Herrschaft einer einzelnen Person über das Staatsgebiet",
+          "richtig": false
+        },
+        {
+          "id": "d",
+          "text": "Die Befugnis des Staates, Gesetze zu erlassen und durchzusetzen",
+          "richtig": true
+        }
+      ]
+    }
   },
   {
     "id": "pug-staatsaufgaben-005",
     "frage": "Welche Aufgaben hat der Staat im Bereich der äußeren Sicherheit?",
-    "antwort": "Der Staat hat die Aufgabe, die äußere Sicherheit seines Territoriums zu gewährleisten.\n Dazu gehören Maßnahmen zur Verteidigung gegen auswärtige Angriffe sowie Diplomatie und internationale Verteidigungsbündnisse."
+    "antwort": "Der Staat hat die Aufgabe, die äußere Sicherheit seines Territoriums zu gewährleisten.\n Dazu gehören Maßnahmen zur Verteidigung gegen auswärtige Angriffe sowie Diplomatie und internationale Verteidigungsbündnisse.",
+    "multipleChoice": {
+      "typ": "single",
+      "optionen": [
+        {
+          "id": "a",
+          "text": "Verteidigung gegen Angriffe von außen, Diplomatie und internationale Verteidigungsbündnisse",
+          "richtig": true
+        },
+        {
+          "id": "b",
+          "text": "Nur die Verfolgung von Straftaten innerhalb des Staatsgebiets",
+          "richtig": false
+        },
+        {
+          "id": "c",
+          "text": "Ausschließlich die Kontrolle des internationalen Warenverkehrs",
+          "richtig": false
+        },
+        {
+          "id": "d",
+          "text": "Die Verwaltung von Schulen, Krankenhäusern und Kindergärten",
+          "richtig": false
+        }
+      ]
+    }
   },
   {
     "id": "pug-staatsaufgaben-006",
     "frage": "Welche Einrichtungen sind für die innere Sicherheit zuständig?",
-    "antwort": "Polizei und Gerichte sorgen für Sicherheit, Ordnung und Rechtsdurchsetzung im Staat."
+    "antwort": "Polizei und Gerichte sorgen für Sicherheit, Ordnung und Rechtsdurchsetzung im Staat.",
+    "multipleChoice": {
+      "typ": "single",
+      "optionen": [
+        {
+          "id": "a",
+          "text": "Bundeswehr und diplomatische Vertretungen",
+          "richtig": false
+        },
+        {
+          "id": "b",
+          "text": "Polizei und Gerichte",
+          "richtig": true
+        },
+        {
+          "id": "c",
+          "text": "Schulen und Universitäten",
+          "richtig": false
+        },
+        {
+          "id": "d",
+          "text": "Unternehmen und Gewerkschaften",
+          "richtig": false
+        }
+      ]
+    }
   },
   {
     "id": "pug-staatsaufgaben-007",
     "frage": "Warum ist die Rechtsordnung eine Staatsaufgabe?",
-    "antwort": "Der Staat schafft, erhält und entwickelt Gesetze, die das Zusammenleben der Menschen regeln. Die Rechtsordnung sorgt für Gerechtigkeit und schützt die Rechte der Bürger."
+    "antwort": "Der Staat schafft, erhält und entwickelt Gesetze, die das Zusammenleben der Menschen regeln. Die Rechtsordnung sorgt für Gerechtigkeit und schützt die Rechte der Bürger.",
+    "multipleChoice": {
+      "typ": "single",
+      "optionen": [
+        {
+          "id": "a",
+          "text": "Weil der Staat dadurch nur seine Einnahmen erhöhen kann",
+          "richtig": false
+        },
+        {
+          "id": "b",
+          "text": "Weil Gesetze ausschließlich wirtschaftliche Abläufe regeln",
+          "richtig": false
+        },
+        {
+          "id": "c",
+          "text": "Weil Gesetze das Zusammenleben regeln, Gerechtigkeit fördern und Bürgerrechte schützen",
+          "richtig": true
+        },
+        {
+          "id": "d",
+          "text": "Weil dadurch private Vereinbarungen grundsätzlich überflüssig werden",
+          "richtig": false
+        }
+      ]
+    }
   },
   {
     "id": "pug-staatsaufgaben-008",
     "frage": "Was sind öffentliche Leistungen des Staates?",
-    "antwort": "Der Staat stellt wichtige Infrastrukturen und Dienstleistungen bereit, wie Bildung, Gesundheitsversorgung, Verkehrssysteme und soziale Sicherheit."
+    "antwort": "Der Staat stellt wichtige Infrastrukturen und Dienstleistungen bereit, wie Bildung, Gesundheitsversorgung, Verkehrssysteme und soziale Sicherheit.",
+    "multipleChoice": {
+      "typ": "single",
+      "optionen": [
+        {
+          "id": "a",
+          "text": "Nur Leistungen, die von privaten Unternehmen mit Gewinn angeboten werden",
+          "richtig": false
+        },
+        {
+          "id": "b",
+          "text": "Ausschließlich Geldzahlungen an alle Bürger",
+          "richtig": false
+        },
+        {
+          "id": "c",
+          "text": "Nur Polizei, Gerichte und Bundeswehr",
+          "richtig": false
+        },
+        {
+          "id": "d",
+          "text": "Infrastrukturen und Dienstleistungen wie Bildung, Gesundheitsversorgung, Verkehr und soziale Sicherheit",
+          "richtig": true
+        }
+      ]
+    }
   },
   {
     "id": "pug-staatsaufgaben-009",
     "frage": "Was bedeutet soziale Sicherung?",
-    "antwort": "Der Staat schützt Menschen vor sozialen Risiken und unterstützt sie in besonderen Lebenslagen."
+    "antwort": "Der Staat schützt Menschen vor sozialen Risiken und unterstützt sie in besonderen Lebenslagen.",
+    "multipleChoice": {
+      "typ": "single",
+      "optionen": [
+        {
+          "id": "a",
+          "text": "Der Staat schützt Menschen vor sozialen Risiken und unterstützt sie in besonderen Lebenslagen",
+          "richtig": true
+        },
+        {
+          "id": "b",
+          "text": "Der Staat garantiert jedem Bürger unabhängig von der Situation dasselbe Einkommen",
+          "richtig": false
+        },
+        {
+          "id": "c",
+          "text": "Der Staat schützt ausschließlich Unternehmen vor wirtschaftlichen Verlusten",
+          "richtig": false
+        },
+        {
+          "id": "d",
+          "text": "Der Staat übernimmt grundsätzlich alle privaten Ausgaben seiner Bürger",
+          "richtig": false
+        }
+      ]
+    }
   },
   {
     "id": "pug-staatsaufgaben-010",
     "frage": "Warum fördert der Staat die Wirtschaft?",
-    "antwort": "Um wirtschaftliche Entwicklung, Wohlstand und Arbeitsplätze zu sichern."
+    "antwort": "Um wirtschaftliche Entwicklung, Wohlstand und Arbeitsplätze zu sichern.",
+    "multipleChoice": {
+      "typ": "single",
+      "optionen": [
+        {
+          "id": "a",
+          "text": "Um den Wettbewerb vollständig abzuschaffen",
+          "richtig": false
+        },
+        {
+          "id": "b",
+          "text": "Um wirtschaftliche Entwicklung, Wohlstand und Arbeitsplätze zu sichern",
+          "richtig": true
+        },
+        {
+          "id": "c",
+          "text": "Um alle Unternehmen durch staatliche Betriebe zu ersetzen",
+          "richtig": false
+        },
+        {
+          "id": "d",
+          "text": "Um ausschließlich die Steuereinnahmen kurzfristig zu erhöhen",
+          "richtig": false
+        }
+      ]
+    }
   },
   {
     "id": "pug-staatsaufgaben-011",
     "frage": "Welche Aufgaben hat der Staat im Bereich der Umwelt?",
-    "antwort": "Der Staat schützt die Umwelt durch Gesetze und Maßnahmen, um die natürlichen Lebensgrundlagen zu erhalten."
+    "antwort": "Der Staat schützt die Umwelt durch Gesetze und Maßnahmen, um die natürlichen Lebensgrundlagen zu erhalten.",
+    "multipleChoice": {
+      "typ": "single",
+      "optionen": [
+        {
+          "id": "a",
+          "text": "Er überlässt den Umweltschutz ausschließlich freiwilligen Entscheidungen von Unternehmen",
+          "richtig": false
+        },
+        {
+          "id": "b",
+          "text": "Er schützt nur staatseigene Flächen vor Umweltschäden",
+          "richtig": false
+        },
+        {
+          "id": "c",
+          "text": "Er schützt durch Gesetze und Maßnahmen die Umwelt und die natürlichen Lebensgrundlagen",
+          "richtig": true
+        },
+        {
+          "id": "d",
+          "text": "Er verhindert grundsätzlich jede wirtschaftliche Nutzung natürlicher Ressourcen",
+          "richtig": false
+        }
+      ]
+    }
   },
   {
     "id": "pug-staatsaufgaben-012",
     "frage": "Warum braucht der Staat eine öffentliche Verwaltung?",
-    "antwort": "Die öffentliche Verwaltung sorgt dafür, dass staatliche Aufgaben organisiert geplant und effizient umgesetzt werden."
+    "antwort": "Die öffentliche Verwaltung sorgt dafür, dass staatliche Aufgaben organisiert geplant und effizient umgesetzt werden.",
+    "multipleChoice": {
+      "typ": "single",
+      "optionen": [
+        {
+          "id": "a",
+          "text": "Damit politische Parteien ihre internen Aufgaben organisieren können",
+          "richtig": false
+        },
+        {
+          "id": "b",
+          "text": "Damit Gerichte neue Gesetze ohne Parlament beschließen können",
+          "richtig": false
+        },
+        {
+          "id": "c",
+          "text": "Damit private Unternehmen staatliche Entscheidungen kontrollieren",
+          "richtig": false
+        },
+        {
+          "id": "d",
+          "text": "Damit staatliche Aufgaben organisiert, geplant und effizient umgesetzt werden",
+          "richtig": true
+        }
+      ]
+    }
   }
 ]

@@ -19,6 +19,14 @@ const faecher = {
       {
         name: "Daten",
         datei: "daten"
+      },
+      {
+        name: "Datenbankentwicklung",
+        datei: "datenbankentwicklung"
+      },
+      {
+        name: "Datenbank-Grundlagen",
+        datei: "db-grundlagen"
       }
     ]
   },
