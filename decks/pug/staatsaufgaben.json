@@ -359,4 +359,186 @@
       ]
     }
   }
+
+  ,
+{
+  "id": "pug-staatsaufgaben-013",
+  "frage": "Was versteht man unter einem Failed State?",
+  "antwort": "Ein Failed State ist ein Staat, dessen Staatsgewalt stark geschwächt oder teilweise zusammengebrochen ist. Er kann grundlegende Staatsaufgaben wie Sicherheit, Rechtsordnung und Versorgung der Bevölkerung nicht mehr zuverlässig erfüllen.",
+  "multipleChoice": {
+    "typ": "single",
+    "optionen": [
+      {
+        "id": "a",
+        "text": "Ein Staat, der keine eigene Währung besitzt",
+        "richtig": false
+      },
+      {
+        "id": "b",
+        "text": "Ein Staat, der grundlegende Staatsaufgaben nicht mehr zuverlässig erfüllen kann",
+        "richtig": true
+      },
+      {
+        "id": "c",
+        "text": "Ein Staat ohne Mitgliedschaft in internationalen Organisationen",
+        "richtig": false
+      },
+      {
+        "id": "d",
+        "text": "Ein Staat mit einer schwachen Wirtschaft",
+        "richtig": false
+      }
+    ]
+  }
+},
+{
+  "id": "pug-staatsaufgaben-014",
+  "frage": "Welche Merkmale können auf einen Failed State hinweisen?",
+  "antwort": "Typische Merkmale sind der Verlust staatlicher Kontrolle, fehlende innere Sicherheit, eine schwache Rechtsordnung, eine nicht funktionierende Verwaltung und die unzureichende Versorgung der Bevölkerung.",
+  "multipleChoice": {
+    "typ": "single",
+    "optionen": [
+      {
+        "id": "a",
+        "text": "Hohe Staatsausgaben und eine große Verwaltung",
+        "richtig": false
+      },
+      {
+        "id": "b",
+        "text": "Eine niedrige Wahlbeteiligung",
+        "richtig": false
+      },
+      {
+        "id": "c",
+        "text": "Verlust staatlicher Kontrolle sowie Ausfall von Sicherheit, Rechtsordnung und Verwaltung",
+        "richtig": true
+      },
+      {
+        "id": "d",
+        "text": "Eine geringe Zahl politischer Parteien",
+        "richtig": false
+      }
+    ]
+  }
+},
+{
+  "id": "pug-staatsaufgaben-015",
+  "frage": "Welche Ursachen können dazu führen, dass ein Staat zu einem Failed State wird?",
+  "antwort": "Mögliche Ursachen sind Krieg und Bürgerkrieg, Korruption, schwache staatliche Institutionen, Machtkämpfe, Armut sowie der Verlust der Kontrolle über Teile des Staatsgebiets.",
+  "multipleChoice": {
+    "typ": "single",
+    "optionen": [
+      {
+        "id": "a",
+        "text": "Krieg, Korruption, schwache Institutionen und der Verlust staatlicher Kontrolle",
+        "richtig": true
+      },
+      {
+        "id": "b",
+        "text": "Eine hohe Anzahl von Schulen und Krankenhäusern",
+        "richtig": false
+      },
+      {
+        "id": "c",
+        "text": "Eine starke Rechtsordnung und funktionierende Verwaltung",
+        "richtig": false
+      },
+      {
+        "id": "d",
+        "text": "Ein stark ausgeprägtes staatliches Gewaltmonopol",
+        "richtig": false
+      }
+    ]
+  }
+},
+{
+  "id": "pug-staatsaufgaben-016",
+  "frage": "Was bedeutet Thomas Hobbes' Aussage „homo homini lupus“?",
+  "antwort": "Die Aussage bedeutet sinngemäß: Der Mensch ist dem Menschen ein Wolf. Hobbes ging davon aus, dass Menschen ohne eine starke staatliche Ordnung vor allem ihre eigenen Interessen verfolgen und dadurch Konflikte entstehen können.",
+  "multipleChoice": {
+    "typ": "single",
+    "optionen": [
+      {
+        "id": "a",
+        "text": "Der Mensch ist von Natur aus vollständig friedlich",
+        "richtig": false
+      },
+      {
+        "id": "b",
+        "text": "Menschen benötigen grundsätzlich keine staatliche Ordnung",
+        "richtig": false
+      },
+      {
+        "id": "c",
+        "text": "Der Mensch ist dem Menschen ein Wolf und ohne Ordnung können Konflikte entstehen",
+        "richtig": true
+      },
+      {
+        "id": "d",
+        "text": "Menschen können nur innerhalb einer Demokratie zusammenleben",
+        "richtig": false
+      }
+    ]
+  }
+},
+{
+  "id": "pug-staatsaufgaben-017",
+  "frage": "Warum hielt Thomas Hobbes eine starke Staatsgewalt für notwendig?",
+  "antwort": "Hobbes sah eine starke Staatsgewalt als notwendig an, um Sicherheit und Ordnung zu gewährleisten und gewaltsame Konflikte zwischen Menschen zu verhindern.",
+  "multipleChoice": {
+    "typ": "single",
+    "optionen": [
+      {
+        "id": "a",
+        "text": "Damit jeder Bürger seine eigenen Gesetze festlegen kann",
+        "richtig": false
+      },
+      {
+        "id": "b",
+        "text": "Damit Sicherheit und Ordnung gewährleistet und Konflikte eingedämmt werden",
+        "richtig": true
+      },
+      {
+        "id": "c",
+        "text": "Damit der Staat keine Polizei und Gerichte benötigt",
+        "richtig": false
+      },
+      {
+        "id": "d",
+        "text": "Damit die Bürger vollständig auf staatliche Regeln verzichten können",
+        "richtig": false
+      }
+    ]
+  }
+},
+{
+  "id": "pug-staatsaufgaben-018",
+  "frage": "Welcher Zusammenhang besteht zwischen Hobbes' Staatsverständnis und dem staatlichen Gewaltmonopol?",
+  "antwort": "Das staatliche Gewaltmonopol bedeutet, dass grundsätzlich der Staat berechtigt ist, legitime physische Gewalt anzuwenden. Dies dient dazu, Sicherheit und Ordnung durchzusetzen und private Gewalt zwischen Bürgern zu verhindern.",
+  "multipleChoice": {
+    "typ": "single",
+    "optionen": [
+      {
+        "id": "a",
+        "text": "Jeder Bürger darf Gewalt einsetzen, wenn er sich im Recht sieht",
+        "richtig": false
+      },
+      {
+        "id": "b",
+        "text": "Nur das Militär darf Gesetze erlassen",
+        "richtig": false
+      },
+      {
+        "id": "c",
+        "text": "Der Staat verzichtet auf die Durchsetzung seiner Gesetze",
+        "richtig": false
+      },
+      {
+        "id": "d",
+        "text": "Der Staat besitzt grundsätzlich das Recht zur legitimen Gewaltanwendung, um Sicherheit und Ordnung durchzusetzen",
+        "richtig": true
+      }
+    ]
+  }
+}
 ]

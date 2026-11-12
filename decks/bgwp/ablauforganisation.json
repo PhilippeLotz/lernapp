@@ -2,8 +2,8 @@
   {
     "id": "bgwp-ablauforganisation-001",
     "bereich": "Ablauforganisation",
-    "frage": "Welche unmittelbaren Folgen entstehen durch schlechte Organisation?",
-    "antwort": "*Stress für Mitarbeiter\n *Doppelte Arbeit\n *Umsatzverluste\n *Unbearbeitete Tickets\n *Kundenverluste"
+    "frage": "Welche unmittelbaren Folgen entstehen durch schlechte Organisation? Nenne 4 Beispiele",
+    "antwort": "* Stress für Mitarbeiter\n * Doppelte Arbeit\n * Umsatzverluste\n * Unbearbeitete Tickets\n * Kundenverluste"
   },
   {
     "id": "bgwp-ablauforganisation-002",
@@ -15,7 +15,7 @@
     "id": "bgwp-ablauforganisation-003",
     "bereich": "Ablauforganisation",
     "frage": "Welche langfristigen Folgen können durch schlechte Organisation entstehen?",
-    "antwort": "*Imageschaden\n *Kündigung von Mitarbeitern\n *Verlust von Kunden\n *Kein Wachstum"
+    "antwort": "* Imageschaden\n * Kein Wachstum\n * Verlust von Kunden\n * Kündigung von Mitarbeitern  "
   },
   {
     "id": "bgwp-ablauforganisation-004",
@@ -27,13 +27,13 @@
     "id": "bgwp-ablauforganisation-005",
     "bereich": "Ablauforganisation",
     "frage": "Welche weiteren organisatorischen Problem traten auf?",
-    "antwort": "Angebot doppelt kalkuliert\n Service-Tickets blieben liegen\n Unklare Urlaubsvertretungen\n Widersprüchliche Informationen an den Kunden"
+    "antwort": "* Angebot doppelt kalkuliert\n * Service-Tickets blieben liegen\n * Unklare Urlaubsvertretungen\n * Widersprüchliche Informationen an den Kunden"
   },
   {
     "id": "bgwp-ablauforganisation-006",
     "bereich": "Ablauforganisation",
     "frage": "Wie können Abläufe transparenter werden?",
-    "antwort": "*Regelmäßige Meetings\n *Kommunikation von Abwesenheiten\n *Klare Statusübersicht von Projekten\n *Dokumentierte Prozesse\n"
+    "antwort": "* Regelmäßige Meetings\n * Kommunikation von Abwesenheiten\n * Klare Statusübersicht von Projekten\n * Dokumentierte Prozesse\n"
   },
   {
     "id": "bgwp-ablauforganisation-007",
@@ -45,7 +45,7 @@
   "id": "bgwp-ablauforganisation-008",
   "bereich": "Aufbau- und Ablauforganisation",
   "frage": "Was regelt die Aufbauorganisation?",
-  "antwort": "Die Aufbauorganisation regelt die Struktur eines Unternehmens:\n\n*Abteilungen\n*Stellen\n*Hierarchien\n*Verantwortlichkeiten",
+  "antwort": "Die Aufbauorganisation regelt die Struktur eines Unternehmens:\n\n* Abteilungen\n* Stellen\n* Hierarchien\n* Verantwortlichkeiten",
   "multipleChoice": {
     "typ": "single",
     "optionen": [
@@ -77,7 +77,7 @@
   "id": "bgwp-ablauforganisation-009",
   "bereich": "Aufbau- und Ablauforganisation",
   "frage": "Was regelt die Ablauforganisation?",
-  "antwort": "Die Ablauforganisation legt fest:\n*Reihenfolge der Arbeitsschritte\n*Zeitpunkt\n*Ort der Durchführung\n*Konkrete Durchführung der Arbeit\n\nMerksatz:\nAufbauorganisation = Wer macht was?\nAblauforganisation = Wie wird es gemacht?",
+  "antwort": "Die Ablauforganisation legt fest:\n\n* Reihenfolge der Arbeitsschritte\n* Zeitpunkt\n* Ort der Durchführung\n* Konkrete Durchführung der Arbeit\n\nMerksatz:\nAufbauorganisation = Wer macht was?\nAblauforganisation = Wie wird es gemacht?",
   "multipleChoice": {
     "typ": "single",
     "optionen": [
@@ -173,7 +173,7 @@
     "id": "bgwp-ablauforganisation-012",
     "bereich": "Dilemma der Ablaufplanung",
     "frage": "Welche Lösungen gibt es?",
-    "antwort": "*Mehr Personal\n *Backup-Ressourcen\n *Schulungen\n *Reserve-Kapazitäten"
+    "antwort": "* Mehr Personal\n * Backup-Ressourcen\n * Schulungen\n * Reserve-Kapazitäten"
   },
   {
   "id": "bgwp-ablauforganisation-013",
@@ -211,7 +211,7 @@
   "id": "bgwp-ablauforganisation-014",
   "bereich": "Prozesskategorien",
   "frage": "Was sind Führungsprozesse?",
-  "antwort": "Prozesse zur Planung, Steuerung und Kontrolle des Unternehmens.\n\n*Unternehmensstrategie\n*Qualitätsziele\n*Jahresplanung",
+  "antwort": "Prozesse zur Planung, Steuerung und Kontrolle des Unternehmens.\n\n* Unternehmensstrategie\n* Qualitätsziele\n* Jahresplanung",
   "multipleChoice": {
     "typ": "single",
     "optionen": [
@@ -275,7 +275,7 @@
   "id": "bgwp-ablauforganisation-016",
   "bereich": "Prozesskategorien",
   "frage": "Was sind Unterstützungsprozesse?",
-  "antwort": "Prozesse, die die Kernprozesse unterstützen, aber keinen direkten Kundennutzen schaffen:\n\n*Personalverwaltung\n*Buchhaltung\n*IT-Support\n*Beschaffung",
+  "antwort": "Prozesse, die die Kernprozesse unterstützen, aber keinen direkten Kundennutzen schaffen:\n\n* Personalverwaltung\n* Buchhaltung\n* IT-Support\n* Beschaffung",
   "multipleChoice": {
     "typ": "single",
     "optionen": [
@@ -627,7 +627,7 @@
   "id": "bgwp-ablauforganisation-027",
   "bereich": "ePK - Ereignisgesteuerte Prozesskette",
   "frage": "Welche logischen Verknüpfungen gibt es in einer ePK und was bedeuten sie?",
-  "antwort": "*UND-Verknüpfung: Alle Zweige werden parallel ausgeführt\n*ODER-Verknüpfung: Mindestens ein Zweig wird ausgeführt\n*XOR-Verknüpfung: Genau ein Zweig wird ausgeführt",
+  "antwort": "* UND-Verknüpfung: Alle Zweige werden parallel ausgeführt\n* ODER-Verknüpfung: Mindestens ein Zweig wird ausgeführt\n* XOR-Verknüpfung: Genau ein Zweig wird ausgeführt",
   "multipleChoice": {
     "typ": "single",
     "optionen": [
@@ -697,7 +697,7 @@
   "id": "bgwp-ablauforganisation-030",
   "bereich": "BPMN",
   "frage": "Welche Grundelemente gibt es in BPMN und wie sehen sie aus?",
-  "antwort": "*Ereignis: Kreis\n*Aktivität: Rechteck mit abgerundeten Ecken\n*Gateway: Raute\n*Verbindungspfeil: Pfeil\n*Pool: Rechteck mit Name der Organisationseinheit\n*Lane: Unterteilung eines Pools",
+  "antwort": "* Ereignis: Kreis\n* Aktivität: Rechteck mit abgerundeten Ecken\n* Gateway: Raute\n* Verbindungspfeil: Pfeil\n* Pool: Rechteck mit Name der Organisationseinheit\n* Lane: Unterteilung eines Pools",
   "multipleChoice": {
     "typ": "single",
     "optionen": [
@@ -761,6 +761,6 @@
     "id": "bgwp-ablauforganisation-032",
     "bereich": "Prozessmanagement",
     "frage": "Welche Ziele verfolgt das Prozessmanagement?",
-    "antwort": "*Höhere Qualität\n *Kürzere Bearbeitungszeiten\n *Geringere Kosten\n *Höhere Kundenzufriedenheit\n Mehr Transparenz"
+    "antwort": "* Höhere Qualität\n * Kürzere Bearbeitungszeiten\n * Geringere Kosten\n * Höhere Kundenzufriedenheit\n * Mehr Transparenz"
   }
 ]
