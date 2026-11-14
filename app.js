@@ -27,6 +27,14 @@ const faecher = {
       {
         name: "Datenbank-Grundlagen",
         datei: "db-grundlagen"
+      },
+      {
+        name: "Use-Case",
+        datei: "usecase"
+      },
+      {
+        name: "Datenaustauschformate",
+        datei: "datenaustauschformate"
       }
     ]
   },

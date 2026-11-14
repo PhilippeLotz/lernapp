@@ -1,0 +1,388 @@
+[
+  {
+    "id": "usecase-001",
+    "frage": "Wofür steht UML?",
+    "antwort": "UML steht für Unified Modeling Language. Sie ist eine grafische Modellierungssprache zur Beschreibung verschiedener Aspekte von Softwaresystemen.",
+    "multipleChoice": {
+      "typ": "single",
+      "optionen": [
+        {
+          "id": "a",
+          "text": "Unified Modeling Language",
+          "richtig": true
+        },
+        {
+          "id": "b",
+          "text": "Universal Machine Language",
+          "richtig": false
+        },
+        {
+          "id": "c",
+          "text": "User Modeling Logic",
+          "richtig": false
+        },
+        {
+          "id": "d",
+          "text": "Unified Management Logic",
+          "richtig": false
+        }
+      ],
+      "erklaerung": "UML steht für Unified Modeling Language und dient der grafischen Modellierung von Softwaresystemen."
+    }
+  },
+  {
+    "id": "usecase-002",
+    "frage": "Was ist ein Use-Case-Diagramm?",
+    "antwort": "Ein Use-Case-Diagramm bzw. Anwendungsfalldiagramm stellt Anforderungen an ein System sowie die Interaktionen zwischen Akteuren und dem System grafisch dar."
+  },
+  {
+    "id": "usecase-003",
+    "frage": "Was beschreibt ein Use Case?",
+    "antwort": "Ein Use Case beschreibt, wie ein Akteur mit einem System interagiert, um ein konkretes Ziel zu erreichen.",
+    "multipleChoice": {
+      "typ": "single",
+      "optionen": [
+        {
+          "id": "a",
+          "text": "Die technische Hardware eines Systems",
+          "richtig": false
+        },
+        {
+          "id": "b",
+          "text": "Die Interaktion eines Akteurs mit einem System zur Erreichung eines Ziels",
+          "richtig": true
+        },
+        {
+          "id": "c",
+          "text": "Die zeitliche Reihenfolge aller Programmbefehle",
+          "richtig": false
+        },
+        {
+          "id": "d",
+          "text": "Die Tabellenstruktur einer Datenbank",
+          "richtig": false
+        }
+      ],
+      "erklaerung": "Ein Use Case beschreibt aus Sicht eines Akteurs, wie dieser mit einem System interagiert, um ein bestimmtes Ziel zu erreichen."
+    }
+  },
+  {
+    "id": "usecase-004",
+    "frage": "Was ist ein Akteur in einem Use-Case-Diagramm?",
+    "antwort": "Ein Akteur ist eine Rolle außerhalb des betrachteten Systems, die mit dem System interagiert, zum Beispiel ein Kunde, Administrator oder externes System."
+  },
+  {
+    "id": "usecase-005",
+    "frage": "Muss ein Akteur immer ein Mensch sein?",
+    "antwort": "Nein. Ein Akteur kann auch ein externes System sein, das mit dem betrachteten System interagiert.",
+    "multipleChoice": {
+      "typ": "single",
+      "optionen": [
+        {
+          "id": "a",
+          "text": "Ja, ein Akteur muss immer ein Mensch sein.",
+          "richtig": false
+        },
+        {
+          "id": "b",
+          "text": "Nein, auch ein externes System kann ein Akteur sein.",
+          "richtig": true
+        },
+        {
+          "id": "c",
+          "text": "Nein, aber nur Unternehmen können zusätzlich Akteure sein.",
+          "richtig": false
+        },
+        {
+          "id": "d",
+          "text": "Ja, außer bei Datenbanken.",
+          "richtig": false
+        }
+      ],
+      "erklaerung": "Ein Akteur beschreibt eine Rolle außerhalb des Systems. Das kann ein Mensch, aber beispielsweise auch ein externes System sein."
+    }
+  },
+  {
+    "id": "usecase-006",
+    "frage": "Wie wird ein Use Case in einem UML-Anwendungsfalldiagramm dargestellt?",
+    "antwort": "Ein Use Case wird als Ellipse innerhalb der Systemgrenze dargestellt.",
+    "multipleChoice": {
+      "typ": "single",
+      "optionen": [
+        {
+          "id": "a",
+          "text": "Als Rechteck",
+          "richtig": false
+        },
+        {
+          "id": "b",
+          "text": "Als Raute",
+          "richtig": false
+        },
+        {
+          "id": "c",
+          "text": "Als Ellipse",
+          "richtig": true
+        },
+        {
+          "id": "d",
+          "text": "Als Strichmännchen",
+          "richtig": false
+        }
+      ],
+      "erklaerung": "Use Cases werden als Ellipsen innerhalb der Systemgrenze dargestellt. Akteure befinden sich außerhalb."
+    }
+  },
+  {
+    "id": "usecase-007",
+    "frage": "Wo befinden sich Akteure im Verhältnis zur Systemgrenze?",
+    "antwort": "Akteure befinden sich außerhalb der Systemgrenze.",
+    "multipleChoice": {
+      "typ": "single",
+      "optionen": [
+        {
+          "id": "a",
+          "text": "Innerhalb der Systemgrenze",
+          "richtig": false
+        },
+        {
+          "id": "b",
+          "text": "Außerhalb der Systemgrenze",
+          "richtig": true
+        },
+        {
+          "id": "c",
+          "text": "Immer auf der Systemgrenze",
+          "richtig": false
+        },
+        {
+          "id": "d",
+          "text": "Nur unterhalb des Systems",
+          "richtig": false
+        }
+      ],
+      "erklaerung": "Akteure gehören nicht zum betrachteten System selbst und werden deshalb außerhalb seiner Systemgrenze dargestellt."
+    }
+  },
+  {
+    "id": "usecase-008",
+    "frage": "Was stellt die Systemgrenze dar?",
+    "antwort": "Die Systemgrenze zeigt, welche Use Cases zum betrachteten System gehören. Die Use Cases liegen innerhalb, die Akteure außerhalb der Systemgrenze."
+  },
+  {
+    "id": "usecase-009",
+    "frage": "Was bedeutet <<include>> in einem Use-Case-Diagramm?",
+    "antwort": "<<include>> bedeutet, dass ein Teilanwendungsfall verbindlich eingebunden wird und häufig von mehreren Anwendungsfällen wiederverwendet werden kann. Merksatz: include = wird immer benötigt."
+  },
+  {
+    "id": "usecase-010",
+    "frage": "Welche Aussage beschreibt <<include>> am besten?",
+    "antwort": "Ein notwendiger bzw. wiederverwendeter Teilanwendungsfall wird eingebunden.",
+    "multipleChoice": {
+      "typ": "single",
+      "optionen": [
+        {
+          "id": "a",
+          "text": "Eine optionale Erweiterung eines Use Cases",
+          "richtig": false
+        },
+        {
+          "id": "b",
+          "text": "Ein notwendiger bzw. wiederverwendeter Teilanwendungsfall wird eingebunden",
+          "richtig": true
+        },
+        {
+          "id": "c",
+          "text": "Ein Akteur wird aus dem System entfernt",
+          "richtig": false
+        },
+        {
+          "id": "d",
+          "text": "Zwei Systeme werden miteinander verbunden",
+          "richtig": false
+        }
+      ],
+      "erklaerung": "<<include>> wird verwendet, wenn ein Teilanwendungsfall verbindlich eingebunden bzw. wiederverwendet wird."
+    }
+  },
+  {
+    "id": "usecase-011",
+    "frage": "Was bedeutet <<extend>> in einem Use-Case-Diagramm?",
+    "antwort": "<<extend>> erweitert einen bestehenden Anwendungsfall um optionales oder situationsabhängiges Verhalten, zum Beispiel eine Variante oder einen Ausnahmefall. Merksatz: extend = kann zusätzlich passieren."
+  },
+  {
+    "id": "usecase-012",
+    "frage": "Welche Aussage beschreibt <<extend>> am besten?",
+    "antwort": "Eine optionale oder bedingte Erweiterung eines bestehenden Anwendungsfalls.",
+    "multipleChoice": {
+      "typ": "single",
+      "optionen": [
+        {
+          "id": "a",
+          "text": "Ein zwingend erforderlicher Teil eines Use Cases",
+          "richtig": false
+        },
+        {
+          "id": "b",
+          "text": "Eine optionale oder bedingte Erweiterung eines Use Cases",
+          "richtig": true
+        },
+        {
+          "id": "c",
+          "text": "Eine Verbindung zwischen zwei Akteuren",
+          "richtig": false
+        },
+        {
+          "id": "d",
+          "text": "Die Grenze des Systems",
+          "richtig": false
+        }
+      ],
+      "erklaerung": "<<extend>> beschreibt Verhalten, das nur optional oder unter bestimmten Bedingungen zum ursprünglichen Use Case hinzukommt."
+    }
+  },
+  {
+    "id": "usecase-013",
+    "frage": "Was ist der wichtigste Unterschied zwischen <<include>> und <<extend>>?",
+    "antwort": "<<include>> steht für einen notwendigen bzw. wiederverwendeten Teil eines Anwendungsfalls. <<extend>> steht für eine optionale oder bedingte Erweiterung."
+  },
+  {
+    "id": "usecase-014",
+    "frage": "Eine Berechtigungsprüfung wird bei jedem Öffnen einer Tür zwingend durchgeführt. Welche Beziehung passt?",
+    "antwort": "<<include>>, weil die Berechtigungsprüfung immer Bestandteil des Vorgangs ist.",
+    "multipleChoice": {
+      "typ": "single",
+      "optionen": [
+        {
+          "id": "a",
+          "text": "<<extend>>",
+          "richtig": false
+        },
+        {
+          "id": "b",
+          "text": "<<include>>",
+          "richtig": true
+        },
+        {
+          "id": "c",
+          "text": "Keine Beziehung",
+          "richtig": false
+        },
+        {
+          "id": "d",
+          "text": "Akteur-Vererbung",
+          "richtig": false
+        }
+      ],
+      "erklaerung": "Da die Berechtigungsprüfung bei jedem Öffnen der Tür zwingend durchgeführt wird, handelt es sich um <<include>>."
+    }
+  },
+  {
+    "id": "usecase-015",
+    "frage": "Eine zusätzliche Funktion wird nur unter bestimmten Bedingungen ausgeführt. Welche Beziehung ist typischerweise passend?",
+    "antwort": "<<extend>>, weil die zusätzliche Funktion nur optional bzw. unter bestimmten Bedingungen ausgeführt wird.",
+    "multipleChoice": {
+      "typ": "single",
+      "optionen": [
+        {
+          "id": "a",
+          "text": "<<include>>",
+          "richtig": false
+        },
+        {
+          "id": "b",
+          "text": "<<extend>>",
+          "richtig": true
+        },
+        {
+          "id": "c",
+          "text": "Systemgrenze",
+          "richtig": false
+        },
+        {
+          "id": "d",
+          "text": "Assoziation zum Akteur",
+          "richtig": false
+        }
+      ],
+      "erklaerung": "<<extend>> eignet sich für optionale oder bedingte Erweiterungen eines bestehenden Use Cases."
+    }
+  },
+  {
+    "id": "usecase-016",
+    "frage": "Wie geht man systematisch beim Erstellen eines Use-Case-Diagramms vor?",
+    "antwort": "1. System identifizieren, 2. Akteure identifizieren, 3. Aktionen bzw. Use Cases bestimmen, 4. Beziehungen und Abhängigkeiten bestimmen, 5. <<include>> und <<extend>> prüfen, 6. Diagramm zeichnen."
+  },
+  {
+    "id": "usecase-017",
+    "frage": "Woran erkennt man mögliche Use Cases in einer Aufgabenstellung?",
+    "antwort": "Vor allem an Verben bzw. Aktionen, die beschreiben, was ein Akteur mit dem System tun möchte.",
+    "multipleChoice": {
+      "typ": "single",
+      "optionen": [
+        {
+          "id": "a",
+          "text": "Vor allem an Verben und Aktionen",
+          "richtig": true
+        },
+        {
+          "id": "b",
+          "text": "Nur an Zahlen",
+          "richtig": false
+        },
+        {
+          "id": "c",
+          "text": "Nur an Personen",
+          "richtig": false
+        },
+        {
+          "id": "d",
+          "text": "Vor allem an Adjektiven",
+          "richtig": false
+        }
+      ],
+      "erklaerung": "Verben und Aktionen zeigen häufig, welche Handlungen ein Akteur mit dem System ausführen möchte und helfen deshalb beim Erkennen der Use Cases."
+    }
+  },
+  {
+    "id": "usecase-018",
+    "frage": "Kann man aus einem Use-Case-Diagramm die genaue zeitliche Reihenfolge der Arbeitsschritte ablesen?",
+    "antwort": "Nein. Ein Use-Case-Diagramm zeigt Akteure, Anwendungsfälle und deren Beziehungen, aber nicht den genauen zeitlichen Ablauf.",
+    "multipleChoice": {
+      "typ": "single",
+      "optionen": [
+        {
+          "id": "a",
+          "text": "Ja, immer",
+          "richtig": false
+        },
+        {
+          "id": "b",
+          "text": "Nur bei <<include>>",
+          "richtig": false
+        },
+        {
+          "id": "c",
+          "text": "Nein",
+          "richtig": true
+        },
+        {
+          "id": "d",
+          "text": "Nur bei maximal zwei Akteuren",
+          "richtig": false
+        }
+      ],
+      "erklaerung": "Das Use-Case-Diagramm beschreibt Anwendungsfälle und Beziehungen. Einen genauen zeitlichen Ablauf bildet es nicht ab."
+    }
+  },
+  {
+    "id": "usecase-019",
+    "frage": "Welche drei grundlegenden Elemente sollte man in einer Fallbeschreibung zuerst suchen?",
+    "antwort": "Das System, die Akteure und die Aktionen bzw. Use Cases."
+  },
+  {
+    "id": "usecase-020",
+    "frage": "Wie lautet ein guter Merksatz für das Vorgehen beim Use-Case-Diagramm?",
+    "antwort": "System → Akteure → Aktionen → Beziehungen → Diagramm."
+  }
+]

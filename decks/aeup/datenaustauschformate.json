@@ -1,0 +1,388 @@
+[
+  {
+    "id": "datenaustausch-001",
+    "frage": "Warum werden Datenaustauschformate benötigt?",
+    "antwort": "Datenaustauschformate ermöglichen es, Daten in einem einheitlichen Format zu speichern und zwischen verschiedenen Programmen bzw. Systemen auszutauschen."
+  },
+  {
+    "id": "datenaustausch-002",
+    "frage": "Was bedeutet Kompatibilität beim Datenaustausch?",
+    "antwort": "Kompatibilität bedeutet, dass verschiedene Programme oder Systeme Daten in einem gemeinsamen Format austauschen und verarbeiten können.",
+    "multipleChoice": {
+      "typ": "single",
+      "optionen": [
+        {
+          "id": "a",
+          "text": "Daten können nur mit einem bestimmten Programm geöffnet werden.",
+          "richtig": false
+        },
+        {
+          "id": "b",
+          "text": "Verschiedene Systeme können Daten miteinander austauschen und verarbeiten.",
+          "richtig": true
+        },
+        {
+          "id": "c",
+          "text": "Alle Daten werden automatisch verschlüsselt.",
+          "richtig": false
+        },
+        {
+          "id": "d",
+          "text": "Daten müssen immer in einer Datenbank gespeichert werden.",
+          "richtig": false
+        }
+      ],
+      "erklaerung": "Kompatibilität ermöglicht den Datenaustausch zwischen unterschiedlichen Programmen und Systemen."
+    }
+  },
+  {
+    "id": "datenaustausch-003",
+    "frage": "Was ist Marshalling?",
+    "antwort": "Marshalling ist der Prozess, ein Objekt oder eine Datenstruktur in ein übertragbares Format umzuwandeln."
+  },
+  {
+    "id": "datenaustausch-004",
+    "frage": "Welche Beschreibung trifft auf Marshalling zu?",
+    "antwort": "Eine Datenstruktur wird in ein Format umgewandelt, das gespeichert oder übertragen werden kann.",
+    "multipleChoice": {
+      "typ": "single",
+      "optionen": [
+        {
+          "id": "a",
+          "text": "Daten werden dauerhaft gelöscht.",
+          "richtig": false
+        },
+        {
+          "id": "b",
+          "text": "Eine Datenstruktur wird in ein übertragbares Format umgewandelt.",
+          "richtig": true
+        },
+        {
+          "id": "c",
+          "text": "Daten werden ausschließlich verschlüsselt.",
+          "richtig": false
+        },
+        {
+          "id": "d",
+          "text": "Mehrere Datenbanken werden zusammengeführt.",
+          "richtig": false
+        }
+      ],
+      "erklaerung": "Beim Marshalling wird ein Objekt bzw. eine Datenstruktur so umgewandelt, dass die Daten übertragen oder gespeichert werden können."
+    }
+  },
+  {
+    "id": "datenaustausch-005",
+    "frage": "Wofür steht CSV?",
+    "antwort": "CSV steht für Comma-Separated Values. Dabei werden tabellarische Daten als Text gespeichert, wobei die einzelnen Werte durch ein Trennzeichen voneinander getrennt werden."
+  },
+  {
+    "id": "datenaustausch-006",
+    "frage": "Welches Format eignet sich besonders für einfache tabellarische Daten?",
+    "antwort": "CSV eignet sich besonders für einfache tabellarische Daten.",
+    "multipleChoice": {
+      "typ": "single",
+      "optionen": [
+        {
+          "id": "a",
+          "text": "CSV",
+          "richtig": true
+        },
+        {
+          "id": "b",
+          "text": "PNG",
+          "richtig": false
+        },
+        {
+          "id": "c",
+          "text": "HTML",
+          "richtig": false
+        },
+        {
+          "id": "d",
+          "text": "PDF",
+          "richtig": false
+        }
+      ],
+      "erklaerung": "CSV eignet sich besonders für einfach aufgebaute tabellarische Daten mit Zeilen und Spalten."
+    }
+  },
+  {
+    "id": "datenaustausch-007",
+    "frage": "Woran kann man eine CSV-Datei erkennen?",
+    "antwort": "CSV enthält Datensätze normalerweise zeilenweise. Die einzelnen Werte einer Zeile werden durch ein Trennzeichen wie Komma oder Semikolon getrennt."
+  },
+  {
+    "id": "datenaustausch-008",
+    "frage": "Welches Beispiel stellt CSV-Daten dar?",
+    "antwort": "Name;Alter;Ort mit einer weiteren Zeile wie Max;18;München ist ein typisches CSV-Beispiel.",
+    "multipleChoice": {
+      "typ": "single",
+      "optionen": [
+        {
+          "id": "a",
+          "text": "<name>Max</name>",
+          "richtig": false
+        },
+        {
+          "id": "b",
+          "text": "{\"name\":\"Max\",\"alter\":18}",
+          "richtig": false
+        },
+        {
+          "id": "c",
+          "text": "Name;Alter;Ort\nMax;18;München",
+          "richtig": true
+        },
+        {
+          "id": "d",
+          "text": "<alter>18</alter>",
+          "richtig": false
+        }
+      ],
+      "erklaerung": "CSV speichert tabellarische Daten zeilenweise und trennt die einzelnen Werte beispielsweise durch Semikolons."
+    }
+  },
+  {
+    "id": "datenaustausch-009",
+    "frage": "Wofür steht JSON?",
+    "antwort": "JSON steht für JavaScript Object Notation. Es ist ein textbasiertes Format zur strukturierten Darstellung und zum Austausch von Daten."
+  },
+  {
+    "id": "datenaustausch-010",
+    "frage": "Wie werden Daten in JSON häufig dargestellt?",
+    "antwort": "JSON stellt Daten häufig durch Schlüssel-Wert-Paare dar. Objekte werden mit geschweiften Klammern und Listen mit eckigen Klammern dargestellt."
+  },
+  {
+    "id": "datenaustausch-011",
+    "frage": "Welches der folgenden Beispiele ist ein einfaches JSON-Objekt?",
+    "antwort": "{\"name\":\"Max\",\"alter\":18}",
+    "multipleChoice": {
+      "typ": "single",
+      "optionen": [
+        {
+          "id": "a",
+          "text": "<name>Max</name>",
+          "richtig": false
+        },
+        {
+          "id": "b",
+          "text": "{\"name\":\"Max\",\"alter\":18}",
+          "richtig": true
+        },
+        {
+          "id": "c",
+          "text": "Max;18;München",
+          "richtig": false
+        },
+        {
+          "id": "d",
+          "text": "<person name=\"Max\">",
+          "richtig": false
+        }
+      ],
+      "erklaerung": "JSON verwendet unter anderem geschweifte Klammern und Schlüssel-Wert-Paare wie \"name\":\"Max\"."
+    }
+  },
+  {
+    "id": "datenaustausch-012",
+    "frage": "Wofür steht XML?",
+    "antwort": "XML steht für Extensible Markup Language. Daten werden mit Elementen bzw. Tags strukturiert beschrieben."
+  },
+  {
+    "id": "datenaustausch-013",
+    "frage": "Woran erkennt man XML besonders leicht?",
+    "antwort": "XML erkennt man an Tags mit spitzen Klammern, zum Beispiel <name>Max</name>.",
+    "multipleChoice": {
+      "typ": "single",
+      "optionen": [
+        {
+          "id": "a",
+          "text": "An Schlüssel-Wert-Paaren mit geschweiften Klammern",
+          "richtig": false
+        },
+        {
+          "id": "b",
+          "text": "An ausschließlich durch Semikolon getrennten Tabellenwerten",
+          "richtig": false
+        },
+        {
+          "id": "c",
+          "text": "An Tags mit spitzen Klammern",
+          "richtig": true
+        },
+        {
+          "id": "d",
+          "text": "An Binärzahlen",
+          "richtig": false
+        }
+      ],
+      "erklaerung": "XML verwendet Elemente bzw. Tags in spitzen Klammern, beispielsweise <name>Max</name>."
+    }
+  },
+  {
+    "id": "datenaustausch-014",
+    "frage": "Welches der folgenden Beispiele ist XML?",
+    "antwort": "<name>Max</name><alter>18</alter>",
+    "multipleChoice": {
+      "typ": "single",
+      "optionen": [
+        {
+          "id": "a",
+          "text": "name;alter\nMax;18",
+          "richtig": false
+        },
+        {
+          "id": "b",
+          "text": "{\"name\":\"Max\",\"alter\":18}",
+          "richtig": false
+        },
+        {
+          "id": "c",
+          "text": "<name>Max</name><alter>18</alter>",
+          "richtig": true
+        },
+        {
+          "id": "d",
+          "text": "name=Max&alter=18",
+          "richtig": false
+        }
+      ],
+      "erklaerung": "XML ist an den öffnenden und schließenden Tags in spitzen Klammern zu erkennen."
+    }
+  },
+  {
+    "id": "datenaustausch-015",
+    "frage": "Was ist ein wesentlicher Unterschied zwischen CSV und JSON?",
+    "antwort": "CSV eignet sich vor allem für einfache tabellarische Daten. JSON kann komplexere und verschachtelte Datenstrukturen mit Objekten und Listen darstellen."
+  },
+  {
+    "id": "datenaustausch-016",
+    "frage": "Welches Format verwendet typischerweise Schlüssel-Wert-Paare, geschweifte Klammern und eckige Klammern?",
+    "antwort": "JSON",
+    "multipleChoice": {
+      "typ": "single",
+      "optionen": [
+        {
+          "id": "a",
+          "text": "CSV",
+          "richtig": false
+        },
+        {
+          "id": "b",
+          "text": "JSON",
+          "richtig": true
+        },
+        {
+          "id": "c",
+          "text": "XML",
+          "richtig": false
+        },
+        {
+          "id": "d",
+          "text": "PDF",
+          "richtig": false
+        }
+      ],
+      "erklaerung": "JSON verwendet Schlüssel-Wert-Paare. Objekte stehen in geschweiften und Arrays bzw. Listen in eckigen Klammern."
+    }
+  },
+  {
+    "id": "datenaustausch-017",
+    "frage": "Welches Format arbeitet hauptsächlich mit öffnenden und schließenden Tags?",
+    "antwort": "XML",
+    "multipleChoice": {
+      "typ": "single",
+      "optionen": [
+        {
+          "id": "a",
+          "text": "CSV",
+          "richtig": false
+        },
+        {
+          "id": "b",
+          "text": "JSON",
+          "richtig": false
+        },
+        {
+          "id": "c",
+          "text": "XML",
+          "richtig": true
+        },
+        {
+          "id": "d",
+          "text": "TXT",
+          "richtig": false
+        }
+      ],
+      "erklaerung": "XML strukturiert Daten mithilfe von Elementen bzw. öffnenden und schließenden Tags."
+    }
+  },
+  {
+    "id": "datenaustausch-018",
+    "frage": "Ordne die typischen Erkennungsmerkmale CSV, JSON und XML zu.",
+    "antwort": "CSV: Werte und Zeilen mit Trennzeichen. JSON: Schlüssel-Wert-Paare sowie geschweifte und eckige Klammern. XML: Elemente bzw. Tags in spitzen Klammern."
+  },
+  {
+    "id": "datenaustausch-019",
+    "frage": "Du siehst die Daten {\"schueler\":{\"name\":\"Max\",\"noten\":[1,2,2]}}. Um welches Format handelt es sich?",
+    "antwort": "JSON. Erkennbar ist es an den Schlüssel-Wert-Paaren, geschweiften Klammern und der Liste in eckigen Klammern.",
+    "multipleChoice": {
+      "typ": "single",
+      "optionen": [
+        {
+          "id": "a",
+          "text": "CSV",
+          "richtig": false
+        },
+        {
+          "id": "b",
+          "text": "JSON",
+          "richtig": true
+        },
+        {
+          "id": "c",
+          "text": "XML",
+          "richtig": false
+        },
+        {
+          "id": "d",
+          "text": "SQL",
+          "richtig": false
+        }
+      ],
+      "erklaerung": "Geschweifte Klammern, Schlüssel-Wert-Paare und das Array [1,2,2] sind typische Merkmale von JSON."
+    }
+  },
+  {
+    "id": "datenaustausch-020",
+    "frage": "Welche Zuordnung der drei Datenaustauschformate ist richtig?",
+    "antwort": "CSV: einfache Tabellenstruktur; JSON: Schlüssel-Wert-Paare und verschachtelte Strukturen; XML: strukturierte Daten mithilfe von Tags.",
+    "multipleChoice": {
+      "typ": "single",
+      "optionen": [
+        {
+          "id": "a",
+          "text": "CSV = Tags, JSON = Tabellenzeilen, XML = Schlüssel-Wert-Paare",
+          "richtig": false
+        },
+        {
+          "id": "b",
+          "text": "CSV = Tabellenstruktur, JSON = Schlüssel-Wert-Paare, XML = Tags",
+          "richtig": true
+        },
+        {
+          "id": "c",
+          "text": "CSV = Binärdaten, JSON = Bilder, XML = Tabellenkalkulation",
+          "richtig": false
+        },
+        {
+          "id": "d",
+          "text": "CSV = Schlüssel-Wert-Paare, JSON = Tags, XML = Tabellenzeilen",
+          "richtig": false
+        }
+      ],
+      "erklaerung": "CSV bildet vor allem tabellarische Daten ab, JSON verwendet Schlüssel-Wert-Strukturen und XML beschreibt Daten mithilfe von Tags."
+    }
+  }
+]
