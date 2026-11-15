@@ -128,7 +128,7 @@
     "id": "aeup-datenbankentwicklung-005",
     "bereich": "Konzeptioneller Entwurf",
     "frage": "Welches Ergebnis entsteht beim konzeptionellen Entwurf?",
-    "antwort": "Ein ER-Diagramm beziehungsweise ER-Modell und damit ein konzeptionelles Datenmodell.",
+    "antwort": "Ein ER-Modell und damit ein konzeptionelles Datenmodell.",
     "multipleChoice": {
       "typ": "single",
       "optionen": [
@@ -144,7 +144,7 @@
         },
         {
           "id": "c",
-          "text": "Ein ER-Diagramm beziehungsweise ER-Modell und damit ein konzeptionelles Datenmodell.",
+          "text": "Ein ER-Modell und damit ein konzeptionelles Datenmodell.",
           "richtig": true
         },
         {
@@ -247,5 +247,29 @@
         }
       ]
     }
-  }
+  },
+  {
+  "id": "aeup-datenbankentwicklung-009",
+  "bereich": "ER-Modell",
+  "frage": "Was bechreibt der Entity-Typ?",
+  "antwort": "• eigenständige Existenz \n• identifizierbar (= unterscheidbar)\n • beschreibbar (Merkmale, Attribute)\n • relevant (für die Anwendungswelt)\n"
+},
+{
+  "id": "aeup-datenbankentwicklung-010",
+  "bereich": "ER-Modell",
+  "frage": "PLATZHALTER – Frage 2",
+  "antwort": "PLATZHALTER – Antwort 2"
+},
+{
+  "id": "aeup-datenbankentwicklung-011",
+  "bereich": "ER-Modell",
+  "frage": "PLATZHALTER – Frage 3",
+  "antwort": "PLATZHALTER – Antwort 3"
+},
+{
+  "id": "aeup-datenbankentwicklung-012",
+  "bereich": "ER-Modell",
+  "frage": "PLATZHALTER – Frage 4",
+  "antwort": "PLATZHALTER – Antwort 4"
+}
 ]

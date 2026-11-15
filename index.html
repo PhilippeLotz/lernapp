@@ -1,41 +1,58 @@
 <!DOCTYPE html>
 <html lang="de">
-
 <head>
   <meta charset="UTF-8">
-
   <meta
     name="viewport"
-    content="width=device-width, initial-scale=1.0"
+    content="width=device-width, initial-scale=1.0, viewport-fit=cover"
   >
 
   <title>Lernwerk</title>
 
+  <meta
+    name="theme-color"
+    content="#151a18"
+  >
+  <meta
+    name="apple-mobile-web-app-capable"
+    content="yes"
+  >
+  <meta
+    name="apple-mobile-web-app-status-bar-style"
+    content="black-translucent"
+  >
+  <meta
+    name="apple-mobile-web-app-title"
+    content="Lernwerk"
+  >
+
+  <link
+    rel="manifest"
+    href="manifest.webmanifest"
+  >
+  <link
+    rel="apple-touch-icon"
+    href="icons/apple-touch-icon.png"
+  >
   <link
     rel="stylesheet"
     href="style.css"
   >
 </head>
-
 <body>
-
   <main class="container">
-
     <h1>📚 Lernwerk 🧠</h1>
 
     <p class="untertitel">
-      Version 1.1
+      Version 1.2
     </p>
-
 
     <!-- Fach und Thema -->
     <section
       class="auswahl"
       aria-label="Lernbereich auswählen"
     >
-
       <div class="auswahl-feld">
-
         <label for="fachAuswahl">
           Fach
         </label>
@@ -45,34 +62,24 @@
             Fach auswählen
           </option>
         </select>
-
       </div>
 
-
       <div class="auswahl-feld">
-
         <label for="themaAuswahl">
           Thema
         </label>
 
         <select id="themaAuswahl">
-
           <option value="" selected>
             Thema auswählen
           </option>
-
         </select>
-
       </div>
-
     </section>
-
 
     <!-- Lernoptionen -->
     <div class="lernoptionen">
-
       <div class="lernart-option">
-
         <label for="lernartAuswahl">
           Lernart
         </label>
@@ -88,56 +95,39 @@
             Multiple Choice
           </option>
         </select>
-
       </div>
 
-
       <div class="lernmodus-option">
-
         <label for="lernmodusAuswahl">
           Lernmodus
         </label>
 
         <select id="lernmodusAuswahl">
-
           <option value="offen" selected>
             Offene Karten
           </option>
-
           <option value="unsicher">
             Nur Unsichere
           </option>
-
           <option value="problematisch">
             Unsichere + Teilweise
           </option>
-
           <option value="alle">
             Alle Karten
           </option>
-
         </select>
-
       </div>
 
-
       <div class="mischen-option">
-
         <label for="mischenCheckbox">
-
           <input
             id="mischenCheckbox"
             type="checkbox"
           >
-
           Karten mischen
-
         </label>
-
       </div>
-
     </div>
-
 
     <!-- Lernstand-Übersicht -->
     <section
@@ -145,40 +135,32 @@
       class="lernstand-uebersicht versteckt"
       aria-labelledby="lernstandTitel"
     >
-
       <h2 id="lernstandTitel">
         Lernstand
       </h2>
 
       <div class="lernstand-werte">
-
         <p>
           Gesamt:
           <strong id="statistikGesamt">0</strong>
         </p>
-
         <p>
           🟢 Sicher:
           <strong id="statistikSicher">0</strong>
         </p>
-
         <p>
           🟡 Teilweise:
           <strong id="statistikTeilweise">0</strong>
         </p>
-
         <p>
           🔴 Unsicher:
           <strong id="statistikUnsicher">0</strong>
         </p>
-
         <p>
           Noch nicht bewertet:
           <strong id="statistikOffen">0</strong>
         </p>
-
       </div>
-
 
       <label for="fortschrittsBalken">
         <span id="fortschrittsProzent">
@@ -193,38 +175,30 @@
       >
         0 %
       </progress>
-
     </section>
-
 
     <!-- Lernkarte -->
     <section class="karte">
-
       <p
         id="fortschritt"
         class="fortschritt"
       ></p>
 
-
       <p class="label">
         Frage
       </p>
 
-
       <div id="bereich"></div>
-
 
       <h2 id="frage">
         Bitte ein Fach und ein Thema auswählen.
       </h2>
-
 
       <!-- Freitextmodus -->
       <div
         id="quizBereich"
         class="quiz-bereich versteckt"
       >
-
         <label for="quizAntwort">
           Deine Antwort
         </label>
@@ -241,7 +215,6 @@
         >
           Antwort prüfen
         </button>
-
       </div>
 
       <!-- Multiple-Choice-Modus -->
@@ -254,6 +227,7 @@
             Wähle eine Antwort aus
           </legend>
         </fieldset>
+
         <button
           id="multipleChoicePruefenButton"
           type="button"
@@ -261,6 +235,7 @@
         >
           Antwort prüfen
         </button>
+
         <div
           id="multipleChoiceErgebnis"
           class="multiple-choice-ergebnis versteckt"
@@ -270,10 +245,12 @@
             id="multipleChoiceRueckmeldung"
             class="multiple-choice-rueckmeldung"
           ></p>
+
           <p
             id="multipleChoiceRichtigeAntwort"
             class="multiple-choice-richtige-antwort"
           ></p>
+
           <div
             id="multipleChoiceErklaerungBereich"
             class="multiple-choice-erklaerung versteckt"
@@ -294,34 +271,27 @@
         Antwort anzeigen
       </button>
 
-
       <!-- Musterantwort -->
       <div
         id="antwortBereich"
         class="antwort versteckt"
       >
-
         <p class="label">
           Musterantwort
         </p>
-
         <p id="antwortText"></p>
-
       </div>
-
 
       <!-- Selbsteinschätzung -->
       <div
         id="bewertungBereich"
         class="bewertung-bereich versteckt"
       >
-
         <p class="label">
           Wie sicher wusstest du die Antwort?
         </p>
 
         <div class="bewertung-buttons">
-
           <button
             id="unsicherButton"
             type="button"
@@ -342,11 +312,8 @@
           >
             🟢 Sicher
           </button>
-
         </div>
-
       </div>
-
 
       <!-- Navigation -->
       <button
@@ -357,10 +324,8 @@
         Nächste Karte
       </button>
 
-
       <!-- Lernstand-Verwaltung -->
       <div class="lernstand-buttons">
-
         <button
           id="alleWiederholenButton"
           type="button"
@@ -376,11 +341,8 @@
         >
           Lernstand zurücksetzen
         </button>
-
       </div>
-
     </section>
-
 
     <!-- Session-Auswertung -->
     <section
@@ -388,7 +350,6 @@
       class="session-auswertung versteckt"
       aria-labelledby="sessionTitel"
     >
-
       <h2 id="sessionTitel">
         Session-Auswertung
       </h2>
@@ -397,33 +358,26 @@
         Bearbeitete Bewertungen:
         <strong id="sessionBearbeitet">0</strong>
       </p>
-
       <p>
         🟢 Sicher:
         <strong id="sessionSicher">0</strong>
       </p>
-
       <p>
         🟡 Teilweise:
         <strong id="sessionTeilweise">0</strong>
       </p>
-
       <p>
         🔴 Unsicher:
         <strong id="sessionUnsicher">0</strong>
       </p>
-
       <p>
         Dauer:
         <strong id="sessionDauer">00:00</strong>
       </p>
-
     </section>
-
 
     <!-- Tastaturhinweise -->
     <details class="tastatur-hinweise">
-
       <summary>
         Tastatursteuerung
       </summary>
@@ -432,35 +386,25 @@
         <li>
           Leertaste: Antwort anzeigen oder ausblenden
         </li>
-
         <li>
           1: Unsicher
         </li>
-
         <li>
           2: Teilweise
         </li>
-
         <li>
           3: Sicher
         </li>
-
         <li>
           Enter: Freitext- oder Multiple-Choice-Antwort prüfen
         </li>
-
         <li>
           Pfeil rechts: nächste Karte
         </li>
       </ul>
-
     </details>
-
   </main>
 
-
   <script src="app.js"></script>
-
 </body>
-
 </html>
